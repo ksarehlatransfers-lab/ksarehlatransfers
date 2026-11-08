@@ -30,8 +30,8 @@ export const faqs: Faq[] = [
       ar: "هل يمكن ترتيب النقل بين مكة المكرمة والمدينة المنورة؟",
     },
     answer: {
-      en: "Yes. Makkah to Madinah and Madinah to Makkah are among the most requested intercity journeys. The road route is roughly 450 km and typically takes four and a half to five and a half hours without stops. The whole vehicle is reserved for your party.",
-      ar: "نعم. رحلتا مكة إلى المدينة والمدينة إلى مكة من أكثر الرحلات طلبًا بين المدن. المسار البري نحو 450 كم ويستغرق عادة من أربع ساعات ونصف إلى خمس ساعات ونصف دون توقف. تُحجز السيارة بالكامل لمجموعتك.",
+      en: "Yes. Makkah to Madinah and Madinah to Makkah are among the most requested intercity journeys. The road route is approximately 440–450 km and typically takes four and a half to five and a half hours without stops. The whole vehicle is reserved for your party.",
+      ar: "نعم. رحلتا مكة إلى المدينة والمدينة إلى مكة من أكثر الرحلات طلبًا بين المدن. المسار البري نحو 440–450 كم ويستغرق عادة من أربع ساعات ونصف إلى خمس ساعات ونصف دون توقف. تُحجز السيارة بالكامل لمجموعتك.",
     },
   },
   {
@@ -70,8 +70,8 @@ export const faqs: Faq[] = [
       ar: "هل يمكنني طلب رحلة زيارة خاصة؟",
     },
     answer: {
-      en: "Yes. A vehicle and driver can be reserved for a Ziyarat itinerary around Madinah or Makkah, with waiting time included at each stop. You choose the sites and the order, and we quote for the time and distance involved.",
-      ar: "نعم. يمكن حجز سيارة وسائق لبرنامج زيارة حول المدينة المنورة أو مكة المكرمة، مع احتساب وقت الانتظار عند كل موقع. أنت تختار المواقع وترتيبها، ونحن نُسعّر الوقت والمسافة.",
+      en: "Yes. A vehicle and driver can be reserved for a Ziyarat itinerary around Madinah or Makkah. You choose the sites and the order, and the quotation for your journey sets out the time and distance it covers.",
+      ar: "نعم. يمكن حجز سيارة وسائق لبرنامج زيارة حول المدينة المنورة أو مكة المكرمة. أنت تختار المواقع وترتيبها، ويوضح عرض السعر لرحلتك الوقت والمسافة اللذين يشملهما.",
     },
   },
   {

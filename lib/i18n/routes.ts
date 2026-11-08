@@ -34,6 +34,9 @@ export const route = {
   makkah: "makkah",
   taif: "taif",
   rabigh: "rabigh",
+  madinah: "madinah",
+  alula: "alula",
+  yanbu: "yanbu",
 } as const;
 
 export type RouteKey = keyof typeof route;
@@ -77,6 +80,11 @@ const sitemapMeta: Record<RouteKey, { priority: number; changeFrequency: "weekly
   makkah: { priority: 0.9, changeFrequency: "weekly" },
   taif: { priority: 0.9, changeFrequency: "weekly" },
   rabigh: { priority: 0.7, changeFrequency: "monthly" },
+  // Madinah Region. Madinah is a city hub, level with Makkah; AlUla and Yanbu
+  // are destination hubs a step below.
+  madinah: { priority: 0.9, changeFrequency: "weekly" },
+  alula: { priority: 0.8, changeFrequency: "monthly" },
+  yanbu: { priority: 0.7, changeFrequency: "monthly" },
 };
 
 /** Pages deliberately kept out of the index; see each page's robots meta. */

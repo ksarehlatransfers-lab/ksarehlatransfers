@@ -55,6 +55,10 @@ credit data, so attribution travels with each image in code.
 | `taif-al-shafa` | [View from Jabal Dakka, Al Shafa, Taif](https://commons.wikimedia.org/wiki/File:Jabal_Dakka,_Al_Shafa.jpg) | Saanina | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 | `dest-rabigh` | [Rabigh city](https://commons.wikimedia.org/wiki/File:Rabigh_city_-_panoramio.jpg) | Mahmoud Farrag | [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) |
 | `rabigh-kaec-waterfront` | [Waterfront, King Abdullah Economic City](https://commons.wikimedia.org/wiki/File:Waterfront_King_Abdullah_Economic_City.jpg) | Mrcosch | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| `madinah-quba` | [Quba Mosque, Madinah](https://commons.wikimedia.org/wiki/File:Mezquita_de_Quba,_Medina,_Arabia_Saudita,_2025-05-22,_DD_13-15_HDR.jpg) — cropped to a square, resized and converted to WebP; this modified version is shared under CC BY-SA 4.0 | Diego Delso | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| `alula-hegra` | [Carved tomb facade, Hegra](https://commons.wikimedia.org/wiki/File:Qasr_al-Farid,_Hegra_(Madain_Salih),_1st_cent._CE,_Saudi_Arabia_(10).jpg) — resized and converted to WebP | Richard Mortel | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) |
+| `alula-elephant-rock` | [Elephant Rock, AlUla](https://commons.wikimedia.org/wiki/File:Elephant_rock,_Al-%27Ula.jpg) — cropped to 3:2, resized and converted to WebP; this modified version is shared under CC BY-SA 4.0 | Uhooep | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| `yanbu-old-town` | [Traditional architecture in old Yanbu](https://commons.wikimedia.org/wiki/File:Traditional_architecture_in_old_Yanbu,_Saudi_Arabia_(9).jpg) — cropped to 16:9, resized and converted to WebP | Richard Mortel | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) |
 
 <!-- credits:end -->
 

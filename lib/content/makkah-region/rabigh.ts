@@ -255,6 +255,14 @@ export const rabigh: RabighContent = {
 
   related: [
     {
+      routeKey: "yanbu",
+      label: { en: "Yanbu", ar: "ينبع" },
+      note: {
+        en: "Further north on the same coast: the old town, the airport and the industrial city.",
+        ar: "شمالًا على الساحل نفسه: البلدة القديمة والمطار والمدينة الصناعية.",
+      },
+    },
+    {
       routeKey: "jeddah",
       label: { en: "All Jeddah transfers", ar: "جميع خدمات النقل في جدة" },
       note: {

@@ -169,6 +169,8 @@ export const jeddahAirport: JeddahAirportContent = {
           en: "The Haramain train reaches Madinah from a station at this airport, and for one or two people travelling light it is usually the better answer. We will tell you so.",
           ar: "وقطار الحرمين يصل إلى المدينة من محطة في هذا المطار، ولشخص أو شخصين بأمتعة خفيفة يكون عادةً الجواب الأفضل. وسنخبرك بذلك.",
         },
+        routeKey: "madinah",
+        linkLabel: { en: "Madinah transfers, in full", ar: "التوصيل في المدينة المنورة بالتفصيل" },
       },
       {
         name: { en: "Into Jeddah", ar: "إلى داخل جدة" },

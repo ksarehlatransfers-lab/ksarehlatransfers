@@ -137,6 +137,8 @@ export const jeddahHub: JeddahHubContent = {
           en: "The Haramain train also runs this corridor and is often the better answer for one or two people travelling light.",
           ar: "وقطار الحرمين يخدم هذا الممر أيضًا، وهو غالبًا الجواب الأفضل لشخص أو شخصين بأمتعة خفيفة.",
         },
+        routeKey: "madinah",
+        linkLabel: { en: "Madinah transfers: airport, station, hotels", ar: "التوصيل في المدينة المنورة: المطار والقطار والفنادق" },
       },
       {
         name: { en: "Taif", ar: "الطائف" },
@@ -156,8 +158,8 @@ export const jeddahHub: JeddahHubContent = {
       {
         name: { en: "Yanbu", ar: "ينبع" },
         reason: {
-          en: "North along the Red Sea coast, for the port, the industrial city and the diving.",
-          ar: "شمالًا على ساحل البحر الأحمر، للميناء والمدينة الصناعية والغوص.",
+          en: "North along the Red Sea coast, for the old town, the industrial city and the diving.",
+          ar: "شمالًا على ساحل البحر الأحمر، للبلدة القديمة والمدينة الصناعية والغوص.",
         },
         distance: { en: "~337 km", ar: "~337 كم" },
         duration: { en: "~3h 20m", ar: "~3:20 ساعة" },

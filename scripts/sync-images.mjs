@@ -24,6 +24,10 @@
  * - If the entry has no `credit`, licence and author are read from the
  *   MediaWiki `imageinfo` API and written back into the manifest, so
  *   attribution is never hand-typed and never re-fetched once known.
+ * - An optional `modifications` string records how the file differs from the
+ *   Commons original (cropped, resized, converted to WebP). It is printed
+ *   after the photograph's link in the credits table, as CC licences ask
+ *   adapters to indicate changes.
  *
  * Note on API host: commons.wikimedia.org is not resolvable from some
  * networks, so this talks to the en.wikipedia.org API, which serves the same
@@ -192,6 +196,7 @@ for (const entry of manifest) {
     subject: entry.subject,
     blurDataURL: await blurDataUrl(out),
     credit: entry.credit,
+    modifications: entry.modifications,
   });
 }
 
@@ -260,7 +265,10 @@ const rows = records.map((r) => {
   const lic = r.credit.licenseUrl
     ? `[${r.credit.license}](${r.credit.licenseUrl})`
     : r.credit.license;
-  return `| \`${r.key}\` | [${r.subject}](${r.credit.page}) | ${r.credit.author} | ${lic} |`;
+  const photo = r.modifications
+    ? `[${r.subject}](${r.credit.page}) — ${r.modifications}`
+    : `[${r.subject}](${r.credit.page})`;
+  return `| \`${r.key}\` | ${photo} | ${r.credit.author} | ${lic} |`;
 });
 
 const table = [

@@ -93,8 +93,8 @@ export const services: Service[] = [
       ar: "زيارات خاصة لنصف يوم أو يوم كامل للمواقع حول المدينتين المقدستين.",
     },
     detail: {
-      en: "A vehicle and driver reserved for a Ziyarat itinerary around Madinah or Makkah, with waiting time at each stop. You set the list of sites and the pace.",
-      ar: "سيارة وسائق محجوزان لبرنامج زيارة حول المدينة المنورة أو مكة المكرمة، مع وقت انتظار عند كل موقع. أنت تحدد قائمة المواقع وإيقاع الرحلة.",
+      en: "A vehicle and driver reserved for a Ziyarat itinerary around Madinah or Makkah. You set the list of sites and the pace; the quotation sets out what your journey covers.",
+      ar: "سيارة وسائق محجوزان لبرنامج زيارة حول المدينة المنورة أو مكة المكرمة. أنت تحدد قائمة المواقع وإيقاع الرحلة، ويوضح عرض السعر ما تشمله رحلتك.",
     },
     imageKey: "svc-ziyarat",
   },
@@ -151,8 +151,8 @@ export const pilgrimageJourneys: {
   {
     name: { en: "Makkah to Madinah", ar: "مكة إلى المدينة" },
     detail: {
-      en: "The intercity road journey north, around 450 km.",
-      ar: "الرحلة البرية شمالًا بين المدينتين، نحو 450 كم.",
+      en: "The intercity road journey north, approximately 440–450 km.",
+      ar: "الرحلة البرية شمالًا بين المدينتين، نحو 440–450 كم.",
     },
   },
   {

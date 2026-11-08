@@ -433,6 +433,14 @@ export const riyadhToAlUla: RoutePageContent = {
 
   related: [
     {
+      routeKey: "alula",
+      label: { en: "AlUla transfers", ar: "التوصيل في العلا" },
+      note: {
+        en: "Once you arrive: AlUla airport, the town, the Old Town, Hegra and Elephant Rock.",
+        ar: "بعد الوصول: مطار العلا والمدينة والبلدة القديمة والحِجر وصخرة الفيل.",
+      },
+    },
+    {
       routeKey: "riyadh",
       label: { en: "All Riyadh transfers", ar: "جميع خدمات النقل في الرياض" },
       note: {

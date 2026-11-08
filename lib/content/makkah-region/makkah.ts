@@ -16,7 +16,8 @@ import type { ClusterCta, ClusterFaq, RelatedLink } from "@/lib/content/riyadh/t
  * - Muslims only — Visit Saudi. Seasonal Hajj-period rules are announced each
  *   year; the 1447 AH example and the official link live on Jeddah→Makkah.
  * - Haramain station in al-Rusaifa, ~3 km from the Grand Mosque; Makkah↔Madinah
- *   2 h 45 min by train — Saudipedia.
+ *   about 2 h 15 min (SAR via PEP, 1447 season) to 2 h 45 min (Saudipedia)
+ *   by train — published figures differ, so the page gives the range.
  * - Taif International Airport ~27 km north-east of central Taif — Saudipedia.
  * - Hotel-dependent drop-off: owner-approved wording.
  *
@@ -163,8 +164,8 @@ export const makkah: MakkahContent = {
     heading: { en: "From the Haramain station to your hotel", ar: "من محطة قطار الحرمين إلى فندقك" },
     paragraphs: [
       {
-        en: "Makkah's Haramain station is in al-Rusaifa, about 3 km from the Grand Mosque. Trains connect it with Jeddah, King Abdulaziz airport, King Abdullah Economic City and Madinah — the journey to Madinah takes about two hours and forty-five minutes.",
-        ar: "تقع محطة قطار الحرمين في مكة بحي الرصيفة، على بعد نحو 3 كم من المسجد الحرام. وتربطها القطارات بجدة ومطار الملك عبدالعزيز ومدينة الملك عبدالله الاقتصادية والمدينة المنورة، والرحلة إلى المدينة نحو ساعتين وخمس وأربعين دقيقة.",
+        en: "Makkah's Haramain station is in al-Rusaifa, about 3 km from the Grand Mosque. Trains connect it with Jeddah, King Abdulaziz airport, King Abdullah Economic City and Madinah — published figures for the journey to Madinah range from about two and a quarter to two and three-quarter hours.",
+        ar: "تقع محطة قطار الحرمين في مكة بحي الرصيفة، على بعد نحو 3 كم من المسجد الحرام. وتربطها القطارات بجدة ومطار الملك عبدالعزيز ومدينة الملك عبدالله الاقتصادية والمدينة المنورة، وتتراوح الأرقام المنشورة لرحلة المدينة بين نحو ساعتين وربع وساعتين وثلاثة أرباع.",
       },
       {
         en: "A train ends at a station, so the last stretch to a hotel is by road. Tell us the train and its arrival time, the hotel, and how many passengers and suitcases. For a departure, give us the train time and we set the hotel pickup from it.",
@@ -255,11 +256,12 @@ export const makkah: MakkahContent = {
       },
       {
         to: { en: "Madinah", ar: "المدينة المنورة" },
-        distance: { en: "~450 km", ar: "~450 كم" },
+        distance: { en: "~440–450 km", ar: "~440–450 كم" },
         note: {
-          en: "A long drive north. The Haramain train covers it in about 2 h 45 min and is often the better answer for one or two people travelling light.",
-          ar: "رحلة طويلة شمالًا، ويقطعها قطار الحرمين في نحو ساعتين و45 دقيقة، وهو غالبًا الخيار الأفضل لشخص أو شخصين بأمتعة خفيفة.",
+          en: "A long drive north. The Haramain train covers it in about 2¼ to 2¾ hours by published figures and is often the better answer for one or two people travelling light.",
+          ar: "رحلة طويلة شمالًا، ويقطعها قطار الحرمين في نحو ساعتين وربع إلى ساعتين وثلاثة أرباع وفق الأرقام المنشورة، وهو غالبًا الخيار الأفضل لشخص أو شخصين بأمتعة خفيفة.",
         },
+        link: { routeKey: "madinah", label: { en: "Private transfers in Madinah", ar: "توصيل خاص في المدينة المنورة" } },
       },
       {
         to: { en: "Rabigh", ar: "رابغ" },
@@ -322,8 +324,8 @@ export const makkah: MakkahContent = {
     {
       question: { en: "Can you take us from Makkah to Madinah by car?", ar: "هل توفرون التوصيل من مكة إلى المدينة المنورة بالسيارة؟" },
       answer: {
-        en: "Yes, as a private road journey of roughly 450 km. For one or two people travelling light the Haramain train, about 2 h 45 min, is often the better answer; the car suits families, real luggage and door-to-door plans.",
-        ar: "نعم، رحلة برية خاصة بطول نحو 450 كم. ولشخص أو شخصين بأمتعة خفيفة يكون قطار الحرمين، نحو ساعتين و45 دقيقة، الخيار الأفضل غالبًا، أما السيارة فتناسب العائلات والأمتعة الفعلية والتوصيل من الباب إلى الباب.",
+        en: "Yes, as a private road journey of approximately 440–450 km. For one or two people travelling light the Haramain train — about 2¼ to 2¾ hours by published figures — is often the better answer; the car suits families, real luggage and door-to-door plans.",
+        ar: "نعم، رحلة برية خاصة بطول نحو 440–450 كم. ولشخص أو شخصين بأمتعة خفيفة يكون قطار الحرمين، في نحو ساعتين وربع إلى ساعتين وثلاثة أرباع وفق الأرقام المنشورة، الخيار الأفضل غالبًا، أما السيارة فتناسب العائلات والأمتعة الفعلية والتوصيل من الباب إلى الباب.",
       },
     },
     {

@@ -23,8 +23,8 @@ export const guides: Guide[] = [
     title: { en: "Reaching AlUla by road", ar: "الوصول إلى العُلا برًّا" },
     kicker: { en: "Day trips", ar: "رحلات يومية" },
     summary: {
-      en: "AlUla sits about three hours north-east of Madinah. What the drive involves and why travellers usually hire a vehicle for the full day rather than a one-way transfer.",
-      ar: "تقع العُلا على نحو ثلاث ساعات شمال شرق المدينة المنورة. ما الذي تتضمنه الرحلة، ولماذا يفضّل المسافرون استئجار سيارة ليوم كامل بدل رحلة باتجاه واحد.",
+      en: "AlUla sits about three hours north-west of Madinah. What the drive involves and why travellers usually hire a vehicle for the full day rather than a one-way transfer.",
+      ar: "تقع العُلا على نحو ثلاث ساعات شمال غرب المدينة المنورة. ما الذي تتضمنه الرحلة، ولماذا يفضّل المسافرون استئجار سيارة ليوم كامل بدل رحلة باتجاه واحد.",
     },
     imageKey: "guide-alula",
     planned: true,
@@ -51,8 +51,8 @@ export const guides: Guide[] = [
     },
     kicker: { en: "Pilgrimage routes", ar: "مسارات الحج والعمرة" },
     summary: {
-      en: "What to expect on the 450 km drive between the two holy cities: typical timings, where people stop, and how to plan the leg around hotel check-in.",
-      ar: "ما الذي تتوقعه في رحلة 450 كم بين المدينتين المقدستين: التوقيتات المعتادة، وأماكن التوقف، وكيفية ترتيب الرحلة حول موعد دخول الفندق.",
+      en: "What to expect on the drive of approximately 440–450 km between the two holy cities: typical timings, where people stop, and how to plan the leg around hotel check-in.",
+      ar: "ما الذي تتوقعه في الرحلة البرية بين المدينتين المقدستين، وطولها نحو 440–450 كم: التوقيتات المعتادة، وأماكن التوقف، وكيفية ترتيب الرحلة حول موعد دخول الفندق.",
     },
     imageKey: "guide-desert",
     planned: true,

@@ -30,7 +30,8 @@ export type Route = {
     | "jeddahToMakkah"
     | "jeddah"
     | "makkah"
-    | "taif";
+    | "taif"
+    | "madinah";
 };
 
 export const routes: Route[] = [
@@ -85,7 +86,8 @@ export const routes: Route[] = [
     },
     fromImageKey: "dest-madinah",
     toImageKey: "dest-jeddah",
-    routeKey: "jeddah",
+    // The journey starts in Madinah, whose hub covers the road to Jeddah.
+    routeKey: "madinah",
   },
   {
     from: { en: "Riyadh", ar: "الرياض" },

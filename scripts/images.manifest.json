@@ -796,5 +796,85 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "page": "https://commons.wikimedia.org/wiki/File:Waterfront_King_Abdullah_Economic_City.jpg"
     }
+  },
+  {
+    "key": "madinah-quba",
+    "commons": "Mezquita de Quba, Medina, Arabia Saudita, 2025-05-22, DD 13-15 HDR.jpg",
+    "out": "madinah-quba-mosque.webp",
+    "shape": [
+      1200,
+      1200
+    ],
+    "focus": "attention",
+    "subject": "Quba Mosque, Madinah",
+    "alt": "Quba Mosque in Madinah, its white walls and minarets lit up at night",
+    "altAr": "مسجد قباء في المدينة المنورة بجدرانه البيضاء ومآذنه المضاءة ليلًا",
+    "modifications": "cropped to a square, resized and converted to WebP; this modified version is shared under CC BY-SA 4.0",
+    "credit": {
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Mezquita_de_Quba,_Medina,_Arabia_Saudita,_2025-05-22,_DD_13-15_HDR.jpg"
+    }
+  },
+  {
+    "key": "alula-hegra",
+    "commons": "Qasr al-Farid, Hegra (Madain Salih), 1st cent. CE, Saudi Arabia (10).jpg",
+    "out": "alula-hegra-qasr-al-farid.webp",
+    "shape": [
+      1500,
+      1000
+    ],
+    "focus": "attention",
+    "subject": "Carved tomb facade, Hegra",
+    "alt": "Detail of a carved Nabataean tomb facade at Hegra, near AlUla, with an eagle above the doorway",
+    "altAr": "تفصيل من واجهة مقبرة نبطية منحوتة في الحِجر قرب العلا، يعلو بابها نسر",
+    "modifications": "resized and converted to WebP",
+    "credit": {
+      "author": "Richard Mortel",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Qasr_al-Farid,_Hegra_(Madain_Salih),_1st_cent._CE,_Saudi_Arabia_(10).jpg"
+    }
+  },
+  {
+    "key": "alula-elephant-rock",
+    "commons": "Elephant rock, Al-'Ula.jpg",
+    "out": "alula-elephant-rock.webp",
+    "shape": [
+      1200,
+      800
+    ],
+    "focus": "attention",
+    "subject": "Elephant Rock, AlUla",
+    "alt": "Elephant Rock, the rock formation north of AlUla",
+    "altAr": "صخرة الفيل، التكوين الصخري شمال العلا",
+    "modifications": "cropped to 3:2, resized and converted to WebP; this modified version is shared under CC BY-SA 4.0",
+    "credit": {
+      "author": "Uhooep",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Elephant_rock,_Al-%27Ula.jpg"
+    }
+  },
+  {
+    "key": "yanbu-old-town",
+    "commons": "Traditional architecture in old Yanbu, Saudi Arabia (9).jpg",
+    "out": "yanbu-old-town.webp",
+    "shape": [
+      1600,
+      900
+    ],
+    "focus": "attention",
+    "subject": "Traditional architecture in old Yanbu",
+    "alt": "Traditional houses with carved wooden balconies in the historic quarter of Yanbu",
+    "altAr": "بيوت تقليدية بشرفات خشبية منقوشة في الحي التاريخي بينبع",
+    "modifications": "cropped to 16:9, resized and converted to WebP",
+    "credit": {
+      "author": "Richard Mortel",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Traditional_architecture_in_old_Yanbu,_Saudi_Arabia_(9).jpg"
+    }
   }
 ]

@@ -98,9 +98,18 @@ export function primaryNav(locale: Locale): NavGroup[] {
         },
         {
           label: t({ en: "Madinah", ar: "المدينة المنورة" }, locale),
-          href: homeAnchor(locale, "destinations"),
-          description: t({ en: "Haram and airport runs", ar: "الحرم والمطار" }, locale),
-          planned: true,
+          href: href(locale, "madinah"),
+          description: t({ en: "Airport, station, hotels, Ziyarat", ar: "المطار والقطار والفنادق والمزارات" }, locale),
+        },
+        {
+          label: t({ en: "AlUla", ar: "العلا" }, locale),
+          href: href(locale, "alula"),
+          description: t({ en: "Airport, Old Town, Hegra", ar: "المطار والبلدة القديمة والحِجر" }, locale),
+        },
+        {
+          label: t({ en: "Yanbu", ar: "ينبع" }, locale),
+          href: href(locale, "yanbu"),
+          description: t({ en: "Town, airport, industrial city", ar: "ينبع البحر والمطار والصناعية" }, locale),
         },
         {
           label: t({ en: "Dammam & Al Khobar", ar: "الدمام والخبر" }, locale),
@@ -342,6 +351,23 @@ export function footerNav(
         {
           label: t({ en: "Riyadh to Jeddah", ar: "الرياض إلى جدة" }, locale),
           href: href(locale, "riyadhToJeddah"),
+        },
+      ],
+    },
+    {
+      heading: t({ en: "Madinah Region", ar: "منطقة المدينة المنورة" }, locale),
+      links: [
+        {
+          label: t({ en: "Madinah transfers", ar: "التوصيل في المدينة المنورة" }, locale),
+          href: href(locale, "madinah"),
+        },
+        {
+          label: t({ en: "AlUla transfers", ar: "التوصيل في العلا" }, locale),
+          href: href(locale, "alula"),
+        },
+        {
+          label: t({ en: "Yanbu transfers", ar: "التوصيل في ينبع" }, locale),
+          href: href(locale, "yanbu"),
         },
       ],
     },

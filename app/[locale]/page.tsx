@@ -24,26 +24,33 @@ export function generateStaticParams() {
 /**
  * Homepage SEO.
  *
- * English title is "main keyword + CTA" at 51 characters. The brand is left
- * out on purpose: adding it pushed the title past the ~60 character display
- * limit, and the rule is to drop the brand before the keyword or the CTA.
- * The Arabic title is written for Arabic searchers rather than translated,
- * and lands at 44 characters.
+ * Owner request (8 Nov 2026): the title should say what the site offers.
+ * English names four core services actually listed on the site — airport,
+ * intercity, Umrah and Ziyarat transfers — plus "Saudia" (owner's chosen
+ * wording), at 55 characters, matching the Arabic title's المزارات. The
+ * brand is left out: with it the title runs past ~60 characters, and the
+ * rule is to drop the brand before the services.
+ * The Arabic title is written for Arabic searchers rather than translated
+ * (المزارات, Ziyarat, is the term Arabic pilgrims search for) and lands at
+ * 56 characters.
+ *
+ * Descriptions are kept under ~160 characters so they are not truncated:
+ * English 157, Arabic 150 (owner request, 8 Nov 2026).
  */
 const title: Bilingual<string> = {
-  en: "Private Transfers Across Saudi Arabia | Get a Quote",
-  ar: "نقل خاص في جميع أنحاء السعودية | اطلب عرض سعر",
+  en: "Airport, Intercity, Umrah & Ziyarat Transfers in Saudia",
+  ar: "نقل خاص في السعودية: المطار وبين المدن والعمرة والمزارات",
 };
 
 const description: Bilingual<string> = {
   en:
-    "Private car, van and minibus transfers across Saudi Arabia — airport " +
-    "pickups, city-to-city routes, hotel transfers and Hajj, Umrah and " +
-    "Ziyarat journeys. Send your journey details for a quotation.",
+    "Private car, van and minibus transfers across Saudi Arabia: airport " +
+    "pickups, intercity routes, hotels, and Hajj, Umrah and Ziyarat " +
+    "journeys. Request a quote.",
   ar:
-    "نقل خاص بالسيارات والڤانات والحافلات الصغيرة في جميع أنحاء السعودية — " +
-    "استقبال من المطارات، ورحلات بين المدن، ونقل من الفنادق، ورحلات الحج " +
-    "والعمرة والزيارة. أرسل تفاصيل رحلتك واحصل على عرض سعر.",
+    "نقل خاص بالسيارة والڤان والحافلة الصغيرة في أنحاء السعودية: الاستقبال " +
+    "من المطارات، والرحلات بين المدن، والفنادق، والحج والعمرة والزيارة. " +
+    "اطلب عرض سعر.",
 };
 
 export async function generateMetadata({

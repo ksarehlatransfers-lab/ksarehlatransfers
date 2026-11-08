@@ -271,8 +271,8 @@ export const riyadhHotel: HotelPageContent = {
         ar: "هل يمكنكم الاستقبال من مجمّع أو شقة مخدومة؟",
       },
       answer: {
-        en: "Yes, and it is quoted like any other address. One thing to know: access to a gated compound is controlled by the compound, not by us, and some require the vehicle and driver to be cleared at the gate or ask that you meet outside it. Tell us the compound when you enquire and we will say plainly what we can reach.",
-        ar: "نعم، وتُسعَّر كأي عنوان آخر. ولتعلم أمرًا: دخول المجمّعات المسوّرة يحكمه المجمّع لا نحن، وبعضها يطلب تصريحًا للمركبة والسائق عند البوابة أو يطلب أن تلتقي خارجها. أخبرنا باسم المجمّع عند الاستفسار ونوضح بصراحة ما يمكننا الوصول إليه.",
+        en: "Yes. A serviced apartment is quoted like any other address. For a gated compound, pickup or drop-off may be possible at an agreed entrance or gate; entry inside the compound is not included, and security permission and internal access are not guaranteed. Tell us the compound when you enquire and we will confirm the meeting point.",
+        ar: "نعم. تُسعَّر الشقة المخدومة كأي عنوان آخر. أما المجمّعات المسوّرة فقد يكون الاستقبال أو النزول ممكنًا عند مدخل أو بوابة متفق عليها، ولا يشمل ذلك الدخول إلى داخل المجمّع، ولا نضمن الإذن الأمني أو الوصول الداخلي. أخبرنا باسم المجمّع عند الاستفسار ونؤكد لك نقطة اللقاء.",
       },
     },
     {

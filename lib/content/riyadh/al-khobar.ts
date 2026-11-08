@@ -71,8 +71,8 @@ export const riyadhToAlKhobar: RoutePageContent = {
       label: { en: "Onward", ar: "المتابعة" },
       value: { en: "King Fahd Causeway", ar: "جسر الملك فهد" },
       note: {
-        en: "The land crossing to Bahrain starts just outside Al Khobar. Border formalities and visas are yours to arrange, not ours.",
-        ar: "يبدأ المعبر البري إلى البحرين خارج الخبر مباشرة. وإجراءات الحدود والتأشيرات مسؤوليتك أنت لا نحن.",
+        en: "The land crossing to Bahrain starts just outside Al Khobar. Our journeys end on the Saudi side; the crossing, visas and border formalities are yours to arrange.",
+        ar: "يبدأ المعبر البري إلى البحرين خارج الخبر مباشرة. وتنتهي رحلاتنا على الجانب السعودي، أما العبور والتأشيرات وإجراءات الحدود فمسؤوليتك.",
       },
     },
   ],
@@ -159,8 +159,8 @@ export const riyadhToAlKhobar: RoutePageContent = {
     heading: { en: "Drop-off in Al Khobar", ar: "الوصول في الخبر" },
     paragraphs: [
       {
-        en: "Door-to-door to a hotel on the corniche, a residential address, a compound entrance, Dhahran or King Fahd International Airport. Give us the specific place rather than just the city — Al Khobar, Dhahran and Dammam run into one another and the last fifteen minutes make a real difference to the timing.",
-        ar: "من الباب إلى الباب إلى فندق على الكورنيش أو عنوان سكني أو مدخل مجمّع أو الظهران أو مطار الملك فهد الدولي. وزوّدنا بالموقع تحديدًا لا باسم المدينة فقط — فالخبر والظهران والدمام متصلة، والدقائق الخمس عشرة الأخيرة تُحدث فرقًا حقيقيًا في التوقيت.",
+        en: "Door-to-door to a hotel on the corniche, a residential address, Dhahran or King Fahd International Airport. For a residential compound, drop-off may be possible at an agreed entrance or gate; entry inside the compound is not included, and security permission and internal access are not guaranteed. Give us the specific place rather than just the city — Al Khobar, Dhahran and Dammam run into one another and the last fifteen minutes make a real difference to the timing.",
+        ar: "من الباب إلى الباب إلى فندق على الكورنيش أو عنوان سكني أو الظهران أو مطار الملك فهد الدولي. وفي المجمّعات السكنية قد يكون النزول ممكنًا عند مدخل أو بوابة متفق عليها، ولا يشمل ذلك الدخول إلى داخل المجمّع، ولا نضمن الإذن الأمني أو الوصول الداخلي. وزوّدنا بالموقع تحديدًا لا باسم المدينة فقط — فالخبر والظهران والدمام متصلة، والدقائق الخمس عشرة الأخيرة تُحدث فرقًا حقيقيًا في التوقيت.",
       },
     ],
   },
@@ -172,8 +172,8 @@ export const riyadhToAlKhobar: RoutePageContent = {
         heading: { en: "What we arrange", ar: "ما نرتّبه" },
         paragraphs: [
           {
-            en: "We can take you from Riyadh to the King Fahd Causeway, and we arrange road transport on the Saudi side as permitted. Journeys that cross the causeway itself depend on the rules in force at the time and on the vehicle's own permissions, which we confirm for your dates before quoting rather than assuming.",
-            ar: "يمكننا نقلك من الرياض إلى جسر الملك فهد، ونرتّب النقل البري على الجانب السعودي وفق ما هو مسموح. أما الرحلات التي تعبر الجسر نفسه فتعتمد على الأنظمة السارية في حينه وعلى تصاريح المركبة، ونؤكدها لتواريخك قبل التسعير بدل الافتراض.",
+            en: "We can take you from Riyadh to an agreed drop-off point on the Saudi side of the King Fahd Causeway. Our journey ends there: we do not drive across the causeway or provide transport in Bahrain.",
+            ar: "يمكننا نقلك من الرياض إلى نقطة نزول متفق عليها على الجانب السعودي من جسر الملك فهد، وتنتهي رحلتنا هناك؛ فنحن لا نعبر الجسر ولا نقدّم النقل داخل البحرين.",
           },
         ],
       },
@@ -181,8 +181,8 @@ export const riyadhToAlKhobar: RoutePageContent = {
         heading: { en: "What we do not do", ar: "ما لا نقوم به" },
         paragraphs: [
           {
-            en: "We do not issue visas, process border formalities or give immigration advice. Entry requirements for Bahrain are yours to check and meet. If a crossing is not possible for your party or your dates, we will say so rather than drive you to a border you cannot pass.",
-            ar: "لا نُصدر تأشيرات ولا نُنجز إجراءات الحدود ولا نقدّم استشارات جوازات. ومتطلبات دخول البحرين مسؤوليتك في التحقق منها واستيفائها. وإن تعذّر العبور لمجموعتك أو لتواريخك فسنقول ذلك بدل أن نوصلك إلى حدود لا يمكنك اجتيازها.",
+            en: "We do not cross the causeway, provide the Bahrain-side journey, issue visas, process border formalities or give immigration advice. The crossing and onward transport in Bahrain are yours to arrange separately, with a service licensed for the crossing, and entry requirements for Bahrain are yours to check and meet.",
+            ar: "لا نعبر الجسر ولا نقدّم النقل على الجانب البحريني، ولا نُصدر تأشيرات ولا نُنجز إجراءات الحدود ولا نقدّم استشارات جوازات. والعبور والنقل داخل البحرين ترتّبهما بنفسك مع خدمة مرخّصة للعبور، ومتطلبات دخول البحرين مسؤوليتك في التحقق منها واستيفائها.",
           },
         ],
       },
@@ -287,8 +287,8 @@ export const riyadhToAlKhobar: RoutePageContent = {
         ar: "هل يمكنكم نقلنا عبر جسر الملك فهد إلى البحرين؟",
       },
       answer: {
-        en: "We can take you to the causeway from Riyadh. Whether a vehicle can cross with you depends on the rules in force at the time and on the vehicle's permissions, so we confirm that for your specific dates before quoting. Visas and border formalities are yours to arrange — we do not process them and do not give immigration advice.",
-        ar: "يمكننا نقلك إلى الجسر انطلاقًا من الرياض. أما إمكانية عبور المركبة معك فتعتمد على الأنظمة السارية في حينه وعلى تصاريح المركبة، ونؤكد ذلك لتواريخك تحديدًا قبل التسعير. والتأشيرات وإجراءات الحدود مسؤوليتك — فنحن لا ننجزها ولا نقدّم استشارات جوازات.",
+        en: "No. We can take you from Riyadh to an agreed drop-off point on the Saudi side of the causeway, and our journey ends there. Crossing the causeway and transport in Bahrain are arranged separately by you, with a service licensed for the crossing. Visas and border formalities are yours to arrange — we do not process them and do not give immigration advice.",
+        ar: "لا. يمكننا نقلك من الرياض إلى نقطة نزول متفق عليها على الجانب السعودي من الجسر، وتنتهي رحلتنا هناك. أما عبور الجسر والنقل داخل البحرين فترتّبهما بنفسك مع خدمة مرخّصة للعبور. والتأشيرات وإجراءات الحدود مسؤوليتك — فنحن لا ننجزها ولا نقدّم استشارات جوازات.",
       },
     },
     {

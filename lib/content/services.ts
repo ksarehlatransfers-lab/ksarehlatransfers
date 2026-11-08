@@ -119,8 +119,8 @@ export const services: Service[] = [
       ar: "رحلات برية من وإلى المنافذ الحدودية البرية في المملكة.",
     },
     detail: {
-      en: "Transfers routed to land crossings such as the King Fahd Causeway to Bahrain. Travellers are responsible for their own visas and border formalities; we arrange the road leg on each side as permitted.",
-      ar: "رحلات متجهة إلى المنافذ البرية مثل جسر الملك فهد إلى البحرين. المسافرون مسؤولون عن تأشيراتهم وإجراءات الحدود، ونحن نرتّب الجزء البري على كل جانب وفق ما هو مسموح.",
+      en: "Road journeys to land crossings such as the King Fahd Causeway to Bahrain, on the Saudi side only, to an agreed drop-off point before the crossing. The crossing and any transport beyond it are arranged separately by the traveller, as are visas and border formalities.",
+      ar: "رحلات برية إلى المنافذ البرية مثل جسر الملك فهد إلى البحرين، على الجانب السعودي فقط، حتى نقطة نزول متفق عليها قبل المعبر. أما العبور وأي نقل بعده فيرتّبه المسافر بنفسه، وكذلك التأشيرات وإجراءات الحدود.",
     },
     imageKey: "svc-border",
   },

@@ -121,8 +121,8 @@ export const riyadhToDammam: RoutePageContent = {
             ar: "لديك أمتعة حقيقية أو معدات أو صناديق، دون قلق من حد مسموح.",
           },
           {
-            en: "Your start or end point is not a city centre — an industrial site, a compound, a site visit.",
-            ar: "لا تكون نقطة البداية أو النهاية في وسط المدينة — موقع صناعي أو مجمّع سكني أو زيارة ميدانية.",
+            en: "Your start or end point is not a city centre — the gate of an industrial site or compound, or a site visit.",
+            ar: "لا تكون نقطة البداية أو النهاية في وسط المدينة — بوابة موقع صناعي أو مجمّع سكني، أو زيارة ميدانية.",
           },
           {
             en: "Your timing is your own rather than built around a published departure.",
@@ -189,8 +189,8 @@ export const riyadhToDammam: RoutePageContent = {
         name: { en: "Abqaiq area", ar: "منطقة بقيق" },
         km: 320,
         detail: {
-          en: "The highway passes the industrial heart of the Eastern Province. If your destination is a facility rather than a city address, this is often where the routing changes — tell us the exact site when you enquire.",
-          ar: "يمر الطريق بالقلب الصناعي للمنطقة الشرقية. وإن كانت وجهتك منشأة لا عنوانًا في المدينة فهنا يتغير المسار غالبًا — أخبرنا بالموقع بدقة عند الاستفسار.",
+          en: "The highway passes the industrial heart of the Eastern Province. If your destination is an industrial site rather than a city address, this is often where the routing changes — tell us the exact site when you enquire. A drop-off at a public address or an agreed gate may be possible, subject to confirmation; entry into controlled facilities is not included or guaranteed.",
+          ar: "يمر الطريق بالقلب الصناعي للمنطقة الشرقية. وإن كانت وجهتك موقعًا صناعيًا لا عنوانًا في المدينة فهنا يتغير المسار غالبًا — أخبرنا بالموقع بدقة عند الاستفسار. وقد يكون النزول ممكنًا عند عنوان عام أو بوابة متفق عليها بعد التأكيد، أما دخول المنشآت الخاضعة للرقابة فغير مشمول ولا مضمون.",
         },
       },
       {
@@ -218,8 +218,8 @@ export const riyadhToDammam: RoutePageContent = {
     heading: { en: "Drop-off in the Eastern Province", ar: "الوصول في المنطقة الشرقية" },
     paragraphs: [
       {
-        en: "Door-to-door in Dammam, and equally to Dhahran, Al Khobar or King Fahd International Airport — the three sit close together and the drive between them is short. Give us the precise destination, especially for industrial or compound addresses, because access arrangements differ from a hotel forecourt.",
-        ar: "من الباب إلى الباب في الدمام، وكذلك إلى الظهران أو الخبر أو مطار الملك فهد الدولي — فالثلاثة متقاربة والمسافة بينها قصيرة. وزوّدنا بالوجهة بدقة، خصوصًا للعناوين الصناعية أو المجمّعات السكنية، لأن ترتيبات الدخول تختلف عن ساحة فندق.",
+        en: "Door-to-door in Dammam, and equally to Dhahran, Al Khobar or King Fahd International Airport — the three sit close together and the drive between them is short. Give us the precise destination. For a residential compound or an industrial site, drop-off may be possible at an agreed entrance or gate; entry inside is not included, and security permission and internal access are not guaranteed.",
+        ar: "من الباب إلى الباب في الدمام، وكذلك إلى الظهران أو الخبر أو مطار الملك فهد الدولي — فالثلاثة متقاربة والمسافة بينها قصيرة. وزوّدنا بالوجهة بدقة. وفي المجمّعات السكنية أو المواقع الصناعية قد يكون النزول ممكنًا عند مدخل أو بوابة متفق عليها، ولا يشمل ذلك الدخول إلى الداخل، ولا نضمن الإذن الأمني أو الوصول الداخلي.",
       },
     ],
   },
@@ -342,8 +342,8 @@ export const riyadhToDammam: RoutePageContent = {
         ar: "هل يمكن إيصالي إلى موقع صناعي بدل عنوان في المدينة؟",
       },
       answer: {
-        en: "Usually yes, but tell us the exact site when you enquire. Access to industrial facilities and compounds is controlled by the operator of the site, not by us, and some require passes or escorts that you would need to arrange. We will say clearly what we can and cannot reach.",
-        ar: "غالبًا نعم، لكن أخبرنا بالموقع بدقة عند الاستفسار. فدخول المنشآت الصناعية والمجمّعات يحكمه مشغّل الموقع لا نحن، وبعضها يتطلب تصاريح أو مرافقة تتولى ترتيبها بنفسك. وسنوضح بجلاء ما يمكننا الوصول إليه وما لا يمكننا.",
+        en: "A drop-off at a public address, or at an agreed entrance or gate, may be possible, subject to confirmation when you enquire — tell us the exact site. Entry to controlled industrial facilities is not included or guaranteed: security access, gate permissions, passes and escorts are controlled by the site operator, not by us, and are yours to arrange.",
+        ar: "قد يكون النزول ممكنًا عند عنوان عام أو عند مدخل أو بوابة متفق عليها، بعد التأكيد عند الاستفسار، فأخبرنا بالموقع بدقة. أما دخول المنشآت الصناعية الخاضعة للرقابة فغير مشمول ولا مضمون، إذ يتحكم مشغّل الموقع لا نحن في الدخول الأمني وأذونات البوابات والتصاريح والمرافقة، وترتيبها مسؤوليتك.",
       },
     },
     {

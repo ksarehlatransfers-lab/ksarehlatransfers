@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# project documentation is kept locally only, outside the repository
+# (C:\Project-Private-Documents\Private-Transfers-Saudi). image-credits.md
+# stays tracked: scripts/sync-images.mjs rewrites it and it carries the
+# license attribution for the photographs in public/images.
+/docs/*
+!/docs/image-credits.md

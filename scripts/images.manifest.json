@@ -1,0 +1,629 @@
+[
+  {
+    "key": "hero",
+    "commons": "Riyadh Skyline.jpg",
+    "out": "riyadh-skyline.webp",
+    "shape": [
+      1920,
+      1080
+    ],
+    "focus": "attention",
+    "subject": "Riyadh skyline",
+    "alt": "The Riyadh skyline at dusk, with the Kingdom Centre tower rising above the city",
+    "altAr": "أفق الرياض عند الغروب، ويعلو برج المملكة فوق المدينة",
+    "credit": {
+      "author": "B.alotaby",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Riyadh_Skyline.jpg"
+    }
+  },
+  {
+    "key": "coverage",
+    "commons": "Highway to Riyadh (8737792939).jpg",
+    "out": "highway-to-riyadh.webp",
+    "shape": [
+      1920,
+      1080
+    ],
+    "focus": "attention",
+    "subject": "Highway to Riyadh",
+    "alt": "A multi-lane highway running through open desert towards Riyadh",
+    "altAr": "طريق متعدد المسارات يمتد في الصحراء المفتوحة باتجاه الرياض",
+    "credit": {
+      "author": "Black Zero from Dubai, United Arab Emirates",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Highway_to_Riyadh_(8737792939).jpg"
+    }
+  },
+  {
+    "key": "route-highway40-west",
+    "commons": "Riyadh-Makkah Road near Tuwaiq Escarpment.JPG",
+    "out": "highway-40-tuwaiq.webp",
+    "shape": [
+      1600,
+      900
+    ],
+    "focus": "attention",
+    "subject": "Highway 40 at the Tuwaiq escarpment, west of Riyadh",
+    "alt": "The Riyadh to Makkah road cutting through the Tuwaiq escarpment west of Riyadh",
+    "altAr": "طريق الرياض – مكة وهو يشق حافة طويق غرب الرياض",
+    "credit": {
+      "author": "Tliuska",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:Riyadh-Makkah_Road_near_Tuwaiq_Escarpment.JPG"
+    }
+  },
+  {
+    "key": "dest-riyadh",
+    "commons": "King Abdullah Financial District 20230411 114859.jpg",
+    "out": "riyadh-kafd.webp",
+    "shape": [
+      1200,
+      900
+    ],
+    "focus": "attention",
+    "subject": "King Abdullah Financial District, Riyadh",
+    "alt": "The towers of the King Abdullah Financial District in Riyadh",
+    "altAr": "أبراج مركز الملك عبدالله المالي في الرياض",
+    "credit": {
+      "author": "Ahmed",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:King_Abdullah_Financial_District_20230411_114859.jpg"
+    }
+  },
+  {
+    "key": "dest-jeddah",
+    "commons": "Jeddah Waterfront, Western Saudi Arabia (2026).jpg",
+    "out": "jeddah-waterfront.webp",
+    "shape": [
+      1200,
+      900
+    ],
+    "focus": "attention",
+    "subject": "Jeddah waterfront",
+    "alt": "The Jeddah waterfront along the Red Sea coast",
+    "altAr": "واجهة جدة البحرية على ساحل البحر الأحمر",
+    "credit": {
+      "author": "Unknown authorUnknown author",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Jeddah_Waterfront,_Western_Saudi_Arabia_(2026).jpg"
+    }
+  },
+  {
+    "key": "dest-makkah",
+    "commons": "Great Mosque of Mecca1.jpg",
+    "out": "makkah-haram.webp",
+    "shape": [
+      1200,
+      900
+    ],
+    "focus": "attention",
+    "subject": "Great Mosque of Makkah",
+    "alt": "The Great Mosque of Makkah seen from above, with the Kaaba at its centre",
+    "altAr": "المسجد الحرام في مكة المكرمة من الأعلى وتتوسطه الكعبة",
+    "credit": {
+      "author": "Saudipics.com",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Great_Mosque_of_Mecca1.jpg"
+    }
+  },
+  {
+    "key": "dest-madinah",
+    "commons": "Al-Masjid An-Nabawi (Bird's Eye View).jpg",
+    "out": "madinah-aerial.webp",
+    "shape": [
+      1200,
+      900
+    ],
+    "focus": "attention",
+    "subject": "Al-Masjid an-Nabawi, Madinah",
+    "alt": "Aerial view of Al-Masjid an-Nabawi and the surrounding city of Madinah",
+    "altAr": "منظر جوي للمسجد النبوي والمدينة المنورة من حوله",
+    "credit": {
+      "author": "Konevi",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "page": "https://commons.wikimedia.org/wiki/File:Al-Masjid_An-Nabawi_(Bird%27s_Eye_View).jpg"
+    }
+  },
+  {
+    "key": "dest-dammam",
+    "commons": "وسط الدمام.jpg",
+    "out": "dammam-centre.webp",
+    "shape": [
+      1200,
+      900
+    ],
+    "focus": "attention",
+    "subject": "Central Dammam",
+    "alt": "Central Dammam in the Eastern Province of Saudi Arabia",
+    "altAr": "وسط مدينة الدمام في المنطقة الشرقية من السعودية",
+    "credit": {
+      "author": "علي عدنان الرمضان",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:%D9%88%D8%B3%D8%B7_%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85.jpg"
+    }
+  },
+  {
+    "key": "dest-khobar",
+    "commons": "Khobar water tower.jpg",
+    "out": "al-khobar-water-tower.webp",
+    "shape": [
+      1200,
+      900
+    ],
+    "focus": "attention",
+    "subject": "Al Khobar water tower",
+    "alt": "The Al Khobar water tower beside the Arabian Gulf corniche",
+    "altAr": "برج الماء في الخبر على كورنيش الخليج العربي",
+    "credit": {
+      "author": "Francisco Anzola",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Khobar_water_tower.jpg"
+    }
+  },
+  {
+    "key": "dest-taif",
+    "commons": "الطائف من جبل الهدى1.jpg",
+    "out": "taif-mountains.webp",
+    "shape": [
+      1200,
+      900
+    ],
+    "focus": "attention",
+    "subject": "Taif seen from the Al Hada mountains",
+    "alt": "The city of Taif viewed from the surrounding Al Hada mountains",
+    "altAr": "مدينة الطائف كما تُرى من جبال الهدا المحيطة بها",
+    "credit": {
+      "author": "عباد ديرانية",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81_%D9%85%D9%86_%D8%AC%D8%A8%D9%84_%D8%A7%D9%84%D9%87%D8%AF%D9%891.jpg"
+    }
+  },
+  {
+    "key": "dest-abha",
+    "commons": "Abha city.png",
+    "out": "abha-city.webp",
+    "shape": [
+      1200,
+      900
+    ],
+    "focus": "attention",
+    "subject": "Abha, Asir region",
+    "alt": "The highland city of Abha in the Asir region of Saudi Arabia",
+    "altAr": "مدينة أبها الجبلية في منطقة عسير",
+    "credit": {
+      "author": "أشخاص متنوعين ولكن هناك صورة مصورة من أمانة منطقة عسير وصورة مصورة من عوض زارب",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Abha_city.png"
+    }
+  },
+  {
+    "key": "svc-airport",
+    "commons": "Jeddah airport terminal.jpg",
+    "out": "jeddah-airport-terminal.webp",
+    "shape": [
+      1200,
+      800
+    ],
+    "focus": "attention",
+    "subject": "Jeddah airport terminal",
+    "alt": "The passenger terminal at Jeddah's King Abdulaziz International Airport",
+    "altAr": "صالة المسافرين في مطار الملك عبدالعزيز الدولي بجدة",
+    "credit": {
+      "author": "Just MRT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Jeddah_airport_terminal.jpg"
+    }
+  },
+  {
+    "key": "svc-intercity",
+    "commons": "Highway60SaudiArabia.JPG",
+    "out": "saudi-highway.webp",
+    "shape": [
+      1200,
+      800
+    ],
+    "focus": "attention",
+    "subject": "Highway 60, Saudi Arabia",
+    "alt": "An open highway crossing the Saudi interior between cities",
+    "altAr": "طريق مفتوح يعبر وسط السعودية بين المدن",
+    "credit": {
+      "author": "King Eliot",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Highway60SaudiArabia.JPG"
+    }
+  },
+  {
+    "key": "svc-hotel",
+    "commons": "Abraj Al Bait Tower 2017.jpg",
+    "out": "makkah-hotel-towers.webp",
+    "shape": [
+      1200,
+      800
+    ],
+    "focus": "attention",
+    "subject": "Abraj Al Bait, Makkah",
+    "alt": "The Abraj Al Bait hotel towers overlooking the Haram in Makkah",
+    "altAr": "أبراج البيت الفندقية المطلّة على الحرم في مكة المكرمة",
+    "credit": {
+      "author": "King Eliot",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Abraj_Al_Bait_Tower_2017.jpg"
+    }
+  },
+  {
+    "key": "svc-hajj",
+    "commons": "The Kaaba during Hajj.jpg",
+    "out": "hajj-kaaba.webp",
+    "shape": [
+      1200,
+      800
+    ],
+    "focus": "attention",
+    "subject": "The Kaaba during Hajj",
+    "alt": "Pilgrims gathered around the Kaaba during the Hajj season",
+    "altAr": "حجاج يحيطون بالكعبة في موسم الحج",
+    "credit": {
+      "author": "Adli Wahid",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Kaaba_during_Hajj.jpg"
+    }
+  },
+  {
+    "key": "svc-umrah",
+    "commons": "The Ka'ba, Great Mosque of Mecca, Saudi Arabia (4).jpg",
+    "out": "umrah-kaaba.webp",
+    "shape": [
+      1200,
+      800
+    ],
+    "focus": "attention",
+    "subject": "The Kaaba, Great Mosque of Makkah",
+    "alt": "The Kaaba inside the Great Mosque of Makkah, where pilgrims perform Umrah",
+    "altAr": "الكعبة داخل المسجد الحرام في مكة المكرمة حيث تُؤدى العمرة",
+    "credit": {
+      "author": "Richard Mortel",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Ka%27ba,_Great_Mosque_of_Mecca,_Saudi_Arabia_(4).jpg"
+    }
+  },
+  {
+    "key": "svc-ziyarat",
+    "commons": "Jabal-e-Uhud.jpg",
+    "out": "mount-uhud.webp",
+    "shape": [
+      1200,
+      800
+    ],
+    "focus": "attention",
+    "subject": "Mount Uhud, Madinah",
+    "alt": "Mount Uhud near Madinah, a frequent stop on Ziyarat journeys",
+    "altAr": "جبل أحد قرب المدينة المنورة، وهو محطة متكررة في رحلات الزيارة",
+    "credit": {
+      "author": "Bintladen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Jabal-e-Uhud.jpg"
+    }
+  },
+  {
+    "key": "svc-daytrip",
+    "commons": "At-Turaif District.jpg",
+    "out": "diriyah-at-turaif.webp",
+    "shape": [
+      1200,
+      800
+    ],
+    "focus": "attention",
+    "subject": "At-Turaif district, Diriyah",
+    "alt": "The mudbrick walls of the At-Turaif district in Diriyah near Riyadh",
+    "altAr": "جدران الطين في حي الطريف بالدرعية قرب الرياض",
+    "credit": {
+      "author": "xiquinhosilva",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:At-Turaif_District.jpg"
+    }
+  },
+  {
+    "key": "svc-border",
+    "commons": "King Fahd Causeway bridge num4.jpg",
+    "out": "king-fahd-causeway.webp",
+    "shape": [
+      1200,
+      800
+    ],
+    "focus": "attention",
+    "subject": "King Fahd Causeway",
+    "alt": "The King Fahd Causeway bridge linking Saudi Arabia and Bahrain",
+    "altAr": "جسر الملك فهد الرابط بين السعودية والبحرين",
+    "credit": {
+      "author": "Greens n cornbread",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:King_Fahd_Causeway_bridge_num4.jpg"
+    }
+  },
+  {
+    "key": "pilgrimage",
+    "commons": "Al-Masjid al-Nabawi, Medina - panoramio.jpg",
+    "out": "masjid-an-nabawi.webp",
+    "shape": [
+      1920,
+      1280
+    ],
+    "focus": "attention",
+    "subject": "Al-Masjid an-Nabawi, Madinah",
+    "alt": "The courtyard and minarets of Al-Masjid an-Nabawi in Madinah",
+    "altAr": "ساحة المسجد النبوي ومآذنه في المدينة المنورة",
+    "credit": {
+      "author": "Vebra",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Al-Masjid_al-Nabawi,_Medina_-_panoramio.jpg"
+    }
+  },
+  {
+    "key": "guide-alula",
+    "commons": "Al Ula (6748577917).jpg",
+    "out": "alula-valley.webp",
+    "shape": [
+      1200,
+      800
+    ],
+    "focus": "attention",
+    "subject": "AlUla",
+    "alt": "Sandstone rock formations rising from the AlUla valley",
+    "altAr": "تشكيلات صخرية رملية ترتفع من وادي العُلا",
+    "credit": {
+      "author": "Sammy Six",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Al_Ula_(6748577917).jpg"
+    }
+  },
+  {
+    "key": "guide-edge",
+    "commons": "Tuwaiq Escarpment-14h38m25s-k.jpg",
+    "out": "tuwaiq-escarpment.webp",
+    "shape": [
+      1200,
+      800
+    ],
+    "focus": "attention",
+    "subject": "Tuwaiq escarpment",
+    "alt": "The Tuwaiq escarpment north-west of Riyadh, known as the Edge of the World",
+    "altAr": "حافة طويق شمال غرب الرياض، المعروفة بحافة العالم",
+    "credit": {
+      "author": "Baptiste Marcel",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Tuwaiq_Escarpment-14h38m25s-k.jpg"
+    }
+  },
+  {
+    "key": "guide-desert",
+    "commons": "Rub al Khali 002.JPG",
+    "out": "rub-al-khali.webp",
+    "shape": [
+      1200,
+      800
+    ],
+    "focus": "attention",
+    "subject": "Rub al Khali",
+    "alt": "Dunes of the Rub al Khali desert in southern Saudi Arabia",
+    "altAr": "كثبان صحراء الربع الخالي في جنوب السعودية",
+    "credit": {
+      "author": "Nepenthes",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Rub_al_Khali_002.JPG"
+    }
+  },
+  {
+    "key": "cta",
+    "commons": "ISS064-E-6310 - View of Saudi Arabia.jpg",
+    "out": "saudi-arabia-from-orbit.webp",
+    "shape": [
+      1920,
+      960
+    ],
+    "focus": "attention",
+    "subject": "Saudi Arabia from orbit",
+    "alt": "Saudi Arabia photographed from orbit, showing the scale of the Kingdom",
+    "altAr": "السعودية مصوَّرة من المدار، ويظهر فيها اتساع المملكة",
+    "credit": {
+      "author": "Earth Science and Remote Sensing Unit, NASA Johnson Space Center",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:ISS064-E-6310_-_View_of_Saudi_Arabia.jpg"
+    }
+  },
+  {
+    "key": "dest-buraydah",
+    "commons": "King Fahad Road in Buraydah.jpg",
+    "out": "buraydah-king-fahad-road.webp",
+    "shape": [
+      1200,
+      900
+    ],
+    "focus": "attention",
+    "subject": "King Fahad Road, Buraydah",
+    "alt": "King Fahad Road running through Buraydah in the Qassim region",
+    "altAr": "طريق الملك فهد وهو يمر في مدينة بريدة بمنطقة القصيم",
+    "credit": {
+      "author": "Kskhh",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:King_Fahad_Road_in_Buraydah.jpg"
+    }
+  },
+  {
+    "key": "dest-hail",
+    "commons": "View of Aarif Fort, Hail, Saudi.jpg",
+    "out": "hail-aarif-fort.webp",
+    "shape": [
+      1200,
+      900
+    ],
+    "focus": "attention",
+    "subject": "A'arif Fort above Hail",
+    "alt": "A'arif Fort standing on the hill above the city of Hail",
+    "altAr": "قلعة عارف قائمة على الهضبة المطلّة على مدينة حائل",
+    "credit": {
+      "author": "Iain Cheyne",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:View_of_Aarif_Fort,_Hail,_Saudi.jpg"
+    }
+  },
+  {
+    "key": "route-highway65-north",
+    "commons": "طريق القصيم الرياض السريع - panoramio.jpg",
+    "out": "highway-65-qassim.webp",
+    "shape": [
+      1600,
+      900
+    ],
+    "focus": "attention",
+    "subject": "The Qassim–Riyadh expressway, Highway 65",
+    "alt": "The Qassim to Riyadh expressway running north across open country",
+    "altAr": "طريق القصيم – الرياض السريع ممتدًّا شمالًا عبر أرض مفتوحة",
+    "credit": {
+      "author": "you2011",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:%D8%B7%D8%B1%D9%8A%D9%82_%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85_%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6_%D8%A7%D9%84%D8%B3%D8%B1%D9%8A%D8%B9_-_panoramio.jpg"
+    }
+  },
+  {
+    "key": "kkia-central",
+    "commons": "Flughafen Riyadh, Innenaufnahmen 03.jpg",
+    "out": "kkia-central-area.webp",
+    "shape": [
+      1600,
+      900
+    ],
+    "focus": "attention",
+    "subject": "The central area of King Khalid International Airport",
+    "alt": "The central concourse area inside King Khalid International Airport in Riyadh",
+    "altAr": "المنطقة الوسطى داخل مطار الملك خالد الدولي في الرياض",
+    "credit": {
+      "author": "Kritzolina",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Flughafen_Riyadh,_Innenaufnahmen_03.jpg"
+    }
+  },
+  {
+    "key": "kkia-departures",
+    "commons": "Domestic Departures Riyadh Airport.jpg",
+    "out": "kkia-domestic-departures.webp",
+    "shape": [
+      1200,
+      900
+    ],
+    "focus": "attention",
+    "subject": "Domestic departures at King Khalid International Airport",
+    "alt": "The domestic departures area at King Khalid International Airport in Riyadh",
+    "altAr": "منطقة المغادرة الداخلية في مطار الملك خالد الدولي في الرياض",
+    "credit": {
+      "author": "Kskhh",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Domestic_Departures_Riyadh_Airport.jpg"
+    }
+  },
+  {
+    "key": "station-riyadh",
+    "commons": "Riyadh Station.JPG",
+    "out": "riyadh-railway-station.webp",
+    "shape": [
+      1600,
+      900
+    ],
+    "focus": "attention",
+    "subject": "Riyadh railway station",
+    "alt": "Riyadh railway station, operated by Saudi Railways",
+    "altAr": "محطة قطار الرياض التابعة للخطوط الحديدية السعودية",
+    "credit": {
+      "author": "haitham alfalah",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Riyadh_Station.JPG"
+    }
+  },
+  {
+    "key": "station-riyadh-interior",
+    "commons": "Riyadh East station interior, Riyadh, Saudi Arabia January 2024.jpg",
+    "out": "riyadh-east-station-interior.webp",
+    "shape": [
+      1200,
+      900
+    ],
+    "focus": "attention",
+    "subject": "Inside Riyadh East station, the Dammam line terminus",
+    "alt": "The interior concourse of Riyadh East station, the terminus of the Dammam line",
+    "altAr": "صالة محطة قطار الرياض الشرقية، نهاية خط الدمام",
+    "credit": {
+      "author": "Zach1055",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Riyadh_East_station_interior,_Riyadh,_Saudi_Arabia_January_2024.jpg"
+    }
+  },
+  {
+    "key": "jeddah-corniche",
+    "commons": "Jeddah Corniche Photo.jpg",
+    "out": "jeddah-corniche.webp",
+    "shape": [
+      1920,
+      800
+    ],
+    "focus": "attention",
+    "subject": "The Jeddah corniche on the Red Sea",
+    "alt": "The Jeddah corniche looking out over the Red Sea",
+    "altAr": "كورنيش جدة المطل على البحر الأحمر",
+    "credit": {
+      "author": "Kolaiel",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "page": "https://commons.wikimedia.org/wiki/File:Jeddah_Corniche_Photo.jpg"
+    }
+  },
+  {
+    "key": "jeddah-albalad",
+    "commons": "Old Jeddah - 55362214124.jpg",
+    "out": "jeddah-al-balad.webp",
+    "shape": [
+      1200,
+      900
+    ],
+    "focus": "attention",
+    "subject": "Al-Balad, historic Jeddah",
+    "alt": "Coral-stone buildings with wooden mashrabiya balconies in Al-Balad, historic Jeddah",
+    "altAr": "مبانٍ من الحجر المنقبي بمشربيات خشبية في البلد، جدة التاريخية",
+    "credit": {
+      "author": "xiquinhosilva",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Old_Jeddah_-_55362214124.jpg"
+    }
+  }
+]

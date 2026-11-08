@@ -658,6 +658,22 @@ export const jeddahMakkah: JeddahMakkahContent = {
 
   related: [
     {
+      routeKey: "makkah",
+      label: { en: "Private transfers in Makkah", ar: "توصيل خاص في مكة المكرمة" },
+      note: {
+        en: "After the arrival: moving between hotels, the Haramain station, Ziyarat and journeys onward.",
+        ar: "بعد الوصول: التنقل بين الفنادق ومحطة قطار الحرمين والزيارة والسفر بعدها.",
+      },
+    },
+    {
+      routeKey: "taif",
+      label: { en: "Makkah to Taif", ar: "من مكة إلى الطائف" },
+      note: {
+        en: "Up the mountain road via Al Hada, or the longer way via Al Sail.",
+        ar: "صعودًا عبر طريق الهدا الجبلي، أو الطريق الأطول عبر السيل.",
+      },
+    },
+    {
       routeKey: "jeddah",
       label: { en: "All Jeddah transfers", ar: "جميع خدمات النقل في جدة" },
       note: {

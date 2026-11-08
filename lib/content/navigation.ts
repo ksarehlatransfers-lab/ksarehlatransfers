@@ -74,9 +74,27 @@ export function primaryNav(locale: Locale): NavGroup[] {
         },
         {
           label: t({ en: "Makkah", ar: "مكة المكرمة" }, locale),
-          href: homeAnchor(locale, "destinations"),
-          description: t({ en: "Pilgrimage transfers", ar: "رحلات الحج والعمرة" }, locale),
-          planned: true,
+          href: href(locale, "makkah"),
+          description: t(
+            { en: "Arrivals, hotels, onward", ar: "الوصول والفنادق والسفر" },
+            locale
+          ),
+        },
+        {
+          label: t({ en: "Taif", ar: "الطائف" }, locale),
+          href: href(locale, "taif"),
+          description: t(
+            { en: "Mountain city, two roads up", ar: "مدينة جبلية وطريقان إليها" },
+            locale
+          ),
+        },
+        {
+          label: t({ en: "Rabigh", ar: "رابغ" }, locale),
+          href: href(locale, "rabigh"),
+          description: t(
+            { en: "Red Sea coast and KAEC", ar: "الساحل والمدينة الاقتصادية" },
+            locale
+          ),
         },
         {
           label: t({ en: "Madinah", ar: "المدينة المنورة" }, locale),
@@ -91,9 +109,9 @@ export function primaryNav(locale: Locale): NavGroup[] {
           planned: true,
         },
         {
-          label: t({ en: "Taif & Abha", ar: "الطائف وأبها" }, locale),
+          label: t({ en: "Abha", ar: "أبها" }, locale),
           href: homeAnchor(locale, "destinations"),
-          description: t({ en: "Highland routes", ar: "طرق المرتفعات" }, locale),
+          description: t({ en: "Asir highlands", ar: "مرتفعات عسير" }, locale),
           planned: true,
         },
       ],
@@ -295,7 +313,7 @@ export function footerNav(
       ],
     },
     {
-      heading: t({ en: "Jeddah transfers", ar: "رحلات جدة" }, locale),
+      heading: t({ en: "Makkah Region", ar: "منطقة مكة المكرمة" }, locale),
       links: [
         {
           label: t({ en: "Jeddah transfers", ar: "نقل خاص في جدة" }, locale),
@@ -308,6 +326,18 @@ export function footerNav(
         {
           label: t({ en: "Jeddah to Makkah", ar: "من جدة إلى مكة" }, locale),
           href: href(locale, "jeddahToMakkah"),
+        },
+        {
+          label: t({ en: "Makkah transfers", ar: "التوصيل في مكة المكرمة" }, locale),
+          href: href(locale, "makkah"),
+        },
+        {
+          label: t({ en: "Taif transfers", ar: "التوصيل في الطائف" }, locale),
+          href: href(locale, "taif"),
+        },
+        {
+          label: t({ en: "Jeddah to Rabigh", ar: "من جدة إلى رابغ" }, locale),
+          href: href(locale, "rabigh"),
         },
         {
           label: t({ en: "Riyadh to Jeddah", ar: "الرياض إلى جدة" }, locale),

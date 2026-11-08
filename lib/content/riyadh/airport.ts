@@ -371,8 +371,8 @@ export const riyadhAirport: AirportPageContent = {
       },
     ],
     footnote: {
-      en: "This is deliberate. Publishing a confident list of inclusions we had not verified with our driver partners would be the easiest thing on this page to get wrong, and the costliest for you.",
-      ar: "وهذا متعمّد. فنشر قائمة واثقة بما يشمله السعر دون التحقق منها مع شركائنا من السائقين هو أسهل ما يمكن أن نخطئ فيه في هذه الصفحة، وأكثره تكلفة عليك.",
+      en: "This is deliberate. Publishing a confident, generic list of inclusions instead of confirming them for your journey would be the easiest thing on this page to get wrong, and the costliest for you.",
+      ar: "وهذا متعمّد. فنشر قائمة عامة واثقة بما يشمله السعر بدل تأكيده لرحلتك هو أسهل ما يمكن أن نخطئ فيه في هذه الصفحة، وأكثره تكلفة عليك.",
     },
   },
 

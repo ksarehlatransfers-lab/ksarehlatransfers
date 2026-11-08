@@ -50,6 +50,11 @@ credit data, so attribution travels with each image in code.
 | `dest-diriyah` | [Salwa Palace, At-Turaif, Diriyah](https://commons.wikimedia.org/wiki/File:%D9%82%D8%B5%D8%B1_%D8%B3%D9%84%D9%88%D9%89.jpg) | Heritage Commission | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 | `dest-shaqra` | [Old city wall, Shaqra](https://commons.wikimedia.org/wiki/File:Shaqraa_Old_City_Wall.jpg) | Oalessa | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) |
 | `shaqra-ushaiqer` | [Ushaiqer heritage village, near Shaqra](https://commons.wikimedia.org/wiki/File:Ushaiger_Heritage_Village,_Najd,_Saudi_Arabia.jpg) | Richard Mortel | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) |
+| `makkah-region-night` | [Jeddah, Makkah and Taif at night from the ISS](https://commons.wikimedia.org/wiki/File:ISS-42_Taif,_Mecca_and_Jeddah_at_night.jpg) | NASA | Public domain |
+| `makkah-haramain-train` | [Haramain High Speed Railway train](https://commons.wikimedia.org/wiki/File:%D9%82%D8%B7%D8%A7%D8%B1_%D8%A7%D9%84%D8%AD%D8%B1%D9%85%D9%8A%D9%86_2023.jpg) | وكالة الأنباء السعودية | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| `taif-al-shafa` | [View from Jabal Dakka, Al Shafa, Taif](https://commons.wikimedia.org/wiki/File:Jabal_Dakka,_Al_Shafa.jpg) | Saanina | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| `dest-rabigh` | [Rabigh city](https://commons.wikimedia.org/wiki/File:Rabigh_city_-_panoramio.jpg) | Mahmoud Farrag | [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) |
+| `rabigh-kaec-waterfront` | [Waterfront, King Abdullah Economic City](https://commons.wikimedia.org/wiki/File:Waterfront_King_Abdullah_Economic_City.jpg) | Mrcosch | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 
 <!-- credits:end -->
 

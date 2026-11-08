@@ -4,7 +4,9 @@ import type { RoutePageContent } from "@/lib/content/riyadh/types";
  * Riyadh to Taif.
  *
  * The only approved route in batch 2 where the terrain is the story: Riyadh
- * sits a little over 600 m above sea level and Taif a little under 1,900 m,
+ * sits a little over 600 m above sea level and Taif at about 1,800 m
+ * (Saudipedia; some references give ~1,879 m, unsupported by their cited
+ * source — see the Makkah Region research notes),
  * so the journey ends by climbing. That is the page's signature element — an
  * elevation band with real published figures on it.
  *
@@ -44,8 +46,8 @@ export const riyadhToTaif: RoutePageContent = {
       ar: "نقل خاص من الرياض إلى الطائف",
     },
     lead: {
-      en: "West across the Najd, then up. Taif sits around 1,300 metres higher than Riyadh, which is the whole reason people go there in summer — and the reason the last part of the drive is unlike the first.",
-      ar: "غربًا عبر نجد، ثم صعودًا. تقع الطائف على ارتفاع يزيد نحو 1,300 متر عن الرياض، وهذا هو سبب قصدها في الصيف — وسبب اختلاف الجزء الأخير من الرحلة عن أولها.",
+      en: "West across the Najd, then up. Taif sits roughly 1,200 metres higher than Riyadh, which is the whole reason people go there in summer — and the reason the last part of the drive is unlike the first.",
+      ar: "غربًا عبر نجد، ثم صعودًا. تقع الطائف على ارتفاع يزيد نحو 1,200 متر عن الرياض، وهذا هو سبب قصدها في الصيف — وسبب اختلاف الجزء الأخير من الرحلة عن أولها.",
     },
   },
 
@@ -68,10 +70,10 @@ export const riyadhToTaif: RoutePageContent = {
     },
     {
       label: { en: "Elevation gain", ar: "الارتفاع المكتسب" },
-      value: { en: "~600 → ~1,880 m", ar: "~600 → ~1,880 م" },
+      value: { en: "~600 → ~1,800 m", ar: "~600 → ~1,800 م" },
       note: {
-        en: "Riyadh is commonly given as 612 m above sea level and Taif as about 1,879 m. The climb is concentrated in the last part of the journey.",
-        ar: "يُذكر ارتفاع الرياض عادةً بـ612 مترًا فوق سطح البحر، والطائف بنحو 1,879 مترًا. والصعود مُركَّز في الجزء الأخير من الرحلة.",
+        en: "Riyadh is commonly given as 612 m above sea level; Taif as about 1,800 m (Saudipedia), with some references giving up to about 1,880 m. Neither figure states where it is measured. The climb is concentrated in the last part of the journey.",
+        ar: "يُذكر ارتفاع الرياض عادةً بـ612 مترًا فوق سطح البحر، والطائف بنحو 1,800 متر (سعوديبيديا)، وتذكر بعض المراجع ما يصل إلى نحو 1,880 مترًا، ولا يحدد أي منهما موضع القياس. والصعود مُركَّز في الجزء الأخير من الرحلة.",
       },
     },
     {
@@ -135,10 +137,10 @@ export const riyadhToTaif: RoutePageContent = {
       },
       {
         name: { en: "Taif", ar: "الطائف" },
-        metres: 1879,
+        metres: 1800,
         note: {
-          en: "Commonly given as about 1,879 m above sea level. This is the cool air people come for.",
-          ar: "يُذكر عادةً بنحو 1,879 مترًا فوق سطح البحر. وهذا هو الهواء البارد الذي يقصده الناس.",
+          en: "About 1,800 m above sea level, the figure given by Saudipedia; some references give up to about 1,880 m. This is the cool air people come for.",
+          ar: "نحو 1,800 متر فوق سطح البحر وفق سعوديبيديا، وتذكر بعض المراجع ما يصل إلى نحو 1,880 مترًا. وهذا هو الهواء البارد الذي يقصده الناس.",
         },
       },
       {
@@ -314,8 +316,8 @@ export const riyadhToTaif: RoutePageContent = {
         ar: "كم تكون الطائف أبرد من الرياض؟",
       },
       answer: {
-        en: "Enough that it is the reason people go. Taif sits around 1,300 metres higher than Riyadh — roughly 1,879 m against 612 m — and highland air at that elevation is reliably cooler through the summer. We are a transfer service rather than a weather service, so we will not quote you temperatures; check a forecast for your dates.",
-        ar: "بما يكفي ليكون هو سبب قصد الناس لها. فالطائف أعلى من الرياض بنحو 1,300 متر — قرابة 1,879 مترًا مقابل 612 مترًا — وهواء المرتفعات على هذا الارتفاع أبرد باستمرار خلال الصيف. ونحن خدمة نقل لا خدمة أرصاد، فلن نذكر لك درجات حرارة؛ تحقق من توقعات الطقس لتواريخك.",
+        en: "Enough that it is the reason people go. Taif sits roughly 1,200 metres higher than Riyadh — about 1,800 m against 612 m — and highland air at that elevation is reliably cooler through the summer. We are a transfer service rather than a weather service, so we will not quote you temperatures; check a forecast for your dates.",
+        ar: "بما يكفي ليكون هو سبب قصد الناس لها. فالطائف أعلى من الرياض بنحو 1,200 متر — قرابة 1,800 متر مقابل 612 مترًا — وهواء المرتفعات على هذا الارتفاع أبرد باستمرار خلال الصيف. ونحن خدمة نقل لا خدمة أرصاد، فلن نذكر لك درجات حرارة؛ تحقق من توقعات الطقس لتواريخك.",
       },
     },
     {
@@ -361,6 +363,14 @@ export const riyadhToTaif: RoutePageContent = {
   ],
 
   related: [
+    {
+      routeKey: "taif",
+      label: { en: "Taif transfers", ar: "التوصيل في الطائف" },
+      note: {
+        en: "Once you arrive: Taif airport, the roads down to Makkah and the Al Hada and Al Shafa highlands.",
+        ar: "بعد الوصول: مطار الطائف والطريقان إلى مكة ومرتفعات الهدا والشفا.",
+      },
+    },
     {
       routeKey: "riyadh",
       label: { en: "All Riyadh transfers", ar: "جميع خدمات النقل في الرياض" },

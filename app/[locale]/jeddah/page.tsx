@@ -308,7 +308,7 @@ export default async function JeddahPage({
                     href={href(locale, item.routeKey)}
                     className="group mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-palm transition-colors hover:text-palm-deep"
                   >
-                    {isArabic ? "تفاصيل المسار" : "Route details"}
+                    {item.linkLabel?.[locale] ?? (isArabic ? "تفاصيل المسار" : "Route details")}
                     <ArrowUpRightIcon
                       aria-hidden
                       className="size-3.5 transition-transform group-hover:translate-x-0.5 rtl:-scale-x-100"

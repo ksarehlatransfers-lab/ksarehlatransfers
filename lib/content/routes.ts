@@ -28,7 +28,9 @@ export type Route = {
     | "riyadhToDammam"
     | "riyadhToAlKhobar"
     | "jeddahToMakkah"
-    | "jeddah";
+    | "jeddah"
+    | "makkah"
+    | "taif";
 };
 
 export const routes: Route[] = [
@@ -69,6 +71,8 @@ export const routes: Route[] = [
     },
     fromImageKey: "dest-makkah",
     toImageKey: "dest-madinah",
+    // No Madinah page yet: the Makkah hub covers the journey onward.
+    routeKey: "makkah",
   },
   {
     from: { en: "Madinah", ar: "المدينة المنورة" },
@@ -107,5 +111,6 @@ export const routes: Route[] = [
     },
     fromImageKey: "dest-makkah",
     toImageKey: "dest-taif",
+    routeKey: "taif",
   },
 ];

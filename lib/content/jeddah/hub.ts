@@ -150,6 +150,8 @@ export const jeddahHub: JeddahHubContent = {
           en: "A genuine mountain road via Al Hada. Travel sources cite a longer alternative route in fog or rain.",
           ar: "طريق جبلي حقيقي عبر الهدا. وتذكر مصادر السفر مسارًا بديلًا أطول في الضباب أو المطر.",
         },
+        routeKey: "taif",
+        linkLabel: { en: "Taif transfers and the two roads up", ar: "التوصيل إلى الطائف والطريقان إليها" },
       },
       {
         name: { en: "Yanbu", ar: "ينبع" },
@@ -375,19 +377,27 @@ export const jeddahHub: JeddahHubContent = {
       },
     },
     {
-      routeKey: "riyadhToTaif",
-      label: { en: "Riyadh to Taif", ar: "الرياض إلى الطائف" },
+      routeKey: "makkah",
+      label: { en: "Private transfers in Makkah", ar: "توصيل خاص في مكة المكرمة" },
       note: {
-        en: "The same highlands from the other side of the country — about 790 km, against roughly 170 km from here.",
-        ar: "المرتفعات نفسها من الجهة الأخرى للبلاد — نحو 790 كم، مقابل 170 كم تقريبًا من هنا.",
+        en: "Once you are there: hotel access, the Haramain station and journeys on from the holy city.",
+        ar: "بعد الوصول: الدخول إلى الفنادق ومحطة قطار الحرمين والسفر من المدينة المقدسة.",
       },
     },
     {
-      routeKey: "riyadh",
-      label: { en: "All Riyadh transfers", ar: "جميع خدمات النقل في الرياض" },
+      routeKey: "taif",
+      label: { en: "Taif", ar: "الطائف" },
       note: {
-        en: "The other city we cover in depth: airport, railway, hotels and seven intercity routes.",
-        ar: "المدينة الأخرى التي نغطيها بعمق: المطار والقطار والفنادق وسبعة مسارات بين المدن.",
+        en: "Up the escarpment: Taif airport, the Al Hada and Al Sail roads, and the highlands.",
+        ar: "صعودًا إلى المرتفعات: مطار الطائف وطريقا الهدا والسيل والمصايف.",
+      },
+    },
+    {
+      routeKey: "rabigh",
+      label: { en: "Rabigh and KAEC", ar: "رابغ والمدينة الاقتصادية" },
+      note: {
+        en: "North along the coast to Rabigh and King Abdullah Economic City.",
+        ar: "شمالًا على الساحل إلى رابغ ومدينة الملك عبدالله الاقتصادية.",
       },
     },
   ],

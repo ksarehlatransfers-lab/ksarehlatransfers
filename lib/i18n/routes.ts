@@ -31,6 +31,9 @@ export const route = {
   alKharj: "al-kharj",
   diriyah: "diriyah",
   shaqra: "shaqra",
+  makkah: "makkah",
+  taif: "taif",
+  rabigh: "rabigh",
 } as const;
 
 export type RouteKey = keyof typeof route;
@@ -69,6 +72,11 @@ const sitemapMeta: Record<RouteKey, { priority: number; changeFrequency: "weekly
   alKharj: { priority: 0.7, changeFrequency: "monthly" },
   diriyah: { priority: 0.7, changeFrequency: "monthly" },
   shaqra: { priority: 0.7, changeFrequency: "monthly" },
+  // Makkah Region. Makkah and Taif are city hubs, level with Riyadh and
+  // Jeddah; Rabigh is a smaller market, level with the Riyadh Region hubs.
+  makkah: { priority: 0.9, changeFrequency: "weekly" },
+  taif: { priority: 0.9, changeFrequency: "weekly" },
+  rabigh: { priority: 0.7, changeFrequency: "monthly" },
 };
 
 /** Pages deliberately kept out of the index; see each page's robots meta. */

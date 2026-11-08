@@ -369,8 +369,8 @@ export const jeddahAirport: JeddahAirportContent = {
   quotation: {
     heading: { en: "What your quotation covers", ar: "ما يشمله عرض السعر" },
     lead: {
-      en: "We describe how the price is arrived at rather than publishing a list of inclusions nobody has confirmed with our driver partners. You will find competitors who publish waiting minutes and vehicle models; we would rather be right than specific.",
-      ar: "نشرح كيف يُحتسب السعر بدل نشر قائمة بما يشمله لم يتحقق منها أحد مع شركائنا من السائقين. وستجد منافسين ينشرون دقائق انتظار وطُرز مركبات؛ ونحن نفضّل أن نكون على صواب على أن نكون محددين.",
+      en: "We describe how the price is arrived at rather than publishing a generic list of inclusions: what is included is confirmed for your journey, in writing. You will find competitors who publish waiting minutes and vehicle models; we would rather be right than specific.",
+      ar: "نشرح كيف يُحتسب السعر بدل نشر قائمة عامة بما يشمله، فما يشمله يُؤكَّد لرحلتك كتابةً. وستجد منافسين ينشرون دقائق انتظار وطُرز مركبات؛ ونحن نفضّل أن نكون على صواب على أن نكون محددين.",
     },
     items: [
       {
@@ -462,8 +462,8 @@ export const jeddahAirport: JeddahAirportContent = {
         ar: "هل توفرون وقت انتظار مجانيًا إذا تأخرت رحلتي؟",
       },
       answer: {
-        en: "A delay does not leave you without a vehicle, because the pickup is set from your flight number rather than a clock time — that is the point of asking for it. What we will not do is publish an allowance in minutes, because our waiting arrangements have not been confirmed with our driver partners and a number we cannot stand behind is worse than none. It is stated in your quotation for your booking. You will find competitors who publish a figure; we would rather be right than specific.",
-        ar: "التأخير لا يتركك بلا سيارة، لأن موعد الاستقبال محدد من رقم رحلتك لا من توقيت الساعة — وهذا هو الغرض من طلبه. أما ما لن نفعله فهو نشر مدة بالدقائق، لأن ترتيبات الانتظار لدينا لم تُؤكَّد مع شركائنا من السائقين، ورقم لا نستطيع الدفاع عنه أسوأ من لا رقم. ويُذكر ذلك في عرض سعرك لحجزك. وستجد منافسين ينشرون رقمًا؛ ونحن نفضّل أن نكون على صواب على أن نكون محددين.",
+        en: "A delay does not leave you without a vehicle, because the pickup is set from your flight number rather than a clock time — that is the point of asking for it. What we will not do is publish an allowance in minutes, because waiting arrangements are confirmed journey by journey and a blanket number we cannot stand behind is worse than none. It is stated in your quotation for your booking. You will find competitors who publish a figure; we would rather be right than specific.",
+        ar: "التأخير لا يتركك بلا سيارة، لأن موعد الاستقبال محدد من رقم رحلتك لا من توقيت الساعة — وهذا هو الغرض من طلبه. أما ما لن نفعله فهو نشر مدة بالدقائق، لأن ترتيبات الانتظار تُؤكَّد لكل رحلة على حدة، ورقم عام لا نستطيع الدفاع عنه أسوأ من لا رقم. ويُذكر ذلك في عرض سعرك لحجزك. وستجد منافسين ينشرون رقمًا؛ ونحن نفضّل أن نكون على صواب على أن نكون محددين.",
       },
     },
     {
@@ -511,6 +511,14 @@ export const jeddahAirport: JeddahAirportContent = {
       note: {
         en: "The 950 km road from the capital, if you are joining or leaving a longer journey.",
         ar: "الطريق 950 كم من العاصمة، إن كنت تنضم إلى رحلة أطول أو تتركها.",
+      },
+    },
+    {
+      routeKey: "makkah",
+      label: { en: "Private transfers in Makkah", ar: "توصيل خاص في مكة المكرمة" },
+      note: {
+        en: "Where most arrivals are heading: hotel access, the Haramain station and onward journeys.",
+        ar: "حيث يتجه معظم القادمين: الدخول إلى الفنادق ومحطة قطار الحرمين والسفر بعدها.",
       },
     },
     {

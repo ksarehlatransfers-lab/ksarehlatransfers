@@ -202,8 +202,8 @@ export const riyadhHotel: HotelPageContent = {
       ar: "ما يشمله عرض سعر النقل من الفندق",
     },
     lead: {
-      en: "We would rather tell you how the price is arrived at than publish a list of inclusions we have not confirmed with our driver partners. So here is what the written quotation states.",
-      ar: "نفضّل أن نخبرك بكيفية الوصول إلى السعر على أن ننشر قائمة بما يشمله لم نتحقق منها مع شركائنا من السائقين. فإليك ما يذكره عرض السعر المكتوب.",
+      en: "We would rather tell you how the price is arrived at than publish a generic list of inclusions — what is included is confirmed for your journey. So here is what the written quotation states.",
+      ar: "نفضّل أن نخبرك بكيفية الوصول إلى السعر على أن ننشر قائمة عامة بما يشمله، فما يشمله يُؤكَّد لرحلتك. فإليك ما يذكره عرض السعر المكتوب.",
     },
     items: [
       {

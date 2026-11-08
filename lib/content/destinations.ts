@@ -17,7 +17,7 @@ export type Destination = {
   /** Marks the two pilgrimage cities for the layout's visual emphasis. */
   pilgrimage?: boolean;
   /** Set once the city has its own hub page; the card then links to it. */
-  routeKey?: "jeddah";
+  routeKey?: "jeddah" | "makkah" | "taif";
 };
 
 export const destinations: Destination[] = [
@@ -52,6 +52,7 @@ export const destinations: Destination[] = [
     },
     imageKey: "dest-makkah",
     pilgrimage: true,
+    routeKey: "makkah",
   },
   {
     slug: "madinah",
@@ -93,6 +94,7 @@ export const destinations: Destination[] = [
       ar: "الطريق الجبلي من مكة المكرمة وعقبة الهدا.",
     },
     imageKey: "dest-taif",
+    routeKey: "taif",
   },
   {
     slug: "abha",

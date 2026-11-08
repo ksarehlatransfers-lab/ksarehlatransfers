@@ -701,5 +701,100 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "page": "https://commons.wikimedia.org/wiki/File:Ushaiger_Heritage_Village,_Najd,_Saudi_Arabia.jpg"
     }
+  },
+  {
+    "key": "makkah-region-night",
+    "commons": "ISS-42 Taif, Mecca and Jeddah at night.jpg",
+    "out": "makkah-region-night-iss.webp",
+    "shape": [
+      1600,
+      1000
+    ],
+    "focus": "attention",
+    "subject": "Jeddah, Makkah and Taif at night from the ISS",
+    "alt": "Jeddah, Makkah and Taif lit up at night, photographed from the International Space Station",
+    "altAr": "جدة ومكة المكرمة والطائف مضاءة ليلًا كما صُوّرت من محطة الفضاء الدولية",
+    "credit": {
+      "author": "NASA",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:ISS-42_Taif,_Mecca_and_Jeddah_at_night.jpg"
+    }
+  },
+  {
+    "key": "makkah-haramain-train",
+    "commons": "قطار الحرمين 2023.jpg",
+    "out": "haramain-train-2023.webp",
+    "shape": [
+      1200,
+      800
+    ],
+    "focus": "attention",
+    "subject": "Haramain High Speed Railway train",
+    "alt": "A Haramain High Speed Railway train",
+    "altAr": "قطار من قطارات الحرمين السريع",
+    "credit": {
+      "author": "وكالة الأنباء السعودية",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:%D9%82%D8%B7%D8%A7%D8%B1_%D8%A7%D9%84%D8%AD%D8%B1%D9%85%D9%8A%D9%86_2023.jpg"
+    }
+  },
+  {
+    "key": "taif-al-shafa",
+    "commons": "Jabal Dakka, Al Shafa.jpg",
+    "out": "taif-al-shafa-jabal-dakka.webp",
+    "shape": [
+      1800,
+      900
+    ],
+    "focus": "attention",
+    "subject": "View from Jabal Dakka, Al Shafa, Taif",
+    "alt": "Mountain view from the top of Jabal Dakka in Al Shafa, in the highlands above Taif",
+    "altAr": "إطلالة جبلية من قمة جبل دكا في الشفا بمرتفعات الطائف",
+    "credit": {
+      "author": "Saanina",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Jabal_Dakka,_Al_Shafa.jpg"
+    }
+  },
+  {
+    "key": "dest-rabigh",
+    "commons": "Rabigh city - panoramio.jpg",
+    "out": "rabigh-city.webp",
+    "shape": [
+      1600,
+      900
+    ],
+    "focus": "attention",
+    "subject": "Rabigh city",
+    "alt": "A palm-lined main road through Rabigh",
+    "altAr": "طريق رئيسي تصطف على جانبيه النخيل في رابغ",
+    "credit": {
+      "author": "Mahmoud Farrag",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Rabigh_city_-_panoramio.jpg"
+    }
+  },
+  {
+    "key": "rabigh-kaec-waterfront",
+    "commons": "Waterfront King Abdullah Economic City.jpg",
+    "out": "kaec-waterfront.webp",
+    "shape": [
+      1200,
+      800
+    ],
+    "focus": "attention",
+    "subject": "Waterfront, King Abdullah Economic City",
+    "alt": "Apartment buildings along the waterfront of King Abdullah Economic City",
+    "altAr": "مبانٍ سكنية على الواجهة المائية في مدينة الملك عبدالله الاقتصادية",
+    "credit": {
+      "author": "Mrcosch",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Waterfront_King_Abdullah_Economic_City.jpg"
+    }
   }
 ]

@@ -574,6 +574,81 @@ export const siteImages = {
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "page": "https://commons.wikimedia.org/wiki/File:Ushaiger_Heritage_Village,_Najd,_Saudi_Arabia.jpg"
     }
+  },
+  "makkah-region-night": {
+    "src": "/images/makkah-region-night-iss.webp",
+    "width": 1600,
+    "height": 1000,
+    "alt": "Jeddah, Makkah and Taif lit up at night, photographed from the International Space Station",
+    "altAr": "جدة ومكة المكرمة والطائف مضاءة ليلًا كما صُوّرت من محطة الفضاء الدولية",
+    "subject": "Jeddah, Makkah and Taif at night from the ISS",
+    "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACwAwCdASoUAAwAPwFqrk8rJiQiMAgBYCAJYwCzgCHhW+DsgJdyAAD+8qhRIol1R6Ys8CH0UcMRnBXHbr0Yt0IC+ul3Q8i/PGO5IjMPHiOBuTnNuet4yAAA",
+    "credit": {
+      "author": "NASA",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:ISS-42_Taif,_Mecca_and_Jeddah_at_night.jpg"
+    }
+  },
+  "makkah-haramain-train": {
+    "src": "/images/haramain-train-2023.webp",
+    "width": 1200,
+    "height": 800,
+    "alt": "A Haramain High Speed Railway train",
+    "altAr": "قطار من قطارات الحرمين السريع",
+    "subject": "Haramain High Speed Railway train",
+    "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABwAwCdASoUAA0APwFsrU8rJiQiMAgBYCAJYwCdABGgWtZZyxgA/RyOEjau3hcq9Nh3hJMB1HFUGKcbSzbI2j7E0DAuth/nhbCiMUHww9PsJgYaJR6qpKnFCUWwMoAA",
+    "credit": {
+      "author": "وكالة الأنباء السعودية",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:%D9%82%D8%B7%D8%A7%D8%B1_%D8%A7%D9%84%D8%AD%D8%B1%D9%85%D9%8A%D9%86_2023.jpg"
+    }
+  },
+  "taif-al-shafa": {
+    "src": "/images/taif-al-shafa-jabal-dakka.webp",
+    "width": 1800,
+    "height": 900,
+    "alt": "Mountain view from the top of Jabal Dakka in Al Shafa, in the highlands above Taif",
+    "altAr": "إطلالة جبلية من قمة جبل دكا في الشفا بمرتفعات الطائف",
+    "subject": "View from Jabal Dakka, Al Shafa, Taif",
+    "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAwCdASoUAAoAPwFssE+rJiSiMAgBYCAJZQDE2CHVd0uwzd7lHAAA/u++iidEIWemrX9JVr1MSnBnbP8gWidrELhnSmqaoAA=",
+    "credit": {
+      "author": "Saanina",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Jabal_Dakka,_Al_Shafa.jpg"
+    }
+  },
+  "dest-rabigh": {
+    "src": "/images/rabigh-city.webp",
+    "width": 1600,
+    "height": 900,
+    "alt": "A palm-lined main road through Rabigh",
+    "altAr": "طريق رئيسي تصطف على جانبيه النخيل في رابغ",
+    "subject": "Rabigh city",
+    "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAwCdASoUAAsAPwFqrU8rJiQiMAgBYCAJYgCdAA39QgwIOIWZ8wAA/c6itd+CzX87VJqF45vFAs12xTZrLZh+d/j2DKZ7fDhkAAAA",
+    "credit": {
+      "author": "Mahmoud Farrag",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Rabigh_city_-_panoramio.jpg"
+    }
+  },
+  "rabigh-kaec-waterfront": {
+    "src": "/images/kaec-waterfront.webp",
+    "width": 1200,
+    "height": 800,
+    "alt": "Apartment buildings along the waterfront of King Abdullah Economic City",
+    "altAr": "مبانٍ سكنية على الواجهة المائية في مدينة الملك عبدالله الاقتصادية",
+    "subject": "Waterfront, King Abdullah Economic City",
+    "blurDataURL": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAQBACdASoUAA0APwFqrU8rJiQiMAgBYCAJYgCdIIpJ/gGkVOsgQnUdwACCx7QAZsius+tg6ZEb9adUFRFgQJ4kJX8t4Qa1wheiqX9+kvsWaRZP7Y2woTZTvnzmnwCjsiCt2knD8d9g+eIwAAA=",
+    "credit": {
+      "author": "Mrcosch",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Waterfront_King_Abdullah_Economic_City.jpg"
+    }
   }
 } as const satisfies Record<string, SiteImage>;
 

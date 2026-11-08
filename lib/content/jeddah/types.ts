@@ -36,6 +36,8 @@ export type JeddahDestination = {
   caveat?: Bilingual<string>;
   /** Only where a published page actually exists. */
   routeKey?: RouteKey;
+  /** Anchor text for `routeKey`; the page falls back to "Route details". */
+  linkLabel?: Bilingual<string>;
   /** Named as text where a page is planned but not built. */
   plannedNote?: Bilingual<string>;
   /** Visually weighted above the others — at most one. */

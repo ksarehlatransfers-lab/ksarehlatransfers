@@ -19,8 +19,16 @@ export type Route = {
   note: Bilingual<string>;
   fromImageKey: SiteImageKey;
   toImageKey: SiteImageKey;
-  /** Set once the route has its own page. */
-  routeKey?: "riyadhToJeddah" | "riyadhToDammam" | "riyadhToAlKhobar";
+  /**
+   * Where the card links: the route's own page once it has one. Until then a
+   * Jeddah-touching route points at the Jeddah hub, which covers it.
+   */
+  routeKey?:
+    | "riyadhToJeddah"
+    | "riyadhToDammam"
+    | "riyadhToAlKhobar"
+    | "jeddahToMakkah"
+    | "jeddah";
 };
 
 export const routes: Route[] = [
@@ -48,6 +56,7 @@ export const routes: Route[] = [
     },
     fromImageKey: "dest-jeddah",
     toImageKey: "dest-makkah",
+    routeKey: "jeddahToMakkah",
   },
   {
     from: { en: "Makkah", ar: "مكة المكرمة" },
@@ -72,6 +81,7 @@ export const routes: Route[] = [
     },
     fromImageKey: "dest-madinah",
     toImageKey: "dest-jeddah",
+    routeKey: "jeddah",
   },
   {
     from: { en: "Riyadh", ar: "الرياض" },

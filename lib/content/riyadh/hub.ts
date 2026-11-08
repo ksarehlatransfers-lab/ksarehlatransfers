@@ -211,6 +211,50 @@ export const riyadhHub = {
     },
   ] satisfies HubBranch[],
 
+  /**
+   * Beyond the city: the Riyadh Region destinations with their own hubs.
+   * Ordered by distance from the capital. Figures match each hub page.
+   */
+  region: {
+    heading: {
+      en: "Beyond the city: around the Riyadh Region",
+      ar: "خارج المدينة: وجهات في منطقة الرياض",
+    } satisfies B,
+    lead: {
+      en: "Three places in the Riyadh Region now have their own page — a heritage district on the city's edge, a working city to the south-east and a historic town on the road north-west.",
+      ar: "ثلاث وجهات في منطقة الرياض لها الآن صفحاتها الخاصة: حي تراثي على طرف المدينة، ومدينة منتجة في الجنوب الشرقي، وبلدة تاريخية على الطريق شمال غرب العاصمة.",
+    } satisfies B,
+    items: [
+      {
+        routeKey: "diriyah",
+        label: { en: "Diriyah", ar: "الدرعية" },
+        meta: { en: "~20 km north-west", ar: "~20 كم شمال غرب" },
+        note: {
+          en: "At-Turaif and Bujairi Terrace — planning where you arrive and how you get back.",
+          ar: "حي الطريف ومطل البجيري، مع تخطيط مكان الوصول وطريقة العودة.",
+        },
+      },
+      {
+        routeKey: "alKharj",
+        label: { en: "Al Kharj", ar: "الخرج" },
+        meta: { en: "~80 km south-east", ar: "~80 كم جنوب شرق" },
+        note: {
+          en: "Journeys to and from the city, including from the airport — and the honest answer about the train.",
+          ar: "الرحلات من الخرج وإليها، ومنها من المطار، والجواب الصريح عن القطار.",
+        },
+      },
+      {
+        routeKey: "shaqra",
+        label: { en: "Shaqra and Ushaiqer", ar: "شقراء وأشيقر" },
+        meta: { en: "~180 km north-west", ar: "~180 كم شمال غرب" },
+        note: {
+          en: "A road trip to two heritage towns in Al-Washm, for university, family or a day out.",
+          ar: "رحلة برية إلى بلدتين تراثيتين في الوشم، للجامعة أو الأهل أو ليوم تراثي.",
+        },
+      },
+    ] satisfies { routeKey: RouteKey; label: B; meta: B; note: B }[],
+  },
+
   practical: {
     heading: { en: "Practical notes", ar: "ملاحظات عملية" } satisfies B,
     items: [

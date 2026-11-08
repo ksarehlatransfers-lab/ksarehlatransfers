@@ -514,6 +514,66 @@ export const siteImages = {
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "page": "https://commons.wikimedia.org/wiki/File:Old_Jeddah_-_55362214124.jpg"
     }
+  },
+  "dest-alkharj": {
+    "src": "/images/alkharj-king-abdulaziz-palace.webp",
+    "width": 1600,
+    "height": 900,
+    "alt": "The King Abdulaziz Palace in Al Kharj, with the town behind it",
+    "altAr": "قصر الملك عبدالعزيز في الخرج وخلفه أحياء المدينة",
+    "subject": "King Abdulaziz Palace, Al Kharj",
+    "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAwCdASoUAAsAPwForE6rJaQiMAgBYCAJYwCsACHPAsMZTCNcv40wAPyLe6ki9uBpLEtjxWI7eHd4vDipFVdVEPo4lc4f2dkgY8Z4iH06088yjwztrJwdVHRwAg01LqAAAA==",
+    "credit": {
+      "author": "Heritage Commission",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:%D9%82%D8%B5%D8%B1_%D8%A7%D9%84%D9%85%D9%84%D9%83_%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2_%D8%A7%D9%84%D8%AE%D8%B1%D8%AC.jpg"
+    }
+  },
+  "dest-diriyah": {
+    "src": "/images/diriyah-salwa-palace.webp",
+    "width": 1200,
+    "height": 1500,
+    "alt": "The mudbrick ruins of Salwa Palace in the At-Turaif district of Diriyah",
+    "altAr": "أطلال قصر سلوى الطينية في حي الطريف بالدرعية",
+    "subject": "Salwa Palace, At-Turaif, Diriyah",
+    "blurDataURL": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAABwBACdASoUABkAPwFmr06rJSSiMBgMAWAgCWQAtsgH/CfGsNotXiXK6mD1AABNXjt45tpTVovM9s9da4YHTk7ri173Y2NIvgBIdH8fTRimA4RufR/YxAgrA56Cg2O9a+zdV2oafWdY5QAuVlKqgzfzBBAZ8AAA",
+    "credit": {
+      "author": "Heritage Commission",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:%D9%82%D8%B5%D8%B1_%D8%B3%D9%84%D9%88%D9%89.jpg"
+    }
+  },
+  "dest-shaqra": {
+    "src": "/images/shaqra-old-city-wall.webp",
+    "width": 1800,
+    "height": 600,
+    "alt": "Ruined mudbrick walls and towers of the old town in Shaqra",
+    "altAr": "أطلال الأسوار والأبراج الطينية في البلدة القديمة بشقراء",
+    "subject": "Old city wall, Shaqra",
+    "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQBACdASoUAAcAPwFsrU8rJiQiMAgBYCAJZACdMoADTlq8QOIa3eMUgAD+w7c0XeWZ/jMQ6hQ3cySG4HtZhZxbGTKKtxj5CgIBAoAs0uU3gAAA",
+    "credit": {
+      "author": "Oalessa",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Shaqraa_Old_City_Wall.jpg"
+    }
+  },
+  "shaqra-ushaiqer": {
+    "src": "/images/ushaiqer-heritage-village.webp",
+    "width": 1200,
+    "height": 900,
+    "alt": "A mudbrick house among palm trees in Ushaiqer heritage village, north of Shaqra",
+    "altAr": "بيت طيني بين النخيل في قرية أشيقر التراثية شمال شقراء",
+    "subject": "Ushaiqer heritage village, near Shaqra",
+    "blurDataURL": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAACQBACdASoUAA8APwForE6rJaQiMAgBYCAJZgCdMoMf2n/AeRZrlgqZC9amw0AA/lmA1oZhH8Sfp6aoYFH2SO+6o0SDJ/Myuq0H7Ji25T8Dcewq9AUXLoyUazOpXTENed43ns4pP4roUG1t8KIflPzdGw6KHNkxla7aAAAA",
+    "credit": {
+      "author": "Richard Mortel",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Ushaiger_Heritage_Village,_Najd,_Saudi_Arabia.jpg"
+    }
   }
 } as const satisfies Record<string, SiteImage>;
 

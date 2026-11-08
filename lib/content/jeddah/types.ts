@@ -57,6 +57,8 @@ export type AccessNotice = {
   body: Bilingual<string>[];
   /** What we will not do, stated so the limit is explicit. */
   limit: Bilingual<string>;
+  /** A contextual link to the page that carries the full rules. */
+  link?: { routeKey: RouteKey; label: Bilingual<string> };
 };
 
 /** A step in the traveller's day, rendered as a full-width band. */

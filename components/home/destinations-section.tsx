@@ -1,8 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { SectionHeading } from "@/components/home/section-heading";
 import { destinations } from "@/lib/content/destinations";
 import { homeCopy } from "@/lib/content/home-copy";
+import { href } from "@/lib/i18n/routes";
 import { altText } from "@/lib/images";
 import { image } from "@/lib/site-images";
 import { cn } from "cn";
@@ -77,7 +79,18 @@ export function DestinationsSection({ locale }: { locale: Locale }) {
                     {destination.region[locale]}
                   </p>
                   <h3 className="mt-1.5 font-heading text-2xl leading-tight text-white">
-                    {destination.name[locale]}
+                    {destination.routeKey ? (
+                      // Stretched link: the overlay makes the whole tile the
+                      // target without changing how the card looks.
+                      <Link
+                        href={href(locale, destination.routeKey)}
+                        className="outline-none after:absolute after:inset-0 after:rounded-2xl focus-visible:after:ring-2 focus-visible:after:ring-brass focus-visible:after:ring-inset"
+                      >
+                        {destination.name[locale]}
+                      </Link>
+                    ) : (
+                      destination.name[locale]
+                    )}
                   </h3>
                   {wide ? (
                     <p className="mt-2 max-w-sm text-sm leading-snug text-white/70">

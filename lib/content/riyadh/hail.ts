@@ -442,6 +442,14 @@ export const riyadhToHail: RoutePageContent = {
         ar: "منتصف الطريق على هذا المسار، ورحلة قائمة بذاتها.",
       },
     },
+    {
+      routeKey: "shaqra",
+      label: { en: "Shaqra and Ushaiqer", ar: "شقراء وأشيقر" },
+      note: {
+        en: "On the western route to Hail: two heritage towns in Al-Washm, worth a journey of their own.",
+        ar: "على المسار الغربي إلى حائل: بلدتان تراثيتان في الوشم تستحقان رحلة خاصة.",
+      },
+    },
   ],
 
   cta: {

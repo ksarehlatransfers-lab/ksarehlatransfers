@@ -69,6 +69,8 @@ export type JeddahAirportContent = {
       meta: Bilingual<string>;
       caveat?: Bilingual<string>;
       routeKey?: RouteKey;
+      /** Anchor text for `routeKey`; the page falls back to a generic label. */
+      linkLabel?: Bilingual<string>;
       plannedNote?: Bilingual<string>;
     }[];
   };
@@ -144,19 +146,17 @@ export const jeddahAirport: JeddahAirportContent = {
     options: [
       {
         name: { en: "To Makkah", ar: "إلى مكة المكرمة" },
-        meta: { en: "~80 km · 1–1.5 hrs", ar: "~80 كم · 1–1.5 ساعة" },
+        meta: { en: "80–100 km · 1–1.5 hrs", ar: "80–100 كم · 1–1.5 ساعة" },
         detail: {
-          en: "The journey most arrivals here are making, usually to a Haram-area hotel. We go door to door and the hotel name is enough to quote on.",
-          ar: "الرحلة التي يقوم بها معظم القادمين إلى هنا، وغالبًا إلى فندق في منطقة الحرم. وننقل من الباب إلى الباب، واسم الفندق يكفي للتسعير.",
+          en: "The journey most arrivals here are making, usually to a Haram-area hotel. The hotel name is enough to quote on; whether the car reaches its entrance or the nearest permitted point depends on the hotel, and is confirmed when the journey is arranged.",
+          ar: "الرحلة التي يقوم بها معظم القادمين إلى هنا، وغالبًا إلى فندق في منطقة الحرم. واسم الفندق يكفي للتسعير، أما وصول السيارة إلى مدخله أو إلى أقرب نقطة مسموح بها فيعتمد على الفندق ويُؤكَّد عند ترتيب الرحلة.",
         },
         caveat: {
-          en: "Entry to Makkah is restricted to Muslims under Saudi law and enforced at checkpoints on the road. If that applies to you, we will say so before quoting rather than after.",
-          ar: "دخول مكة المكرمة مقصور على المسلمين بموجب النظام السعودي ويُطبَّق عند نقاط التفتيش على الطريق. وإن كان ذلك يخصّك فسنقوله قبل التسعير لا بعده.",
+          en: "Entry to Makkah is restricted to Muslims under Saudi law and enforced at checkpoints on the road. We will not accept or carry a passenger who is not legally permitted to enter Makkah on their travel date.",
+          ar: "دخول مكة المكرمة مقصور على المسلمين بموجب النظام السعودي ويُطبَّق عند نقاط التفتيش على الطريق. ولا نقبل ولا ننقل أي راكب لا يحق له نظامًا دخول مكة في تاريخ رحلته.",
         },
-        plannedNote: {
-          en: "A fuller page on this journey is being written.",
-          ar: "صفحة أوفى عن هذه الرحلة قيد الإعداد.",
-        },
+        routeKey: "jeddahToMakkah",
+        linkLabel: { en: "Jeddah airport to Makkah, in full", ar: "من مطار جدة إلى مكة بالتفصيل" },
       },
       {
         name: { en: "To Madinah", ar: "إلى المدينة المنورة" },
@@ -442,8 +442,8 @@ export const jeddahAirport: JeddahAirportContent = {
         ar: "هل يمكنكم نقلي من المطار مباشرة إلى مكة المكرمة؟",
       },
       answer: {
-        en: "Yes — it is the most common journey from this airport, roughly 80 km and an hour to an hour and a half to a Haram-area hotel. One thing to settle first: entry to Makkah is restricted to Muslims under Saudi law and enforced at checkpoints on the road. If that applies to you we will tell you before quoting rather than drive you to a checkpoint. We arrange the road transport only and are not an official Hajj or Umrah operator.",
-        ar: "نعم — وهي أكثر رحلة شيوعًا من هذا المطار، نحو 80 كم وساعة إلى ساعة ونصف إلى فندق في منطقة الحرم. وأمر يجب حسمه أولًا: دخول مكة المكرمة مقصور على المسلمين بموجب النظام السعودي ويُطبَّق عند نقاط التفتيش على الطريق. وإن كان ذلك يخصّك فسنخبرك قبل التسعير لا أن نوصلك إلى نقطة تفتيش. ونحن نرتّب النقل البري فقط ولسنا مشغّلاً رسميًا للحج أو العمرة.",
+        en: "Yes — it is the most common journey from this airport, closer to 100 km from here and an hour to an hour and a half to a Haram-area hotel. One thing to settle first: entry to Makkah is restricted to Muslims under Saudi law and enforced at checkpoints on the road, and further restrictions are announced around the Hajj season. We will not accept or carry a passenger who is not legally permitted to enter on their travel date. Our Jeddah to Makkah page covers the journey in full, including hotel drop-off near the Haram. We arrange the road transport only and are not an official Hajj or Umrah operator.",
+        ar: "نعم — وهي أكثر رحلة شيوعًا من هذا المطار، أقرب إلى 100 كم من هنا وساعة إلى ساعة ونصف إلى فندق في منطقة الحرم. وأمر يجب حسمه أولًا: دخول مكة المكرمة مقصور على المسلمين بموجب النظام السعودي ويُطبَّق عند نقاط التفتيش على الطريق، وتُعلَن حول موسم الحج قيود إضافية. ولا نقبل ولا ننقل أي راكب لا يحق له نظامًا الدخول في تاريخ رحلته. وصفحة التوصيل من جدة إلى مكة لدينا تغطي الرحلة كاملة، ومنها مكان النزول عند الفنادق قرب الحرم. ونحن نرتّب النقل البري فقط ولسنا مشغّلاً رسميًا للحج أو العمرة.",
       },
     },
     {
@@ -489,6 +489,14 @@ export const jeddahAirport: JeddahAirportContent = {
   ],
 
   related: [
+    {
+      routeKey: "jeddahToMakkah",
+      label: { en: "Jeddah to Makkah", ar: "من جدة إلى مكة" },
+      note: {
+        en: "The journey most arrivals make: the entry rules, the road, and hotel drop-off near the Haram.",
+        ar: "الرحلة التي يقوم بها معظم القادمين: شروط الدخول والطريق ومكان النزول عند الفنادق قرب الحرم.",
+      },
+    },
     {
       routeKey: "jeddah",
       label: { en: "All Jeddah transfers", ar: "جميع خدمات النقل في جدة" },

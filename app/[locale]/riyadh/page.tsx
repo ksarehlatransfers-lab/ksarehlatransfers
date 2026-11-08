@@ -209,6 +209,49 @@ export default async function RiyadhHubPage({
         </div>
       </section>
 
+      {/* Beyond the city: Riyadh Region destination hubs */}
+      <section
+        id="riyadh-region"
+        className="section-y scroll-mt-24 bg-background"
+        aria-labelledby="riyadh-region-title"
+      >
+        <div className="site-container">
+          <div className="max-w-3xl">
+            <h2 id="riyadh-region-title" className="text-h2 text-balance text-ink">
+              {riyadhHub.region.heading[locale]}
+            </h2>
+            <p className="mt-4 text-[0.975rem] leading-relaxed text-muted-foreground">
+              {riyadhHub.region.lead[locale]}
+            </p>
+          </div>
+
+          <ul role="list" className="mt-10 grid gap-4 md:grid-cols-3">
+            {riyadhHub.region.items.map((item) => (
+              <li key={item.routeKey}>
+                <Link
+                  href={href(locale, item.routeKey)}
+                  className="group flex h-full flex-col rounded-2xl border border-border p-6 transition-colors hover:border-palm/40 hover:bg-palm-soft/40"
+                >
+                  <span className="numeric text-xs font-semibold text-palm">
+                    {item.meta[locale]}
+                  </span>
+                  <span className="mt-2 flex items-start justify-between gap-3 text-h4 text-ink">
+                    {item.label[locale]}
+                    <ArrowUpRightIcon
+                      aria-hidden
+                      className="mt-1 size-4 shrink-0 text-palm transition-transform group-hover:translate-x-0.5 rtl:-scale-x-100"
+                    />
+                  </span>
+                  <span className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {item.note[locale]}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
       {/* Practical notes */}
       <section
         className="section-y bg-background"

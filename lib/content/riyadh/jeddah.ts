@@ -317,8 +317,8 @@ export const riyadhToJeddah: RoutePageContent = {
         ar: "هل تكملون من جدة إلى مكة المكرمة؟",
       },
       answer: {
-        en: "Yes, as a separate leg of about 90 km. Mention it in the same enquiry and we will quote both journeys together. We arrange road transport only — we are not an official Hajj or Umrah operator and do not issue permits or visas.",
-        ar: "نعم، كمرحلة منفصلة بطول نحو 90 كم. اذكرها في الاستفسار نفسه ونُسعّر الرحلتين معًا. ونحن نرتّب النقل البري فقط — لسنا مشغّلاً رسميًا للحج أو العمرة ولا نُصدر تصاريح أو تأشيرات.",
+        en: "Yes, as a separate leg of about 80 to 100 km, depending on where in Jeddah it starts. Mention it in the same enquiry and we will quote both journeys together. Entry to Makkah is restricted to Muslims, and we will not carry a passenger who is not legally permitted to enter on the travel date — our Jeddah to Makkah page sets out the rules. We arrange road transport only — we are not an official Hajj or Umrah operator and do not issue permits or visas.",
+        ar: "نعم، كمرحلة منفصلة بطول نحو 80 إلى 100 كم بحسب نقطة الانطلاق في جدة. اذكرها في الاستفسار نفسه ونُسعّر الرحلتين معًا. ودخول مكة مقصور على المسلمين، ولا ننقل راكبًا لا يحق له نظامًا الدخول في تاريخ الرحلة، وتعرض صفحة التوصيل من جدة إلى مكة لدينا هذه الشروط. ونحن نرتّب النقل البري فقط — لسنا مشغّلاً رسميًا للحج أو العمرة ولا نُصدر تصاريح أو تأشيرات.",
       },
     },
   ],
@@ -338,6 +338,14 @@ export const riyadhToJeddah: RoutePageContent = {
       note: {
         en: "What happens at the other end: the airport, the road to Makkah and journeys on from the coast.",
         ar: "ما يحدث في الطرف الآخر: المطار والطريق إلى مكة والرحلات من الساحل.",
+      },
+    },
+    {
+      routeKey: "jeddahToMakkah",
+      label: { en: "Jeddah to Makkah", ar: "من جدة إلى مكة" },
+      note: {
+        en: "The onward leg for Umrah travellers: the entry rules, the road and hotel drop-off near the Haram.",
+        ar: "المرحلة التالية للمعتمرين: شروط الدخول والطريق ومكان النزول عند الفنادق قرب الحرم.",
       },
     },
     {

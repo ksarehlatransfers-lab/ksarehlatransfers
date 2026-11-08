@@ -57,6 +57,17 @@ export function primaryNav(locale: Locale): NavGroup[] {
           ),
         },
         {
+          // One entry for the region rather than three: keeps the menu
+          // manageable. It opens the Riyadh hub's region section, which links
+          // to each destination hub.
+          label: t({ en: "Riyadh Region", ar: "منطقة الرياض" }, locale),
+          href: `${href(locale, "riyadh")}#riyadh-region`,
+          description: t(
+            { en: "Diriyah, Al Kharj, Shaqra", ar: "الدرعية والخرج وشقراء" },
+            locale
+          ),
+        },
+        {
           label: t({ en: "Jeddah", ar: "جدة" }, locale),
           href: href(locale, "jeddah"),
           description: t({ en: "Red Sea gateway", ar: "بوابة البحر الأحمر" }, locale),
@@ -178,6 +189,14 @@ export function primaryNav(locale: Locale): NavGroup[] {
           ),
         },
         {
+          label: t({ en: "Jeddah to Makkah", ar: "من جدة إلى مكة" }, locale),
+          href: href(locale, "jeddahToMakkah"),
+          description: t(
+            { en: "Airport or city to your hotel", ar: "من المطار أو المدينة إلى فندقك" },
+            locale
+          ),
+        },
+        {
           label: t({ en: "Riyadh to Jeddah", ar: "الرياض إلى جدة" }, locale),
           href: href(locale, "riyadhToJeddah"),
           description: t(
@@ -234,6 +253,18 @@ export function footerNav(
           href: href(locale, "riyadhHotel"),
         },
         {
+          label: t({ en: "Diriyah transfers", ar: "التوصيل إلى الدرعية" }, locale),
+          href: href(locale, "diriyah"),
+        },
+        {
+          label: t({ en: "Riyadh–Al Kharj transfers", ar: "التوصيل بين الرياض والخرج" }, locale),
+          href: href(locale, "alKharj"),
+        },
+        {
+          label: t({ en: "Riyadh to Shaqra", ar: "الرياض إلى شقراء" }, locale),
+          href: href(locale, "shaqra"),
+        },
+        {
           label: t({ en: "Riyadh to Jeddah", ar: "الرياض إلى جدة" }, locale),
           href: href(locale, "riyadhToJeddah"),
         },
@@ -273,6 +304,10 @@ export function footerNav(
         {
           label: t({ en: "Jeddah airport transfers", ar: "النقل من مطار جدة" }, locale),
           href: href(locale, "jeddahAirport"),
+        },
+        {
+          label: t({ en: "Jeddah to Makkah", ar: "من جدة إلى مكة" }, locale),
+          href: href(locale, "jeddahToMakkah"),
         },
         {
           label: t({ en: "Riyadh to Jeddah", ar: "الرياض إلى جدة" }, locale),

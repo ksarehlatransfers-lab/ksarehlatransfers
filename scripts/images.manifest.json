@@ -625,5 +625,81 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "page": "https://commons.wikimedia.org/wiki/File:Old_Jeddah_-_55362214124.jpg"
     }
+  },
+  {
+    "key": "dest-alkharj",
+    "commons": "قصر الملك عبدالعزيز الخرج.jpg",
+    "out": "alkharj-king-abdulaziz-palace.webp",
+    "shape": [
+      1600,
+      900
+    ],
+    "focus": "attention",
+    "subject": "King Abdulaziz Palace, Al Kharj",
+    "alt": "The King Abdulaziz Palace in Al Kharj, with the town behind it",
+    "altAr": "قصر الملك عبدالعزيز في الخرج وخلفه أحياء المدينة",
+    "credit": {
+      "author": "Heritage Commission",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:%D9%82%D8%B5%D8%B1_%D8%A7%D9%84%D9%85%D9%84%D9%83_%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2_%D8%A7%D9%84%D8%AE%D8%B1%D8%AC.jpg"
+    }
+  },
+  {
+    "key": "dest-diriyah",
+    "commons": "قصر سلوى.jpg",
+    "out": "diriyah-salwa-palace.webp",
+    "shape": [
+      1200,
+      1500
+    ],
+    "focus": "attention",
+    "subject": "Salwa Palace, At-Turaif, Diriyah",
+    "alt": "The mudbrick ruins of Salwa Palace in the At-Turaif district of Diriyah",
+    "altAr": "أطلال قصر سلوى الطينية في حي الطريف بالدرعية",
+    "credit": {
+      "author": "Heritage Commission",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:%D9%82%D8%B5%D8%B1_%D8%B3%D9%84%D9%88%D9%89.jpg"
+    }
+  },
+  {
+    "key": "dest-shaqra",
+    "commons": "Shaqraa Old City Wall.jpg",
+    "out": "shaqra-old-city-wall.webp",
+    "shape": [
+      1800,
+      600
+    ],
+    "focus": "attention",
+    "subject": "Old city wall, Shaqra",
+    "alt": "Ruined mudbrick walls and towers of the old town in Shaqra",
+    "altAr": "أطلال الأسوار والأبراج الطينية في البلدة القديمة بشقراء",
+    "credit": {
+      "author": "Oalessa",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Shaqraa_Old_City_Wall.jpg"
+    }
+  },
+  {
+    "key": "shaqra-ushaiqer",
+    "commons": "Ushaiger Heritage Village, Najd, Saudi Arabia.jpg",
+    "out": "ushaiqer-heritage-village.webp",
+    "shape": [
+      1200,
+      900
+    ],
+    "focus": "attention",
+    "subject": "Ushaiqer heritage village, near Shaqra",
+    "alt": "A mudbrick house among palm trees in Ushaiqer heritage village, north of Shaqra",
+    "altAr": "بيت طيني بين النخيل في قرية أشيقر التراثية شمال شقراء",
+    "credit": {
+      "author": "Richard Mortel",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Ushaiger_Heritage_Village,_Najd,_Saudi_Arabia.jpg"
+    }
   }
 ]

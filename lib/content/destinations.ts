@@ -16,6 +16,8 @@ export type Destination = {
   imageKey: SiteImageKey;
   /** Marks the two pilgrimage cities for the layout's visual emphasis. */
   pilgrimage?: boolean;
+  /** Set once the city has its own hub page; the card then links to it. */
+  routeKey?: "jeddah";
 };
 
 export const destinations: Destination[] = [
@@ -38,6 +40,7 @@ export const destinations: Destination[] = [
       ar: "مطار الملك عبدالعزيز الدولي، والبوابة الرئيسية للمعتمرين والحجاج.",
     },
     imageKey: "dest-jeddah",
+    routeKey: "jeddah",
   },
   {
     slug: "makkah",

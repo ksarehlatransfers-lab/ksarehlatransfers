@@ -46,6 +46,10 @@ credit data, so attribution travels with each image in code.
 | `station-riyadh-interior` | [Inside Riyadh East station, the Dammam line terminus](https://commons.wikimedia.org/wiki/File:Riyadh_East_station_interior,_Riyadh,_Saudi_Arabia_January_2024.jpg) | Zach1055 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 | `jeddah-corniche` | [The Jeddah corniche on the Red Sea](https://commons.wikimedia.org/wiki/File:Jeddah_Corniche_Photo.jpg) | Kolaiel | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) |
 | `jeddah-albalad` | [Al-Balad, historic Jeddah](https://commons.wikimedia.org/wiki/File:Old_Jeddah_-_55362214124.jpg) | xiquinhosilva | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
+| `dest-alkharj` | [King Abdulaziz Palace, Al Kharj](https://commons.wikimedia.org/wiki/File:%D9%82%D8%B5%D8%B1_%D8%A7%D9%84%D9%85%D9%84%D9%83_%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2_%D8%A7%D9%84%D8%AE%D8%B1%D8%AC.jpg) | Heritage Commission | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| `dest-diriyah` | [Salwa Palace, At-Turaif, Diriyah](https://commons.wikimedia.org/wiki/File:%D9%82%D8%B5%D8%B1_%D8%B3%D9%84%D9%88%D9%89.jpg) | Heritage Commission | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| `dest-shaqra` | [Old city wall, Shaqra](https://commons.wikimedia.org/wiki/File:Shaqraa_Old_City_Wall.jpg) | Oalessa | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) |
+| `shaqra-ushaiqer` | [Ushaiqer heritage village, near Shaqra](https://commons.wikimedia.org/wiki/File:Ushaiger_Heritage_Village,_Najd,_Saudi_Arabia.jpg) | Richard Mortel | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) |
 
 <!-- credits:end -->
 

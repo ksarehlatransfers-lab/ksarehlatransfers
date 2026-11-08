@@ -227,6 +227,22 @@ export default async function JeddahPage({
               >
                 {content.access.limit[locale]}
               </p>
+              {content.access.link ? (
+                <Link
+                  href={href(locale, content.access.link.routeKey)}
+                  className={
+                    isArabic
+                      ? "group mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-palm transition-colors hover:text-palm-deep"
+                      : "group mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-palm-deep underline decoration-palm/40 underline-offset-4 hover:decoration-palm-deep"
+                  }
+                >
+                  {content.access.link.label[locale]}
+                  <ArrowUpRightIcon
+                    aria-hidden
+                    className="size-3.5 transition-transform group-hover:translate-x-0.5 rtl:-scale-x-100"
+                  />
+                </Link>
+              ) : null}
             </div>
           </div>
         </div>

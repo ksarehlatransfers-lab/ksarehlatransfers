@@ -86,13 +86,20 @@ export const jeddahHub: JeddahHubContent = {
         ar: "لذلك نقول ذلك قبل الحجز لا بعده. فإن لم تكن الرحلة متاحة لك، فعرض سعر منا يعني رحلة تنتهي عند نقطة تفتيش — ونفضّل إخبارك الآن على أن نوصلك إلى هناك.",
       },
       {
-        en: "During the Hajj season, permit checks can apply to Muslim travellers as well. If you are travelling then, say so in your enquiry so the timing accounts for it.",
-        ar: "وفي موسم الحج قد تُطبَّق التحقق من التصاريح على المسافرين المسلمين أيضًا. فإن كنت مسافرًا في ذلك الحين فاذكره في استفسارك ليُحتسب في التوقيت.",
+        en: "Around the Hajj season, the Ministry of Interior announces further restrictions each year — they have included entry permits for residents and a bar on visit-visa holders entering Makkah. We will not accept or carry a passenger who is not legally permitted to enter Makkah on their travel date.",
+        ar: "وحول موسم الحج تعلن وزارة الداخلية كل عام قيودًا إضافية، وقد شملت اشتراط تصريح دخول للمقيمين ومنع حاملي تأشيرات الزيارة من دخول مكة. ولا نقبل ولا ننقل أي راكب لا يحق له نظامًا دخول مكة المكرمة في تاريخ رحلته.",
       },
     ],
     limit: {
       en: "What we will not do is tell you how the checkpoint operates, what will be inspected, or whether any particular traveller will be admitted. We arrange road transport; we do not give immigration or religious advice, and we are not an official Hajj or Umrah operator.",
       ar: "وما لن نفعله هو إخبارك بكيفية عمل نقطة التفتيش، أو بما سيُفحص، أو بما إن كان مسافر بعينه سيُسمح له بالدخول. نحن نرتّب النقل البري، ولا نقدّم استشارات جوازات ولا فتاوى، ولسنا مشغّلاً رسميًا للحج أو العمرة.",
+    },
+    link: {
+      routeKey: "jeddahToMakkah",
+      label: {
+        en: "The Jeddah to Makkah journey, with the seasonal rules in full",
+        ar: "التوصيل من جدة إلى مكة، مع قيود موسم الحج كاملة",
+      },
     },
   },
 
@@ -109,16 +116,13 @@ export const jeddahHub: JeddahHubContent = {
           en: "The journey most people arriving in Jeddah are actually making — airport or hotel to a Haram-area address.",
           ar: "الرحلة التي يقوم بها فعلًا معظم القادمين إلى جدة — من المطار أو الفندق إلى عنوان في منطقة الحرم.",
         },
-        distance: { en: "~80 km", ar: "~80 كم" },
+        distance: { en: "80–100 km", ar: "80–100 كم" },
         duration: { en: "1–1.5 hrs", ar: "1–1.5 ساعة" },
         caveat: {
           en: "Entry is restricted to Muslims and enforced at checkpoints on the road. Read the notice above before booking.",
           ar: "الدخول مقصور على المسلمين ويُطبَّق عند نقاط التفتيش على الطريق. اقرأ التنبيه أعلاه قبل الحجز.",
         },
-        plannedNote: {
-          en: "A fuller page on this journey is being written.",
-          ar: "صفحة أوفى عن هذه الرحلة قيد الإعداد.",
-        },
+        routeKey: "jeddahToMakkah",
         primary: true,
       },
       {
@@ -269,8 +273,8 @@ export const jeddahHub: JeddahHubContent = {
         ar: "هل يمكنكم نقلي من مطار جدة إلى فندق في مكة المكرمة؟",
       },
       answer: {
-        en: "Yes — it is the most common journey people ask us for in Jeddah, roughly 80 km and an hour to an hour and a half. Give us the flight number and the hotel, and the pickup is set from the flight so a delay does not leave you without a vehicle. Please read the notice about entry to Makkah first: it is restricted to Muslims under Saudi law and enforced at checkpoints on the road.",
-        ar: "نعم — وهي أكثر رحلة يطلبها الناس منا في جدة، نحو 80 كم وساعة إلى ساعة ونصف. زوّدنا برقم الرحلة والفندق، ويُحدَّد موعد الاستقبال من الرحلة فلا يتركك التأخر بلا سيارة. ويُرجى قراءة التنبيه بشأن دخول مكة أولًا: فهو مقصور على المسلمين بموجب النظام السعودي ويُطبَّق عند نقاط التفتيش على الطريق.",
+        en: "Yes — it is the most common journey people ask us for in Jeddah, about 80 to 100 km and an hour to an hour and a half. Give us the flight number and the hotel, and the pickup is set from the flight so a delay does not leave you without a vehicle. Please read the notice about entry to Makkah first: it is restricted to Muslims under Saudi law and enforced at checkpoints on the road. Our Jeddah to Makkah page covers the journey in full, including hotel drop-off near the Haram.",
+        ar: "نعم — وهي أكثر رحلة يطلبها الناس منا في جدة، نحو 80 إلى 100 كم وساعة إلى ساعة ونصف. زوّدنا برقم الرحلة والفندق، ويُحدَّد موعد الاستقبال من الرحلة فلا يتركك التأخر بلا سيارة. ويُرجى قراءة التنبيه بشأن دخول مكة أولًا: فهو مقصور على المسلمين بموجب النظام السعودي ويُطبَّق عند نقاط التفتيش على الطريق. وصفحة التوصيل من جدة إلى مكة لدينا تغطي الرحلة كاملة، ومنها مكان النزول عند الفنادق قرب الحرم.",
       },
     },
     {
@@ -309,8 +313,8 @@ export const jeddahHub: JeddahHubContent = {
         ar: "كم تستغرق الرحلة من جدة إلى مكة فعلًا؟",
       },
       answer: {
-        en: "An hour to an hour and a half for roughly 80 km, with published road figures running from about 79 to 85 km and higher for the airport specifically. The spread is why we give a range rather than a number. Add the checkpoint and the traffic around the Haram at prayer times and the upper end is the realistic figure. These are estimates from public route data, not a guaranteed arrival time.",
-        ar: "ساعة إلى ساعة ونصف لمسافة 80 كم تقريبًا، وتتراوح أرقام الطريق المنشورة بين نحو 79 و85 كم وأعلى من ذلك للمطار تحديدًا. وهذا الفارق هو سبب ذكرنا نطاقًا لا رقمًا. وأضف نقطة التفتيش والحركة حول الحرم في أوقات الصلاة فيكون الحد الأعلى هو الرقم الواقعي. وهذه تقديرات من بيانات مسارات عامة، لا وقت وصول مضمون.",
+        en: "An hour to an hour and a half for 80 to 100 km — roughly 80 km from central Jeddah and closer to 100 km from the airport, which lies north of the city. The spread is why we give a range rather than a number. Add the checkpoint and the traffic around the Haram at prayer times and the upper end is the realistic figure. These are estimates from public route data, not a guaranteed arrival time.",
+        ar: "ساعة إلى ساعة ونصف لمسافة 80 إلى 100 كم — نحو 80 كم من وسط جدة وأقرب إلى 100 كم من المطار الواقع شمال المدينة. وهذا الفارق هو سبب ذكرنا نطاقًا لا رقمًا. وأضف نقطة التفتيش والحركة حول الحرم في أوقات الصلاة فيكون الحد الأعلى هو الرقم الواقعي. وهذه تقديرات من بيانات مسارات عامة، لا وقت وصول مضمون.",
       },
     },
     {
@@ -346,6 +350,14 @@ export const jeddahHub: JeddahHubContent = {
   ],
 
   related: [
+    {
+      routeKey: "jeddahToMakkah",
+      label: { en: "Jeddah to Makkah", ar: "من جدة إلى مكة" },
+      note: {
+        en: "Airport or city to your hotel: the entry rules, the 80–100 km road and drop-off near the Haram.",
+        ar: "من المطار أو المدينة إلى فندقك: شروط الدخول وطريق 80–100 كم ومكان النزول قرب الحرم.",
+      },
+    },
     {
       routeKey: "jeddahAirport",
       label: { en: "Jeddah airport transfers", ar: "النقل من مطار جدة" },

@@ -27,6 +27,10 @@ export const route = {
   riyadhHotel: "riyadh-hotel-transfers",
   jeddah: "jeddah",
   jeddahAirport: "jeddah-airport-transfers",
+  jeddahToMakkah: "jeddah-to-makkah",
+  alKharj: "al-kharj",
+  diriyah: "diriyah",
+  shaqra: "shaqra",
 } as const;
 
 export type RouteKey = keyof typeof route;
@@ -58,6 +62,13 @@ const sitemapMeta: Record<RouteKey, { priority: number; changeFrequency: "weekly
   jeddah: { priority: 0.9, changeFrequency: "weekly" },
   // Level with the Riyadh airport page: the highest-intent journey in Jeddah.
   jeddahAirport: { priority: 0.8, changeFrequency: "monthly" },
+  // The dominant Jeddah intent, so level with the airport page.
+  jeddahToMakkah: { priority: 0.8, changeFrequency: "monthly" },
+  // Riyadh Region destination hubs. Below the city hubs and the main routes:
+  // smaller markets, and operational coverage is still to be confirmed.
+  alKharj: { priority: 0.7, changeFrequency: "monthly" },
+  diriyah: { priority: 0.7, changeFrequency: "monthly" },
+  shaqra: { priority: 0.7, changeFrequency: "monthly" },
 };
 
 /** Pages deliberately kept out of the index; see each page's robots meta. */

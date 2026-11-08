@@ -172,7 +172,8 @@ export default async function JeddahAirportTransfersPage({
                     href={href(locale, option.routeKey)}
                     className="group mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-palm transition-colors hover:text-palm-deep"
                   >
-                    {isArabic ? "صفحة جدة" : "The Jeddah page"}
+                    {option.linkLabel?.[locale] ??
+                      (isArabic ? "صفحة جدة" : "The Jeddah page")}
                     <ArrowUpRightIcon
                       aria-hidden
                       className="size-3.5 transition-transform group-hover:translate-x-0.5 rtl:-scale-x-100"

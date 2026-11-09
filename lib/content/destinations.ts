@@ -17,7 +17,9 @@ export type Destination = {
   /** Marks the two pilgrimage cities for the layout's visual emphasis. */
   pilgrimage?: boolean;
   /** Set once the city has its own hub page; the card then links to it. */
-  routeKey?: "jeddah" | "makkah" | "taif" | "madinah";
+  routeKey?: "jeddah" | "makkah" | "taif" | "madinah" | "dammam";
+  /** Section id on that hub page, for a city covered as a section of a hub. */
+  anchor?: string;
 };
 
 export const destinations: Destination[] = [
@@ -75,6 +77,7 @@ export const destinations: Destination[] = [
       ar: "مطار الملك فهد الدولي، والمنطقة الشرقية.",
     },
     imageKey: "dest-dammam",
+    routeKey: "dammam",
   },
   {
     slug: "al-khobar",
@@ -85,6 +88,9 @@ export const destinations: Destination[] = [
       ar: "فنادق الكورنيش وطريق جسر الملك فهد باتجاه البحرين.",
     },
     imageKey: "dest-khobar",
+    // Al Khobar is a section of the Dammam metropolitan hub, not its own page.
+    routeKey: "dammam",
+    anchor: "al-khobar",
   },
   {
     slug: "taif",

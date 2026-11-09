@@ -83,7 +83,7 @@ export function DestinationsSection({ locale }: { locale: Locale }) {
                       // Stretched link: the overlay makes the whole tile the
                       // target without changing how the card looks.
                       <Link
-                        href={href(locale, destination.routeKey)}
+                        href={`${href(locale, destination.routeKey)}${destination.anchor ? `#${destination.anchor}` : ""}`}
                         className="outline-none after:absolute after:inset-0 after:rounded-2xl focus-visible:after:ring-2 focus-visible:after:ring-brass focus-visible:after:ring-inset"
                       >
                         {destination.name[locale]}

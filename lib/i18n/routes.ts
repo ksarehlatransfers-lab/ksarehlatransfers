@@ -37,6 +37,9 @@ export const route = {
   madinah: "madinah",
   alula: "alula",
   yanbu: "yanbu",
+  dammam: "dammam",
+  jubail: "jubail",
+  alAhsa: "al-ahsa",
 } as const;
 
 export type RouteKey = keyof typeof route;
@@ -85,6 +88,12 @@ const sitemapMeta: Record<RouteKey, { priority: number; changeFrequency: "weekly
   madinah: { priority: 0.9, changeFrequency: "weekly" },
   alula: { priority: 0.8, changeFrequency: "monthly" },
   yanbu: { priority: 0.7, changeFrequency: "monthly" },
+  // Eastern Province. Dammam is the metropolitan hub for Dammam, Al Khobar
+  // and Dhahran, level with the other city hubs; Al Ahsa and Jubail are
+  // destination hubs a step below.
+  dammam: { priority: 0.9, changeFrequency: "weekly" },
+  alAhsa: { priority: 0.8, changeFrequency: "monthly" },
+  jubail: { priority: 0.7, changeFrequency: "monthly" },
 };
 
 /** Pages deliberately kept out of the index; see each page's robots meta. */

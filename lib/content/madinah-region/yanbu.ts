@@ -264,6 +264,14 @@ export const yanbu: YanbuContent = {
         ar: "إلى الداخل شمالًا غربًا: الواحة والبلدة القديمة والحِجر.",
       },
     },
+    {
+      routeKey: "jubail",
+      label: { en: "Jubail", ar: "الجبيل" },
+      note: {
+        en: "Yanbu's sister industrial city on the Gulf coast, under the same Royal Commission.",
+        ar: "المدينة الصناعية الشقيقة لينبع على ساحل الخليج، تحت الهيئة الملكية نفسها.",
+      },
+    },
   ],
 
   cta: {

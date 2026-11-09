@@ -112,10 +112,19 @@ export function primaryNav(locale: Locale): NavGroup[] {
           description: t({ en: "Town, airport, industrial city", ar: "ينبع البحر والمطار والصناعية" }, locale),
         },
         {
-          label: t({ en: "Dammam & Al Khobar", ar: "الدمام والخبر" }, locale),
-          href: homeAnchor(locale, "destinations"),
-          description: t({ en: "Eastern Province", ar: "المنطقة الشرقية" }, locale),
-          planned: true,
+          label: t({ en: "Dammam, Al Khobar & Dhahran", ar: "الدمام والخبر والظهران" }, locale),
+          href: href(locale, "dammam"),
+          description: t({ en: "Airport, hotels, three cities", ar: "المطار والفنادق والمدن الثلاث" }, locale),
+        },
+        {
+          label: t({ en: "Jubail", ar: "الجبيل" }, locale),
+          href: href(locale, "jubail"),
+          description: t({ en: "Old town, Industrial City", ar: "الجبيل البلد والصناعية" }, locale),
+        },
+        {
+          label: t({ en: "Al Ahsa", ar: "الأحساء" }, locale),
+          href: href(locale, "alAhsa"),
+          description: t({ en: "Airport and hotels", ar: "المطار والفنادق" }, locale),
         },
         {
           label: t({ en: "Abha", ar: "أبها" }, locale),
@@ -368,6 +377,23 @@ export function footerNav(
         {
           label: t({ en: "Yanbu transfers", ar: "التوصيل في ينبع" }, locale),
           href: href(locale, "yanbu"),
+        },
+      ],
+    },
+    {
+      heading: t({ en: "Eastern Province", ar: "المنطقة الشرقية" }, locale),
+      links: [
+        {
+          label: t({ en: "Dammam, Al Khobar & Dhahran", ar: "الدمام والخبر والظهران" }, locale),
+          href: href(locale, "dammam"),
+        },
+        {
+          label: t({ en: "Jubail transfers", ar: "التوصيل في الجبيل" }, locale),
+          href: href(locale, "jubail"),
+        },
+        {
+          label: t({ en: "Al Ahsa transfers", ar: "التوصيل في الأحساء" }, locale),
+          href: href(locale, "alAhsa"),
         },
       ],
     },

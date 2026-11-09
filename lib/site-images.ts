@@ -709,6 +709,96 @@ export const siteImages = {
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "page": "https://commons.wikimedia.org/wiki/File:Traditional_architecture_in_old_Yanbu,_Saudi_Arabia_(9).jpg"
     }
+  },
+  "khobar-corniche": {
+    "src": "/images/khobar-corniche.webp",
+    "width": 1600,
+    "height": 1000,
+    "alt": "The Al Khobar corniche at dusk, palm trees and lights along the Gulf waterfront",
+    "altAr": "كورنيش الخبر عند الغروب، تصطف أشجار النخيل والأضواء على واجهة الخليج",
+    "subject": "Al Khobar Corniche",
+    "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQBACdASoUAAwAPwFqrU6rJiQiMAgBYCAJZQCdABkqOtPFWnSGYHV/gAD+gRw82ll0X1hZp0+YahVeNsemZE5mykd4HSG3j4uVc0A+6DySCoh9vnUAAA==",
+    "credit": {
+      "author": "saudipics",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:%D9%83%D9%88%D8%B1%D9%86%D9%8A%D8%B4_%D8%A7%D9%84%D8%AE%D8%A8%D8%B1.jpg"
+    }
+  },
+  "dhahran-ithra": {
+    "src": "/images/dhahran-ithra.webp",
+    "width": 800,
+    "height": 1000,
+    "alt": "The curved, rounded forms of the King Abdulaziz Center for World Culture (Ithra) in Dhahran",
+    "altAr": "الكتل المنحنية لمركز الملك عبدالعزيز الثقافي العالمي (إثراء) في الظهران",
+    "subject": "King Abdulaziz Center for World Culture (Ithra), Dhahran",
+    "blurDataURL": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAAAQBQCdASoUABkAPwFoq06rJaOiMAgBYCAJZQC84CFT32TkRBtJIImvclwrL5pLFTQAAP7DlYEtwhQUiiUE8KC3oSBGTZPMT0OYk+N2ZCm6r0ziu9yeRDazvc2gcKFiVRtvW1uX9O2gE4WRmzpc9nU8YjojrJZTM2ZB5DEJzhUZ9dD57CdrYY5P+8pUPD//MZJ1Dmu5Z8B7moAA",
+    "credit": {
+      "author": "Ali Lajami",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:King_Abdulaziz_Center_for_World_Culture_(Ithra)_(cropped).png"
+    }
+  },
+  "jubail-ic-marina": {
+    "src": "/images/jubail-industrial-city-marina.webp",
+    "width": 1500,
+    "height": 1000,
+    "alt": "Aerial view of the boat marina and waterfront in Jubail Industrial City",
+    "altAr": "منظر جوي لمرسى القوارب والواجهة البحرية في الجبيل الصناعية",
+    "subject": "Boat marina, Jubail Industrial City",
+    "blurDataURL": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADwAwCdASoUAA0APwFqrE6rJiQiMAgBYCAJYgCdEf/gPIzsTtm4BeOwAPfeNxghfNWRr+BeppHLh+QBCEDN6w9xLMT3PHsMGnQNMLKFA/B5iYF30uvpJ5ruxCr+05gJEeMSJ5rGLiALBhZLEIXiAAAA",
+    "credit": {
+      "author": "Aaiq2005",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:%D9%85%D8%B1%D8%B3%D9%89_%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%B1%D8%A8_%D8%A8%D8%A7%D9%84%D8%AC%D8%A8%D9%8A%D9%84_%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%D8%A9.jpg"
+    }
+  },
+  "jubail-town-minaret": {
+    "src": "/images/jubail-town-minaret.webp",
+    "width": 800,
+    "height": 1000,
+    "alt": "A mosque minaret against a clear sky in the centre of Jubail town",
+    "altAr": "مئذنة مسجد في سماء صافية وسط مدينة الجبيل",
+    "subject": "Mosque minaret in central Jubail town",
+    "blurDataURL": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABwBACdASoUABkAPwF4rlMrJyOiqAqpYCAJQBWGaYg1PqQggl4UwiqJIndYAAD+3sByIeFt4u6lLbBIQozRZzG/mu08rkdJxsBcEwDA3s/P7/1WGo6TPHFQx6RZWjJShbIZKVniAlwfCgGExkF4W6Ns2gAAAA==",
+    "credit": {
+      "author": "anemic silence",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Minaret_of_a_mosque_in_the_center_of_jubail_town_proper._Saudi_Arabia.4-23-2010.jpg"
+    }
+  },
+  "alahsa-qasr-ibrahim": {
+    "src": "/images/alahsa-qasr-ibrahim.webp",
+    "width": 1500,
+    "height": 900,
+    "alt": "Qasr Ibrahim in Hofuf, its domed mosque and earthen walls seen from above",
+    "altAr": "قصر إبراهيم في الهفوف بقبة مسجده وأسواره الطينية من الأعلى",
+    "subject": "Qasr Ibrahim, Hofuf",
+    "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQBACdASoUAAwAPwFqrE6rJiQiMAgBYCAJQBOmUABwWEK08gYob6osyADdIjnBsL3LpbaMLjVFpexOFVXLYJ0NRStG+rRWY2uG8asWmr3LjcT/fhjr8raVEAA=",
+    "credit": {
+      "author": "Heritage Commission",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:%D9%82%D8%B5%D8%B1_%D8%A7%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85.jpg"
+    }
+  },
+  "alahsa-qaysariyah": {
+    "src": "/images/alahsa-qaysariyah-souq.webp",
+    "width": 1200,
+    "height": 800,
+    "alt": "The tower and arched gateway of Suq al-Qaysariyah in Hofuf",
+    "altAr": "برج سوق القيصرية في الهفوف وبوابته المقوّسة",
+    "subject": "Suq al-Qaysariyah, Hofuf",
+    "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAACwAwCdASoUAA0APwFqrE6rJiQiMAgBYCAJZQAAWjurMxU4kRnHwAD+1woC5KvGMG+XnXXgGwGkvIGwdgihCyvJ7neSrrspQBaT4LZYD3VD1+IrwJ306EOKtYUQkAAA",
+    "credit": {
+      "author": "Yafa.naif",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:%D8%B3%D9%88%D9%82_%D8%A7%D9%84%D9%82%D9%8A%D8%B5%D8%B1%D9%8A%D8%A9W5246.jpg"
+    }
   }
 } as const satisfies Record<string, SiteImage>;
 

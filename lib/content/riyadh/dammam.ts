@@ -360,6 +360,14 @@ export const riyadhToDammam: RoutePageContent = {
 
   related: [
     {
+      routeKey: "dammam",
+      label: { en: "Dammam, Al Khobar and Dhahran", ar: "الدمام والخبر والظهران" },
+      note: {
+        en: "Once you arrive: King Fahd International Airport, hotels and journeys between the three cities.",
+        ar: "بعد الوصول: مطار الملك فهد الدولي والفنادق والتنقل بين المدن الثلاث.",
+      },
+    },
+    {
       routeKey: "riyadh",
       label: { en: "All Riyadh transfers", ar: "جميع خدمات النقل في الرياض" },
       note: {

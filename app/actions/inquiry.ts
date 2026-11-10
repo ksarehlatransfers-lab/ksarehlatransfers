@@ -1,65 +1,80 @@
 "use server";
 
-import { deliverInquiry } from "@/lib/inquiry/delivery";
+import { headers } from "next/headers";
+
+import { deliverLead } from "@/lib/inquiry/delivery";
 import {
-  EMPTY_INQUIRY,
-  readInquiry,
-  validateInquiry,
-  type Inquiry,
-  type InquiryErrors,
+  buildLeadPayload,
+  readFormValues,
+  validateLead,
+  type FormValues,
 } from "@/lib/inquiry/schema";
+import { site } from "@/lib/site";
 
 export type InquiryState =
   | { status: "idle" }
-  /** Server-side validation rejected the submission. */
-  | { status: "invalid"; errors: InquiryErrors; values: Inquiry }
-  /** Delivered to the configured destination. */
+  /** The CRM's validation (`leadSchema`) rejected the submission. */
+  | { status: "invalid"; fields: (keyof FormValues)[]; values: FormValues }
+  /** Delivered: saved in the CRM (or the configured fallback). */
   | { status: "sent"; reference: string }
-  /** Valid, but no destination is configured yet — see lib/inquiry/delivery.ts. */
-  | { status: "unconfigured"; values: Inquiry }
-  /** Destination configured but the call failed. */
-  | { status: "error"; message: string; values: Inquiry };
-
-export const initialInquiryState: InquiryState = { status: "idle" };
+  /** Valid, but no destination is configured — nothing was delivered. */
+  | { status: "unconfigured"; values: FormValues }
+  /** The destination refused or failed — nothing is claimed as sent. */
+  | { status: "error"; kind: "busy" | "failed"; values: FormValues };
 
 /**
- * Handles a journey enquiry.
+ * Handles a quote request.
  *
- * This is a public endpoint — a Server Action is reachable by direct POST, not
- * only through the form — so every field is re-validated here regardless of
- * what the browser checked.
+ * A Server Action is reachable by direct POST, not only through the form, so
+ * the payload is rebuilt and validated here with the CRM's own schema
+ * regardless of what the browser checked. Secrets never leave the server.
  */
 export async function submitInquiry(
   _prev: InquiryState,
   formData: FormData
 ): Promise<InquiryState> {
-  // Simple bot trap: a field hidden from people, so anything in it is a bot.
-  // Report success-shaped state without delivering anything.
-  if (typeof formData.get("company") === "string" && formData.get("company")) {
-    return { status: "unconfigured", values: EMPTY_INQUIRY };
+  const values = readFormValues(formData);
+
+  // Bot trap: a field hidden from people, so anything in it is a bot. Report a
+  // success-shaped state without delivering anything.
+  const trap = formData.get("company");
+  if (typeof trap === "string" && trap) {
+    return { status: "sent", reference: makeReference(null) };
   }
 
-  const values = readInquiry(formData);
-  const errors = validateInquiry(values);
+  const payload = buildLeadPayload(formData, { siteUrl: site.url });
+  const result = validateLead(payload);
+  if (!result.ok) return { status: "invalid", fields: result.fields, values };
 
-  if (Object.keys(errors).length > 0) {
-    return { status: "invalid", errors, values };
+  const reference = makeReference(formData.get("submissionId"));
+  const delivery = await deliverLead(result.lead, { reference, clientIp: await clientIp() });
+
+  if (delivery.ok) return { status: "sent", reference: delivery.reference };
+  if (delivery.reason === "not_configured") return { status: "unconfigured", values };
+  if (delivery.reason === "rejected") {
+    // Same schema on both sides, so this should not happen; report honestly.
+    return { status: "invalid", fields: [], values };
   }
+  return { status: "error", kind: delivery.reason === "busy" ? "busy" : "failed", values };
+}
 
-  const result = await deliverInquiry(values);
+/**
+ * Customer-facing reference, also the CRM idempotency key. Derived from the
+ * per-form-render id so a repeated submission of the same form carries the
+ * same key; generated here when the form did not send a usable one.
+ */
+function makeReference(submissionId: FormDataEntryValue | null): string {
+  const raw = typeof submissionId === "string" ? submissionId.replace(/[^A-Za-z0-9]/g, "") : "";
+  const core = raw.length >= 10 ? raw.slice(0, 10) : crypto.randomUUID().replace(/-/g, "").slice(0, 10);
+  return `SPT-${core.toUpperCase()}`;
+}
 
-  if (result.ok) {
-    return { status: "sent", reference: result.reference };
-  }
-
-  if (result.reason === "not_configured") {
-    return { status: "unconfigured", values };
-  }
-
-  return {
-    status: "error",
-    message:
-      "We could not pass your details on just now. Please try again in a moment.",
-    values,
-  };
+async function clientIp(): Promise<string | null> {
+  const h = await headers();
+  const ip =
+    h.get("cf-connecting-ip") ||
+    h.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+    h.get("x-real-ip") ||
+    "";
+  return /^[0-9a-fA-F:.]{3,64}$/.test(ip) ? ip : null;
 }

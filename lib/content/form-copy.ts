@@ -1,61 +1,54 @@
 import type { Bilingual } from "@/lib/i18n/config";
-import type { InquiryErrorCode, TripType } from "@/lib/inquiry/schema";
+import type { FormValues } from "@/lib/inquiry/schema";
 
 /**
- * Everything the enquiry form says, in both languages.
+ * Everything the quote form says, in both languages.
  *
- * Validation codes come back from the shared validator and are turned into
- * sentences here, so the server-side rules stay language-neutral and there is
- * exactly one place to fix a wording.
+ * The fields, their order of meaning, options and rules follow the original
+ * Saudi Private Transfers form (see lib/inquiry/schema.ts); the wording is
+ * this website's own. It makes no promise the site does not make elsewhere:
+ * a written quotation, not a "fixed price".
  */
 
 type B = Bilingual<string>;
 
 export const formCopy = {
+  ariaLabel: { en: "Quote request form", ar: "نموذج طلب عرض سعر" } satisfies B,
   intro: {
     title: { en: "Plan your journey", ar: "خطّط رحلتك" } satisfies B,
     lead: {
-      en: "Send the details and we reply with a price. This is an enquiry, not a confirmed booking.",
-      ar: "أرسل التفاصيل ونرد عليك بالسعر. هذا استفسار وليس حجزًا مؤكدًا.",
+      en: "Send the details and we reply with a written quotation. This is a request, not a confirmed booking.",
+      ar: "أرسل التفاصيل ونرد عليك بعرض سعر مكتوب. هذا طلب وليس حجزًا مؤكدًا.",
     } satisfies B,
   },
   labels: {
-    tripType: { en: "Journey type", ar: "نوع الرحلة" } satisfies B,
-    tripTypePlaceholder: {
-      en: "Select a journey type",
-      ar: "اختر نوع الرحلة",
+    name: { en: "Full name", ar: "الاسم الكامل" } satisfies B,
+    namePlaceholder: { en: "Your name", ar: "اسمك" } satisfies B,
+    phone: { en: "Phone / WhatsApp number", ar: "رقم الجوال / واتساب" } satisfies B,
+    phoneHint: {
+      en: "Include the country code, e.g. +966",
+      ar: "أضف رمز الدولة، مثل ‎+966",
+    } satisfies B,
+    email: { en: "Email", ar: "البريد الإلكتروني" } satisfies B,
+    emailHint: {
+      en: "Optional — to receive a confirmation",
+      ar: "اختياري — لتلقي تأكيد باستلام الطلب",
     } satisfies B,
     pickup: { en: "Pickup location", ar: "مكان الانطلاق" } satisfies B,
-    pickupPlaceholder: {
-      en: "Airport, hotel or address",
-      ar: "مطار أو فندق أو عنوان",
-    } satisfies B,
-    destination: { en: "Destination", ar: "الوجهة" } satisfies B,
-    destinationPlaceholder: {
-      en: "Where the journey ends",
-      ar: "أين تنتهي الرحلة",
-    } satisfies B,
-    date: { en: "Travel date", ar: "تاريخ السفر" } satisfies B,
-    time: { en: "Pickup time", ar: "وقت الانطلاق" } satisfies B,
+    pickupPlaceholder: { en: "Airport, hotel or address", ar: "مطار أو فندق أو عنوان" } satisfies B,
+    dropoff: { en: "Drop-off location", ar: "الوجهة" } satisfies B,
+    dropoffPlaceholder: { en: "Where the journey ends", ar: "أين تنتهي الرحلة" } satisfies B,
+    date: { en: "Date", ar: "التاريخ" } satisfies B,
+    time: { en: "Time", ar: "الوقت" } satisfies B,
     passengers: { en: "Passengers", ar: "عدد الركاب" } satisfies B,
-    luggage: { en: "Suitcases", ar: "عدد الحقائب" } satisfies B,
-    flightNumber: { en: "Flight number", ar: "رقم الرحلة" } satisfies B,
-    flightHint: {
-      en: "Optional — helps us track arrivals",
-      ar: "اختياري — يساعدنا على متابعة موعد الوصول",
-    } satisfies B,
-    name: { en: "Your name", ar: "الاسم" } satisfies B,
-    namePlaceholder: { en: "Full name", ar: "الاسم الكامل" } satisfies B,
-    email: { en: "Email", ar: "البريد الإلكتروني" } satisfies B,
-    phone: { en: "Phone or WhatsApp", ar: "الجوال أو واتساب" } satisfies B,
-    notes: { en: "Anything else", ar: "ملاحظات إضافية" } satisfies B,
-    notesHint: {
-      en: "Optional — child seats, extra stops, group details",
-      ar: "اختياري — مقاعد أطفال، توقفات إضافية، تفاصيل المجموعة",
-    } satisfies B,
-    notesPlaceholder: {
-      en: "Tell us anything that affects the journey",
-      ar: "أخبرنا بأي شيء يؤثر على الرحلة",
+    luggage: { en: "Luggage", ar: "الأمتعة" } satisfies B,
+    vehicle: { en: "Vehicle type", ar: "نوع المركبة" } satisfies B,
+    flight: { en: "Flight number", ar: "رقم الرحلة" } satisfies B,
+    flightPlaceholder: { en: "e.g. SV1234", ar: "مثال: SV1234" } satisfies B,
+    message: { en: "Message", ar: "رسالة" } satisfies B,
+    messagePlaceholder: {
+      en: "Child seats, extra stops, group details…",
+      ar: "مقاعد أطفال، توقفات إضافية، تفاصيل المجموعة…",
     } satisfies B,
     optional: { en: "Optional", ar: "اختياري" } satisfies B,
     company: { en: "Company", ar: "الشركة" } satisfies B,
@@ -65,128 +58,48 @@ export const formCopy = {
     pending: { en: "Sending…", ar: "جارٍ الإرسال…" } satisfies B,
   },
   privacy: {
-    en: "We use your details only to answer this enquiry. No payment is taken here and no booking is confirmed until you accept a quotation.",
-    ar: "نستخدم بياناتك للرد على هذا الاستفسار فقط. لا يُدفع أي مبلغ هنا ولا يُؤكَّد أي حجز حتى توافق على عرض السعر.",
+    en: "We use your details only to answer this request. No payment is taken here and no booking is confirmed until you accept a quotation.",
+    ar: "نستخدم بياناتك للرد على هذا الطلب فقط. لا يُدفع أي مبلغ هنا ولا يُؤكَّد أي حجز حتى توافق على عرض السعر.",
   } satisfies B,
   outcomes: {
-    sentTitle: {
-      en: "Your enquiry is with us",
-      ar: "وصلنا استفسارك",
-    } satisfies B,
+    sentTitle: { en: "Request received", ar: "تم استلام طلبك" } satisfies B,
     sentBody: {
-      en: "We have your journey details and will reply with a quotation. Your reference is",
-      ar: "لدينا تفاصيل رحلتك وسنرد عليك بعرض سعر. رقمك المرجعي هو",
+      en: "We have your journey details and will reply with a written quotation. Your reference is",
+      ar: "لدينا تفاصيل رحلتك وسنرد عليك بعرض سعر مكتوب. رقمك المرجعي هو",
     } satisfies B,
-    unconfiguredTitle: {
-      en: "Your details were not sent",
-      ar: "لم تُرسَل بياناتك",
-    } satisfies B,
+    sendAnother: { en: "Send another request", ar: "إرسال طلب آخر" } satisfies B,
+    unconfiguredTitle: { en: "Your details were not sent", ar: "لم تُرسَل بياناتك" } satisfies B,
     unconfiguredBody: {
-      en: "The form is working and your details are valid, but no enquiry destination is connected on this deployment yet, so nothing was delivered. Nothing has been booked. See",
-      ar: "النموذج يعمل وبياناتك صحيحة، لكن لا توجد جهة استقبال مرتبطة بهذه النسخة بعد، لذلك لم يُرسَل شيء. ولم يُحجز شيء. راجع",
+      en: "The form is working and your details are valid, but no destination is connected on this deployment yet, so nothing was delivered and nothing has been booked.",
+      ar: "النموذج يعمل وبياناتك صحيحة، لكن لا توجد جهة استقبال مرتبطة بهذه النسخة بعد، لذلك لم يُرسَل شيء ولم يُحجز شيء.",
     } satisfies B,
-    unconfiguredSuffix: {
-      en: "to connect one.",
-      ar: "لربط جهة استقبال.",
-    } satisfies B,
-    errorTitle: {
-      en: "That did not go through",
-      ar: "لم تتم العملية",
-    } satisfies B,
+    errorTitle: { en: "That did not go through", ar: "لم تتم العملية" } satisfies B,
     errorBody: {
-      en: "We could not pass your details on just now. Please try again in a moment.",
-      ar: "تعذّر تمرير بياناتك في هذه اللحظة. يرجى المحاولة بعد قليل.",
+      en: "Something went wrong and your request was not sent. Please try again in a moment.",
+      ar: "حدث خطأ ولم يُرسَل طلبك. يرجى المحاولة مرة أخرى بعد قليل.",
     } satisfies B,
-    invalidTitle: {
-      en: "Check the highlighted fields",
-      ar: "راجع الحقول المحددة",
+    busyBody: {
+      en: "We are receiving a lot of requests from your connection. Your request was not sent — please wait a minute and try again.",
+      ar: "نستقبل طلبات كثيرة من اتصالك. لم يُرسَل طلبك — يرجى الانتظار دقيقة ثم المحاولة مرة أخرى.",
     } satisfies B,
+    invalidTitle: { en: "Check the highlighted fields", ar: "راجع الحقول المحددة" } satisfies B,
     invalidBody: {
-      en: "A few details need fixing before we can quote.",
-      ar: "بعض التفاصيل تحتاج تصحيحًا قبل أن نتمكن من التسعير.",
+      en: "A few details need fixing before we can send your request.",
+      ar: "بعض التفاصيل تحتاج تصحيحًا قبل أن نتمكن من إرسال طلبك.",
     } satisfies B,
   },
 } as const;
 
-export const tripTypeLabels: Record<TripType, B> = {
-  "Airport transfer": { en: "Airport transfer", ar: "نقل من وإلى المطار" },
-  "City-to-city transfer": { en: "City-to-city transfer", ar: "نقل بين المدن" },
-  "Hotel transfer": { en: "Hotel transfer", ar: "نقل من وإلى الفندق" },
-  "Hajj or Umrah journey": {
-    en: "Hajj or Umrah journey",
-    ar: "رحلة حج أو عمرة",
+/** Per-field messages for fields the CRM schema can reject. */
+export const fieldErrors: Partial<Record<keyof FormValues, B>> = {
+  phone: {
+    en: "Enter a phone / WhatsApp number (at least 5 characters).",
+    ar: "أدخل رقم جوال / واتساب (5 خانات على الأقل).",
   },
-  "Private Ziyarat": { en: "Private Ziyarat", ar: "زيارة خاصة" },
-  "Private day trip": { en: "Private day trip", ar: "رحلة يومية خاصة" },
-  "Border transfer": { en: "Border transfer", ar: "نقل إلى منفذ حدودي" },
-};
-
-export const errorMessages: Record<InquiryErrorCode, B> = {
-  pickupRequired: {
-    en: "Tell us where the journey starts.",
-    ar: "أخبرنا من أين تبدأ الرحلة.",
-  },
-  destinationRequired: {
-    en: "Tell us where the journey ends.",
-    ar: "أخبرنا أين تنتهي الرحلة.",
-  },
-  sameEndpoints: {
-    en: "Pickup and destination are the same.",
-    ar: "مكان الانطلاق والوجهة متطابقان.",
-  },
-  dateRequired: { en: "Choose a travel date.", ar: "اختر تاريخ السفر." },
-  dateFormat: {
-    en: "Use the date picker to choose a date.",
-    ar: "استخدم أداة التقويم لاختيار التاريخ.",
-  },
-  datePast: {
-    en: "Choose a date that has not passed.",
-    ar: "اختر تاريخًا لم يمضِ بعد.",
-  },
-  timeRequired: { en: "Choose a pickup time.", ar: "اختر وقت الانطلاق." },
-  timeFormat: {
-    en: "Use the time picker to choose a time.",
-    ar: "استخدم أداة الوقت لاختيار الوقت.",
-  },
-  passengersRequired: {
-    en: "How many passengers are travelling?",
-    ar: "كم عدد الركاب المسافرين؟",
-  },
-  passengersRange: {
-    en: "Enter a number between 1 and 60.",
-    ar: "أدخل رقمًا بين 1 و60.",
-  },
-  luggageRange: {
-    en: "Enter a number between 0 and 99.",
-    ar: "أدخل رقمًا بين 0 و99.",
-  },
-  nameRequired: {
-    en: "Tell us who the booking is for.",
-    ar: "أخبرنا باسم صاحب الحجز.",
-  },
-  nameTooLong: { en: "That name is too long.", ar: "الاسم طويل جدًا." },
-  contactRequired: {
-    en: "Add an email address or a phone number so we can reply.",
-    ar: "أضف بريدًا إلكترونيًا أو رقم جوال حتى نتمكن من الرد.",
-  },
-  emailInvalid: {
-    en: "That email address does not look right.",
-    ar: "البريد الإلكتروني لا يبدو صحيحًا.",
-  },
-  phoneInvalid: {
-    en: "Use digits, spaces and an optional leading +.",
-    ar: "استخدم أرقامًا ومسافات مع علامة + في البداية إن رغبت.",
-  },
-  notesTooLong: {
-    en: "Please keep notes under 2000 characters.",
-    ar: "يرجى إبقاء الملاحظات أقل من 2000 حرف.",
-  },
-  flightTooLong: {
-    en: "That flight number is too long.",
-    ar: "رقم الرحلة طويل جدًا.",
-  },
-  tripTypeInvalid: {
-    en: "Choose one of the listed journey types.",
-    ar: "اختر نوعًا من أنواع الرحلات المدرجة.",
-  },
+  email: { en: "That email address does not look right.", ar: "البريد الإلكتروني لا يبدو صحيحًا." },
+  name: { en: "That name is too long.", ar: "الاسم طويل جدًا." },
+  pickup: { en: "That location is too long.", ar: "الموقع طويل جدًا." },
+  dropoff: { en: "That location is too long.", ar: "الموقع طويل جدًا." },
+  flight: { en: "That flight number is too long.", ar: "رقم الرحلة طويل جدًا." },
+  message: { en: "Please keep the message under 2000 characters.", ar: "يرجى إبقاء الرسالة أقل من 2000 حرف." },
 };

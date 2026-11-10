@@ -1,60 +1,109 @@
-import type { Inquiry } from "./schema";
+import type { LeadFormInput } from "./lead-schema";
 
 /**
  * ============================================================================
- * INTEGRATION POINT — connect the enquiry form to a real destination here.
+ * INTEGRATION POINT — where a validated quote request goes.
  * ============================================================================
  *
- * The form in front of this is complete and validated, but an enquiry is only
- * useful once it reaches a person. Until a destination is configured this
- * module reports `not_configured`, and the UI tells the visitor plainly that
- * their details were not sent. That is deliberate: a form that says "thank
- * you, we'll be in touch" while dropping the message on the floor is worse
- * than one that admits it is not wired up.
+ * Primary destination: the shared CRM (the Saudi Private Transfers CRM, same
+ * `public.leads` table as the original website). Configure, server-side only:
  *
- * To connect it, set INQUIRY_WEBHOOK_URL to an endpoint that accepts a JSON
- * POST — an email service, a CRM intake, a Slack or Teams incoming webhook, or
- * your own route handler. Optionally set INQUIRY_WEBHOOK_TOKEN to have it sent
- * as a bearer token.
+ *   CRM_INTAKE_URL    https://saudiprivatetransfers.com/api/leads/intake
+ *   CRM_INTAKE_TOKEN  the bearer token the CRM knows as PTAS_INTAKE_TOKEN
  *
- * If you would rather send email directly, replace the fetch below with your
- * provider's SDK call. Nothing outside this file needs to change.
+ * Never put either in a NEXT_PUBLIC_ variable: this module runs only inside
+ * the Server Action, and the browser never talks to the CRM directly. The CRM
+ * decides which website a lead came from from the token, not from anything in
+ * the payload.
+ *
+ * Fallback (kept from the original design): if the CRM is not configured but
+ * INQUIRY_WEBHOOK_URL is, the lead is POSTed there instead (optional bearer
+ * INQUIRY_WEBHOOK_TOKEN). If neither is set the result is `not_configured`
+ * and the UI says plainly that nothing was sent.
  */
 
 export type DeliveryResult =
   | { ok: true; reference: string }
   | { ok: false; reason: "not_configured" }
-  | { ok: false; reason: "failed"; detail: string };
+  | { ok: false; reason: "rejected" | "busy" | "failed"; detail: string };
 
-/** Short, human-quotable reference so the visitor can refer to the enquiry. */
-function makeReference(): string {
-  const stamp = Date.now().toString(36).toUpperCase().slice(-5);
-  const rand = Math.floor(Math.random() * 36 ** 3)
-    .toString(36)
-    .toUpperCase()
-    .padStart(3, "0");
-  return `SPT-${stamp}${rand}`;
-}
+export type DeliveryMeta = {
+  /** Shown to the customer and used by the CRM as the idempotency key. */
+  reference: string;
+  /** The customer's IP, so the CRM rate-limits per customer, not per server. */
+  clientIp: string | null;
+};
 
-export async function deliverInquiry(
-  inquiry: Inquiry
+const TIMEOUT_MS = 10_000;
+
+export async function deliverLead(
+  lead: LeadFormInput,
+  meta: DeliveryMeta
 ): Promise<DeliveryResult> {
-  const endpoint = process.env.INQUIRY_WEBHOOK_URL;
+  const crmUrl = process.env.CRM_INTAKE_URL;
+  const crmToken = process.env.CRM_INTAKE_TOKEN;
 
-  if (!endpoint) {
-    // Nowhere to send it. Record it in the server log so a submission made
-    // during setup is not silently lost, then report the truth upwards.
-    console.warn(
-      "[inquiry] INQUIRY_WEBHOOK_URL is not set — enquiry was not delivered.",
-      { pickup: inquiry.pickup, destination: inquiry.destination }
-    );
-    return { ok: false, reason: "not_configured" };
+  if (crmUrl && crmToken) return deliverToCrm(crmUrl, crmToken, lead, meta);
+  if (crmUrl || crmToken) {
+    // Half-configured is a deployment mistake; refuse rather than guess.
+    console.error("[inquiry] CRM_INTAKE_URL and CRM_INTAKE_TOKEN must both be set.");
+    return { ok: false, reason: "failed", detail: "CRM intake half-configured" };
   }
 
-  const reference = makeReference();
+  const webhook = process.env.INQUIRY_WEBHOOK_URL;
+  if (webhook) return deliverToWebhook(webhook, lead, meta);
 
+  console.warn("[inquiry] No destination configured (CRM_INTAKE_URL / INQUIRY_WEBHOOK_URL) — lead NOT delivered.", {
+    reference: meta.reference,
+  });
+  return { ok: false, reason: "not_configured" };
+}
+
+async function deliverToCrm(
+  url: string,
+  token: string,
+  lead: LeadFormInput,
+  meta: DeliveryMeta
+): Promise<DeliveryResult> {
   try {
-    const res = await fetch(endpoint, {
+    const res = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+        "Idempotency-Key": meta.reference,
+        ...(meta.clientIp ? { "X-Client-IP": meta.clientIp } : {}),
+      },
+      body: JSON.stringify(lead),
+      // Never follow a redirect with the token attached to an unexpected host.
+      redirect: "error",
+      cache: "no-store",
+      signal: AbortSignal.timeout(TIMEOUT_MS),
+    });
+    const json = (await res.json().catch(() => null)) as { ok?: boolean; error?: string } | null;
+
+    if (res.ok && json?.ok) return { ok: true, reference: meta.reference };
+    if (res.status === 429 || res.status === 409) {
+      return { ok: false, reason: "busy", detail: `CRM responded ${res.status}` };
+    }
+    if (res.status === 400) {
+      return { ok: false, reason: "rejected", detail: json?.error ?? "CRM rejected the lead" };
+    }
+    console.error("[inquiry] CRM intake failed", { status: res.status, error: json?.error, reference: meta.reference });
+    return { ok: false, reason: "failed", detail: `CRM responded ${res.status}` };
+  } catch (error) {
+    console.error("[inquiry] CRM intake unreachable", { reference: meta.reference, error: error instanceof Error ? error.message : error });
+    return { ok: false, reason: "failed", detail: error instanceof Error ? error.message : "Unknown error" };
+  }
+}
+
+async function deliverToWebhook(
+  url: string,
+  lead: LeadFormInput,
+  meta: DeliveryMeta
+): Promise<DeliveryResult> {
+  try {
+    const res = await fetch(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -62,29 +111,12 @@ export async function deliverInquiry(
           ? { Authorization: `Bearer ${process.env.INQUIRY_WEBHOOK_TOKEN}` }
           : {}),
       },
-      body: JSON.stringify({
-        reference,
-        receivedAt: new Date().toISOString(),
-        ...inquiry,
-      }),
-      // Don't let a hanging endpoint hold the request open.
-      signal: AbortSignal.timeout(10_000),
+      body: JSON.stringify({ reference: meta.reference, receivedAt: new Date().toISOString(), ...lead }),
+      signal: AbortSignal.timeout(TIMEOUT_MS),
     });
-
-    if (!res.ok) {
-      return {
-        ok: false,
-        reason: "failed",
-        detail: `Endpoint responded ${res.status}`,
-      };
-    }
-
-    return { ok: true, reference };
+    if (!res.ok) return { ok: false, reason: "failed", detail: `Endpoint responded ${res.status}` };
+    return { ok: true, reference: meta.reference };
   } catch (error) {
-    return {
-      ok: false,
-      reason: "failed",
-      detail: error instanceof Error ? error.message : "Unknown error",
-    };
+    return { ok: false, reason: "failed", detail: error instanceof Error ? error.message : "Unknown error" };
   }
 }

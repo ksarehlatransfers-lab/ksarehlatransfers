@@ -1,176 +1,189 @@
 /**
- * Journey enquiry shape and validation.
+ * The quote form's functional specification.
  *
- * Hand-rolled rather than pulled from a schema library: the form has a fixed,
- * small set of fields and adding a dependency for it is not worth the weight.
- * The same rules run on the server for every submission, so client-side HTML
- * validation is a convenience, never the gate.
+ * Mirrors the original Saudi Private Transfers quote form
+ * (`components/QuoteForm.tsx` in taxiservicesaudiaa/sauditaxi) field for
+ * field, because both websites feed one CRM and one `public.leads` table:
+ *
+ * | form `name`   | input        | browser-required | CRM key           |
+ * |---------------|--------------|------------------|-------------------|
+ * | name          | text         | yes              | fullName          |
+ * | phone         | tel          | yes              | phone             |
+ * | email         | email        | no               | email             |
+ * | pickup        | text         | yes              | pickupLocation    |
+ * | dropoff       | text         | yes              | dropoffLocation   |
+ * | date          | date         | yes              | date              |
+ * | time          | time         | yes              | time              |
+ * | passengers    | select (2)   | no (defaulted)   | passengers        |
+ * | luggage       | select (2)   | no (defaulted)   | luggage           |
+ * | vehicle       | select (Comfort) | no (defaulted) | vehicleType     |
+ * | flight        | text         | no               | flightNumber      |
+ * | message       | textarea     | no               | message           |
+ *
+ * plus the hidden attribution fields, `serviceType` and `sourcePage`.
+ * Server-side validation is the original `leadSchema` (see lead-schema.ts):
+ * only `phone` is required there, exactly as on the original site. Design is
+ * the only thing this website does differently.
  */
 
-export const TRIP_TYPES = [
-  "Airport transfer",
-  "City-to-city transfer",
-  "Hotel transfer",
-  "Hajj or Umrah journey",
-  "Private Ziyarat",
-  "Private day trip",
-  "Border transfer",
+import { leadSchema, type LeadFormInput } from "./lead-schema";
+
+/** Identical to the original form's options and values. */
+export const PASSENGER_OPTIONS = ["1", "2", "3", "4", "5", "6", "7+"] as const;
+export const LUGGAGE_OPTIONS = ["0", "1", "2", "3", "4", "5+"] as const;
+
+/**
+ * The original form's vehicle values (`data/vehicles.ts` names). The value
+ * sent to the CRM is the English name, exactly as on the original site; only
+ * the visible label is translated on Arabic pages.
+ */
+export const VEHICLE_OPTIONS = [
+  { value: "Economy", label: { en: "Economy", ar: "اقتصادية" } },
+  { value: "Comfort", label: { en: "Comfort", ar: "مريحة" } },
+  { value: "Business", label: { en: "Business", ar: "رجال الأعمال" } },
+  { value: "SUV", label: { en: "SUV", ar: "دفع رباعي (SUV)" } },
+  { value: "Van", label: { en: "Van", ar: "ڤان" } },
+  { value: "Minibus", label: { en: "Minibus", ar: "حافلة صغيرة" } },
 ] as const;
 
-export type TripType = (typeof TRIP_TYPES)[number];
+/** The original form's defaults. */
+export const FORM_DEFAULTS = {
+  passengers: "2",
+  luggage: "2",
+  vehicle: "Comfort",
+  serviceType: "General taxi quote",
+} as const;
 
-export type Inquiry = {
-  tripType: string;
+/** Query-string fields the original form prefills from (same list). */
+export const QUERY_PREFILL_FIELDS = ["pickup", "dropoff", "date", "time", "passengers"] as const;
+
+/** Visible field values a form can be seeded with or returned with. */
+export type FormValues = {
+  name: string;
+  phone: string;
+  email: string;
   pickup: string;
-  destination: string;
+  dropoff: string;
   date: string;
   time: string;
   passengers: string;
   luggage: string;
-  name: string;
-  email: string;
-  phone: string;
-  flightNumber: string;
-  notes: string;
+  vehicle: string;
+  flight: string;
+  message: string;
 };
 
-/**
- * Validation failures are reported as stable codes, not sentences, so the
- * same validator serves both languages. The message text lives with the form.
- */
-export type InquiryErrorCode =
-  | "pickupRequired"
-  | "destinationRequired"
-  | "sameEndpoints"
-  | "dateRequired"
-  | "dateFormat"
-  | "datePast"
-  | "timeRequired"
-  | "timeFormat"
-  | "passengersRequired"
-  | "passengersRange"
-  | "luggageRange"
-  | "nameRequired"
-  | "nameTooLong"
-  | "contactRequired"
-  | "emailInvalid"
-  | "phoneInvalid"
-  | "notesTooLong"
-  | "flightTooLong"
-  | "tripTypeInvalid";
-
-export type InquiryErrors = Partial<Record<keyof Inquiry, InquiryErrorCode>>;
-
-export const EMPTY_INQUIRY: Inquiry = {
-  tripType: "",
+export const EMPTY_FORM_VALUES: FormValues = {
+  name: "",
+  phone: "",
+  email: "",
   pickup: "",
-  destination: "",
+  dropoff: "",
   date: "",
   time: "",
-  passengers: "",
-  luggage: "",
-  name: "",
-  email: "",
-  phone: "",
-  flightNumber: "",
-  notes: "",
+  passengers: FORM_DEFAULTS.passengers,
+  luggage: FORM_DEFAULTS.luggage,
+  vehicle: FORM_DEFAULTS.vehicle,
+  flight: "",
+  message: "",
 };
 
-const str = (v: FormDataEntryValue | null) =>
-  typeof v === "string" ? v.trim() : "";
+/** Hidden attribution inputs, named exactly like the CRM keys they fill. */
+export const ATTRIBUTION_FIELDS = [
+  "firstLandingPage",
+  "firstReferrer",
+  "firstUtmSource",
+  "firstUtmMedium",
+  "firstUtmCampaign",
+  "landingPage",
+  "referrer",
+  "utmSource",
+  "utmMedium",
+  "utmCampaign",
+  "gclid",
+  "searchSource",
+] as const;
 
-export function readInquiry(formData: FormData): Inquiry {
+const text = (formData: FormData, key: string) => {
+  const v = formData.get(key);
+  return typeof v === "string" ? v.trim() : "";
+};
+
+export function readFormValues(formData: FormData): FormValues {
   return {
-    tripType: str(formData.get("tripType")),
-    pickup: str(formData.get("pickup")),
-    destination: str(formData.get("destination")),
-    date: str(formData.get("date")),
-    time: str(formData.get("time")),
-    passengers: str(formData.get("passengers")),
-    luggage: str(formData.get("luggage")),
-    name: str(formData.get("name")),
-    email: str(formData.get("email")),
-    phone: str(formData.get("phone")),
-    flightNumber: str(formData.get("flightNumber")),
-    notes: str(formData.get("notes")),
+    name: text(formData, "name"),
+    phone: text(formData, "phone"),
+    email: text(formData, "email"),
+    pickup: text(formData, "pickup"),
+    dropoff: text(formData, "dropoff"),
+    date: text(formData, "date"),
+    time: text(formData, "time"),
+    passengers: text(formData, "passengers"),
+    luggage: text(formData, "luggage"),
+    vehicle: text(formData, "vehicle"),
+    flight: text(formData, "flight"),
+    message: text(formData, "message"),
   };
 }
 
-// Deliberately permissive: it rejects obvious typos without turning away
-// valid addresses that a stricter pattern would refuse.
-const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-// Digits, spaces and the usual separators, optional leading +.
-const PHONE = /^\+?[\d\s().-]{7,20}$/;
-const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
-const TIME = /^\d{2}:\d{2}$/;
+/**
+ * Build the CRM payload exactly as the original form's `handleSubmit` does
+ * (`get(x) || undefined` for every field, `phone` always sent), with
+ * `sourcePage` = this website's URL + the page path.
+ */
+export function buildLeadPayload(
+  formData: FormData,
+  { siteUrl }: { siteUrl: string }
+): Record<string, string | undefined> {
+  const get = (k: string) => text(formData, k);
+  const pathname = get("pathname");
+  const safePath = /^\/[^\s]{0,250}$/.test(pathname) ? pathname : "";
 
-export function validateInquiry(input: Inquiry): InquiryErrors {
-  const errors: InquiryErrors = {};
+  const payload: Record<string, string | undefined> = {
+    fullName: get("name") || undefined,
+    email: get("email") || undefined,
+    phone: get("phone"),
+    pickupLocation: get("pickup") || undefined,
+    dropoffLocation: get("dropoff") || undefined,
+    date: get("date") || undefined,
+    time: get("time") || undefined,
+    passengers: get("passengers") || undefined,
+    luggage: get("luggage") || undefined,
+    vehicleType: get("vehicle") || undefined,
+    flightNumber: get("flight") || undefined,
+    message: get("message") || undefined,
+    serviceType: get("serviceType") || FORM_DEFAULTS.serviceType,
+    sourcePage: `${siteUrl}${safePath}`,
+  };
+  for (const key of ATTRIBUTION_FIELDS) payload[key] = get(key) || undefined;
+  return payload;
+}
 
-  if (!input.pickup) errors.pickup = "pickupRequired";
-  if (!input.destination) errors.destination = "destinationRequired";
-  if (
-    input.pickup &&
-    input.destination &&
-    input.pickup.toLowerCase() === input.destination.toLowerCase()
-  ) {
-    errors.destination = "sameEndpoints";
-  }
+export type ValidationResult =
+  | { ok: true; lead: LeadFormInput }
+  | { ok: false; fields: (keyof FormValues)[] };
 
-  if (!input.date) {
-    errors.date = "dateRequired";
-  } else if (!ISO_DATE.test(input.date)) {
-    errors.date = "dateFormat";
-  } else {
-    // Compare date-only values so a journey later today is still valid.
-    const today = new Date().toISOString().slice(0, 10);
-    if (input.date < today) errors.date = "datePast";
-  }
+/** Map CRM keys back to the visible field that caused a schema error. */
+const FIELD_FOR_KEY: Partial<Record<keyof LeadFormInput, keyof FormValues>> = {
+  fullName: "name",
+  email: "email",
+  phone: "phone",
+  pickupLocation: "pickup",
+  dropoffLocation: "dropoff",
+  date: "date",
+  time: "time",
+  passengers: "passengers",
+  luggage: "luggage",
+  vehicleType: "vehicle",
+  flightNumber: "flight",
+  message: "message",
+};
 
-  if (!input.time) {
-    errors.time = "timeRequired";
-  } else if (!TIME.test(input.time)) {
-    errors.time = "timeFormat";
-  }
-
-  const passengers = Number(input.passengers);
-  if (!input.passengers) {
-    errors.passengers = "passengersRequired";
-  } else if (!Number.isInteger(passengers) || passengers < 1 || passengers > 60) {
-    errors.passengers = "passengersRange";
-  }
-
-  const luggage = Number(input.luggage);
-  if (input.luggage && (!Number.isInteger(luggage) || luggage < 0 || luggage > 99)) {
-    errors.luggage = "luggageRange";
-  }
-
-  if (!input.name) {
-    errors.name = "nameRequired";
-  } else if (input.name.length > 120) {
-    errors.name = "nameTooLong";
-  }
-
-  // At least one way to reply, and whichever is given must be usable.
-  if (!input.email && !input.phone) {
-    errors.email = "contactRequired";
-  }
-  if (input.email && !EMAIL.test(input.email)) {
-    errors.email = "emailInvalid";
-  }
-  if (input.phone && !PHONE.test(input.phone)) {
-    errors.phone = "phoneInvalid";
-  }
-
-  if (input.notes.length > 2000) {
-    errors.notes = "notesTooLong";
-  }
-  if (input.flightNumber.length > 20) {
-    errors.flightNumber = "flightTooLong";
-  }
-  if (input.tripType && !TRIP_TYPES.includes(input.tripType as TripType)) {
-    errors.tripType = "tripTypeInvalid";
-  }
-
-  return errors;
+/** The original server-side validation: `leadSchema`, nothing added. */
+export function validateLead(payload: Record<string, string | undefined>): ValidationResult {
+  const parsed = leadSchema.safeParse(payload);
+  if (parsed.success) return { ok: true, lead: parsed.data };
+  const keys = Object.keys(parsed.error.flatten().fieldErrors) as (keyof LeadFormInput)[];
+  const fields = keys.map((k) => FIELD_FOR_KEY[k]).filter((f): f is keyof FormValues => Boolean(f));
+  return { ok: false, fields };
 }

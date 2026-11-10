@@ -45,13 +45,13 @@ export function QuoteStartForm({ locale }: { locale: Locale }) {
         </StartField>
 
         <StartField
-          name="destination"
+          name="dropoff"
           label={copy.dropoff[locale]}
           icon={<NavigationIcon aria-hidden className="size-3.5 text-palm" />}
         >
           <input
-            id="destination"
-            name="destination"
+            id="dropoff"
+            name="dropoff"
             required
             list={listId}
             autoComplete="off"

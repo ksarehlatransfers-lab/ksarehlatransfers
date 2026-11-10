@@ -7,6 +7,7 @@ import {
   Plus_Jakarta_Sans,
 } from "next/font/google";
 
+import { FirstTouchRecorder } from "@/components/attribution/first-touch";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { ui } from "@/lib/i18n/dictionary";
@@ -132,6 +133,7 @@ export default async function LocaleLayout({
           {children}
         </main>
         <SiteFooter locale={active} />
+        <FirstTouchRecorder />
       </body>
     </html>
   );

@@ -8,7 +8,7 @@ import { BookingForm } from "@/components/home/booking-form";
 import { href } from "@/lib/i18n/routes";
 import { isLocale, locales, type Bilingual, type Locale } from "@/lib/i18n/config";
 import { pageMetadata } from "@/lib/seo";
-import type { Inquiry } from "@/lib/inquiry/schema";
+import { PASSENGER_OPTIONS, type FormValues } from "@/lib/inquiry/schema";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -123,6 +123,8 @@ async function PrefilledBookingForm({
     <BookingForm
       locale={locale}
       showIntro={false}
+      // Same lead context as the original site's Get a Quote page.
+      serviceType="Get Quote page"
       defaults={readDefaults(params)}
     />
   );
@@ -131,22 +133,28 @@ async function PrefilledBookingForm({
 type RawParams = Awaited<PageProps<"/[locale]/get-quote">["searchParams"]>;
 
 /**
- * Only the fields the starter can send, each sanity-checked. A query string is
- * attacker-controlled, so values are trimmed, length-capped and — for the date
- * — shape-checked before they reach an input. The server action re-validates
+ * The same prefill fields as the original form (pickup, dropoff, date, time,
+ * passengers), each sanity-checked. `destination` is still read as a
+ * fallback for `dropoff` so older starter links keep working. A query string
+ * is attacker-controlled, so values are trimmed, length-capped and
+ * shape-checked before they reach an input; the server action re-validates
  * everything on submit regardless.
  */
-function readDefaults(params: RawParams): Partial<Inquiry> {
+function readDefaults(params: RawParams): Partial<FormValues> {
   const first = (value: RawParams[string]) =>
     (Array.isArray(value) ? value[0] : value)?.trim().slice(0, 160) ?? "";
 
   const date = first(params.date);
-
-  return {
+  const time = first(params.time);
+  const passengers = first(params.passengers);
+  const defaults: Partial<FormValues> = {
     pickup: first(params.pickup),
-    destination: first(params.destination),
+    dropoff: first(params.dropoff) || first(params.destination),
     date: /^\d{4}-\d{2}-\d{2}$/.test(date) ? date : "",
+    time: /^\d{2}:\d{2}$/.test(time) ? time : "",
   };
+  if ((PASSENGER_OPTIONS as readonly string[]).includes(passengers)) defaults.passengers = passengers;
+  return defaults;
 }
 
 function FormSkeleton() {

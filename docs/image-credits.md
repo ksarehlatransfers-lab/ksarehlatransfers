@@ -65,6 +65,8 @@ credit data, so attribution travels with each image in code.
 | `jubail-town-minaret` | [Mosque minaret in central Jubail town](https://commons.wikimedia.org/wiki/File:Minaret_of_a_mosque_in_the_center_of_jubail_town_proper._Saudi_Arabia.4-23-2010.jpg) — cropped to 4:5, resized and converted to WebP | anemic silence | Public domain |
 | `alahsa-qasr-ibrahim` | [Qasr Ibrahim, Hofuf](https://commons.wikimedia.org/wiki/File:%D9%82%D8%B5%D8%B1_%D8%A7%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85.jpg) — cropped to 5:3, resized and converted to WebP; this modified version is shared under CC BY-SA 4.0 | Heritage Commission | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 | `alahsa-qaysariyah` | [Suq al-Qaysariyah, Hofuf](https://commons.wikimedia.org/wiki/File:%D8%B3%D9%88%D9%82_%D8%A7%D9%84%D9%82%D9%8A%D8%B5%D8%B1%D9%8A%D8%A9W5246.jpg) — cropped to 3:2, resized and converted to WebP; this modified version is shared under CC BY-SA 4.0 | Yafa.naif | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| `abha-cable-car` | [Cable car above Abha, Asir region](https://commons.wikimedia.org/wiki/File:Abha_29.jpg) — resized and converted to WebP; this modified version is shared under CC BY-SA 3.0 | Aiman titi | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) |
+| `khamis-mosque` | [A mosque in Khamis Mushait](https://commons.wikimedia.org/wiki/File:Mosque_in_Khamis_Mushayt.jpg) — resized and converted to WebP; this modified version is shared under CC BY-SA 3.0 | Aiman titi | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) |
 
 <!-- credits:end -->
 

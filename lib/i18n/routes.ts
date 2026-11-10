@@ -40,6 +40,7 @@ export const route = {
   dammam: "dammam",
   jubail: "jubail",
   alAhsa: "al-ahsa",
+  abha: "abha",
 } as const;
 
 export type RouteKey = keyof typeof route;
@@ -94,6 +95,9 @@ const sitemapMeta: Record<RouteKey, { priority: number; changeFrequency: "weekly
   dammam: { priority: 0.9, changeFrequency: "weekly" },
   alAhsa: { priority: 0.8, changeFrequency: "monthly" },
   jubail: { priority: 0.7, changeFrequency: "monthly" },
+  // Asir Region. One hub for Abha and Khamis Mushait, level with the other
+  // city hubs.
+  abha: { priority: 0.9, changeFrequency: "weekly" },
 };
 
 /** Pages deliberately kept out of the index; see each page's robots meta. */

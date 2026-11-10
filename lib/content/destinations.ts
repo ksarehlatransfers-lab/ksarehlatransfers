@@ -17,7 +17,7 @@ export type Destination = {
   /** Marks the two pilgrimage cities for the layout's visual emphasis. */
   pilgrimage?: boolean;
   /** Set once the city has its own hub page; the card then links to it. */
-  routeKey?: "jeddah" | "makkah" | "taif" | "madinah" | "dammam";
+  routeKey?: "jeddah" | "makkah" | "taif" | "madinah" | "dammam" | "abha";
   /** Section id on that hub page, for a city covered as a section of a hub. */
   anchor?: string;
 };
@@ -112,6 +112,7 @@ export const destinations: Destination[] = [
       ar: "مرتفعات عسير — أبها وخميس مشيط. اسألنا عن الرحلات في هذه المنطقة.",
     },
     imageKey: "dest-abha",
+    routeKey: "abha",
   },
 ];
 

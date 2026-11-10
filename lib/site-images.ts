@@ -799,6 +799,36 @@ export const siteImages = {
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "page": "https://commons.wikimedia.org/wiki/File:%D8%B3%D9%88%D9%82_%D8%A7%D9%84%D9%82%D9%8A%D8%B5%D8%B1%D9%8A%D8%A9W5246.jpg"
     }
+  },
+  "abha-cable-car": {
+    "src": "/images/abha-cable-car.webp",
+    "width": 1200,
+    "height": 900,
+    "alt": "A cable car cabin passing over the houses of Abha beneath grey cloud",
+    "altAr": "عربة تلفريك تعبر فوق منازل أبها تحت غيوم رمادية",
+    "subject": "Cable car above Abha, Asir region",
+    "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAABwAwCdASoUAA8APwFqrE6rJiQiMAgBYCAJZwAAS+1Q4vz2XBgAypIiLhUjNAH689EIHB688tqkA7tqg1RAml0QFhGZxrHD38l3KgPeAYIKAAAA",
+    "credit": {
+      "author": "Aiman titi",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Abha_29.jpg"
+    }
+  },
+  "khamis-mosque": {
+    "src": "/images/khamis-mushait-mosque.webp",
+    "width": 1200,
+    "height": 900,
+    "alt": "A large white mosque with two minarets beside a road in Khamis Mushait, under a clear blue sky",
+    "altAr": "مسجد أبيض كبير بمئذنتين بجوار طريق في خميس مشيط تحت سماء زرقاء صافية",
+    "subject": "A mosque in Khamis Mushait",
+    "blurDataURL": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADwAwCdASoUAA8APwFqrE8rJiQiMAgBYCAJZACdACHRDHrqukZgIs6AAP7LPNik//k/43DSFJjTbCyL5ssuFpLlWLB+/JfUhaFwh/T+sMd6rOWC9QU6pqn3fAOp3y8u2X/OshEqKxcool0LNz3+D4gv71lSXxuWCMkUKqXAAAA=",
+    "credit": {
+      "author": "Aiman titi",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Mosque_in_Khamis_Mushayt.jpg"
+    }
   }
 } as const satisfies Record<string, SiteImage>;
 

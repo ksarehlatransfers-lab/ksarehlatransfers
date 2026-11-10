@@ -127,10 +127,9 @@ export function primaryNav(locale: Locale): NavGroup[] {
           description: t({ en: "Airport and hotels", ar: "المطار والفنادق" }, locale),
         },
         {
-          label: t({ en: "Abha", ar: "أبها" }, locale),
-          href: homeAnchor(locale, "destinations"),
-          description: t({ en: "Asir highlands", ar: "مرتفعات عسير" }, locale),
-          planned: true,
+          label: t({ en: "Abha & Khamis Mushait", ar: "أبها وخميس مشيط" }, locale),
+          href: href(locale, "abha"),
+          description: t({ en: "Local transfers in both cities", ar: "التوصيل داخل المدينتين" }, locale),
         },
       ],
     },
@@ -394,6 +393,15 @@ export function footerNav(
         {
           label: t({ en: "Al Ahsa transfers", ar: "التوصيل في الأحساء" }, locale),
           href: href(locale, "alAhsa"),
+        },
+      ],
+    },
+    {
+      heading: t({ en: "Asir Region", ar: "منطقة عسير" }, locale),
+      links: [
+        {
+          label: t({ en: "Abha & Khamis Mushait", ar: "أبها وخميس مشيط" }, locale),
+          href: href(locale, "abha"),
         },
       ],
     },

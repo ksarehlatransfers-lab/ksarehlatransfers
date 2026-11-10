@@ -278,6 +278,14 @@ export const taif: TaifContent = {
         ar: "الطريق الطويل: نحو 790 كم غربًا من العاصمة، والصعود في آخره.",
       },
     },
+    {
+      routeKey: "abha",
+      label: { en: "Abha & Khamis Mushait", ar: "أبها وخميس مشيط" },
+      note: {
+        en: "The other highland hub, in the Asir region: local transfers in both cities.",
+        ar: "المحور الجبلي الآخر في منطقة عسير: التوصيل داخل المدينتين.",
+      },
+    },
   ],
 
   cta: {

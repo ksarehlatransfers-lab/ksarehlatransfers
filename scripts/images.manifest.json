@@ -997,5 +997,45 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "page": "https://commons.wikimedia.org/wiki/File:%D8%B3%D9%88%D9%82_%D8%A7%D9%84%D9%82%D9%8A%D8%B5%D8%B1%D9%8A%D8%A9W5246.jpg"
     }
+  },
+  {
+    "key": "abha-cable-car",
+    "commons": "Abha 29.jpg",
+    "out": "abha-cable-car.webp",
+    "shape": [
+      1200,
+      900
+    ],
+    "focus": "attention",
+    "subject": "Cable car above Abha, Asir region",
+    "alt": "A cable car cabin passing over the houses of Abha beneath grey cloud",
+    "altAr": "عربة تلفريك تعبر فوق منازل أبها تحت غيوم رمادية",
+    "modifications": "resized and converted to WebP; this modified version is shared under CC BY-SA 3.0",
+    "credit": {
+      "author": "Aiman titi",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Abha_29.jpg"
+    }
+  },
+  {
+    "key": "khamis-mosque",
+    "commons": "Mosque in Khamis Mushayt.jpg",
+    "out": "khamis-mushait-mosque.webp",
+    "shape": [
+      1200,
+      900
+    ],
+    "focus": "attention",
+    "subject": "A mosque in Khamis Mushait",
+    "alt": "A large white mosque with two minarets beside a road in Khamis Mushait, under a clear blue sky",
+    "altAr": "مسجد أبيض كبير بمئذنتين بجوار طريق في خميس مشيط تحت سماء زرقاء صافية",
+    "modifications": "resized and converted to WebP; this modified version is shared under CC BY-SA 3.0",
+    "credit": {
+      "author": "Aiman titi",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Mosque_in_Khamis_Mushayt.jpg"
+    }
   }
 ]

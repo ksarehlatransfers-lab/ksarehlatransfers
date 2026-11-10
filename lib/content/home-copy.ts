@@ -30,8 +30,8 @@ export const homeCopy = {
       coverage: {
         term: { en: "Coverage", ar: "نطاق الخدمة" } satisfies B,
         detail: {
-          en: "Riyadh, Jeddah, Makkah, Madinah, Dammam, Al Khobar, Taif and Abha",
-          ar: "الرياض، جدة، مكة المكرمة، المدينة المنورة، الدمام، الخبر، الطائف، أبها",
+          en: "Riyadh, Jeddah, Makkah, Madinah, Dammam, Al Khobar and Taif",
+          ar: "الرياض، جدة، مكة المكرمة، المدينة المنورة، الدمام، الخبر، الطائف",
         } satisfies B,
       },
       airports: {
@@ -83,8 +83,8 @@ export const homeCopy = {
       {
         term: { en: "Where it operates", ar: "أين تعمل" } satisfies B,
         detail: {
-          en: "Across Saudi Arabia, including Riyadh, Jeddah, Makkah, Madinah, Dammam, Al Khobar, Taif and Abha, and the airports serving them.",
-          ar: "في جميع أنحاء المملكة، وتشمل الرياض وجدة ومكة المكرمة والمدينة المنورة والدمام والخبر والطائف وأبها، والمطارات التي تخدمها.",
+          en: "Across Saudi Arabia, including Riyadh, Jeddah, Makkah, Madinah, Dammam, Al Khobar and Taif, and the airports serving them.",
+          ar: "في جميع أنحاء المملكة، وتشمل الرياض وجدة ومكة المكرمة والمدينة المنورة والدمام والخبر والطائف، والمطارات التي تخدمها.",
         } satisfies B,
       },
       {

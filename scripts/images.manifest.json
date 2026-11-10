@@ -191,21 +191,22 @@
   },
   {
     "key": "dest-abha",
-    "commons": "Abha city.png",
-    "out": "abha-city.webp",
+    "commons": "Abha 12.jpg",
+    "out": "abha-highlands.webp",
     "shape": [
       1200,
       900
     ],
     "focus": "attention",
     "subject": "Abha, Asir region",
-    "alt": "The highland city of Abha in the Asir region of Saudi Arabia",
-    "altAr": "مدينة أبها الجبلية في منطقة عسير",
+    "alt": "Rooftops of Abha with the Asir mountains behind, under low cloud",
+    "altAr": "أسطح مباني أبها وخلفها جبال عسير تحت الغيوم المنخفضة",
+    "modifications": "resized and converted to WebP; this modified version is shared under CC BY-SA 3.0",
     "credit": {
-      "author": "أشخاص متنوعين ولكن هناك صورة مصورة من أمانة منطقة عسير وصورة مصورة من عوض زارب",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "page": "https://commons.wikimedia.org/wiki/File:Abha_city.png"
+      "author": "Aiman titi",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Abha_12.jpg"
     }
   },
   {

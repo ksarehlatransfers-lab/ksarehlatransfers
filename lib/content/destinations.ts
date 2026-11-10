@@ -108,8 +108,8 @@ export const destinations: Destination[] = [
     name: { en: "Abha", ar: "أبها" },
     region: { en: "South — Asir", ar: "الجنوب — عسير" },
     note: {
-      en: "Highland travel in the Asir region and Abha Airport.",
-      ar: "التنقل في مرتفعات منطقة عسير ومطار أبها.",
+      en: "The Asir highlands — Abha and Khamis Mushait. Ask us about journeys in this region.",
+      ar: "مرتفعات عسير — أبها وخميس مشيط. اسألنا عن الرحلات في هذه المنطقة.",
     },
     imageKey: "dest-abha",
   },

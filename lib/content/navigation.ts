@@ -402,8 +402,8 @@ export function footerNav(
       links: [
         // Deliberately still the nationwide services section, not the Riyadh
         // airport page. This column describes the service across Riyadh,
-        // Jeddah, Madinah, Dammam and Abha; sending it to a Riyadh-only page
-        // would be the wrong answer for four of those five airports. The
+        // Jeddah, Madinah and Dammam; sending it to a Riyadh-only page
+        // would be the wrong answer for three of those four airports. The
         // Riyadh page is linked from the Riyadh column above, from the hub and
         // from the header.
         {

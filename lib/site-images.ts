@@ -171,18 +171,18 @@ export const siteImages = {
     }
   },
   "dest-abha": {
-    "src": "/images/abha-city.webp",
+    "src": "/images/abha-highlands.webp",
     "width": 1200,
     "height": 900,
-    "alt": "The highland city of Abha in the Asir region of Saudi Arabia",
-    "altAr": "مدينة أبها الجبلية في منطقة عسير",
+    "alt": "Rooftops of Abha with the Asir mountains behind, under low cloud",
+    "altAr": "أسطح مباني أبها وخلفها جبال عسير تحت الغيوم المنخفضة",
     "subject": "Abha, Asir region",
-    "blurDataURL": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAADQAwCdASoUAA8APwForE6rJaQiMAgBYCAJQBYdu4AbtFdNEDpjACAA/un++7ha/dIInGeD8qS8D76ZzdfNtdt0K38H4pvDv9XLvupqfpuzi0CxtvC5UQxHT0GPZMMVv0h0SoVe7+1sIPeU85oXcs9LItX64gLN5A6klyinqKIp23ZbCJNiNc5Ub9AENeAA",
+    "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAwCdASoUAA8APwFsrU8rJiQiMAgBYCAJZwC/OB6GAQyu3o4YEAD+VHJCBjk6FIuTXeGiPnaq650hm7gVw6ZxYnAO6rPT7N6ekEZ435WsL2AA",
     "credit": {
-      "author": "أشخاص متنوعين ولكن هناك صورة مصورة من أمانة منطقة عسير وصورة مصورة من عوض زارب",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "page": "https://commons.wikimedia.org/wiki/File:Abha_city.png"
+      "author": "Aiman titi",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Abha_12.jpg"
     }
   },
   "svc-airport": {

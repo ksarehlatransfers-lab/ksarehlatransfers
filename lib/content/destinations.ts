@@ -131,6 +131,10 @@ export const locationOptions: Bilingual<string[]> = {
     "Al Khobar",
     "Taif",
     "Abha",
+    "Jazan",
+    "Sabya",
+    "Abu Arish",
+    "Najran",
     "Other location in Saudi Arabia",
   ],
   ar: [
@@ -146,6 +150,10 @@ export const locationOptions: Bilingual<string[]> = {
     "الخبر",
     "الطائف",
     "أبها",
+    "جازان",
+    "صبيا",
+    "أبو عريش",
+    "نجران",
     "موقع آخر داخل المملكة",
   ],
 };

@@ -67,6 +67,9 @@ credit data, so attribution travels with each image in code.
 | `alahsa-qaysariyah` | [Suq al-Qaysariyah, Hofuf](https://commons.wikimedia.org/wiki/File:%D8%B3%D9%88%D9%82_%D8%A7%D9%84%D9%82%D9%8A%D8%B5%D8%B1%D9%8A%D8%A9W5246.jpg) — cropped to 3:2, resized and converted to WebP; this modified version is shared under CC BY-SA 4.0 | Yafa.naif | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 | `abha-cable-car` | [Cable car above Abha, Asir region](https://commons.wikimedia.org/wiki/File:Abha_29.jpg) — resized and converted to WebP; this modified version is shared under CC BY-SA 3.0 | Aiman titi | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) |
 | `khamis-mosque` | [A mosque in Khamis Mushait](https://commons.wikimedia.org/wiki/File:Mosque_in_Khamis_Mushayt.jpg) — resized and converted to WebP; this modified version is shared under CC BY-SA 3.0 | Aiman titi | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) |
+| `najran-imarah-palace` | [Imarah (Emirate) Palace, Najran](https://commons.wikimedia.org/wiki/File:Imarah_Palace.jpg) — cropped to 4:3, resized and converted to WebP | Richard Mortel | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) |
+| `najran-mud-tower` | [Traditional house, Najran](https://commons.wikimedia.org/wiki/File:Origineel_huis_Najran.JPG) — cropped to 4:3, resized and converted to WebP; this modified version is shared under CC BY-SA 3.0 | TacoJeddah | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) |
+| `jazan-coast-sunset` | [Sunset from the shore of Jazan city](https://commons.wikimedia.org/wiki/File:Sunset_in_Jazan.jpg) — resized and converted to WebP; this modified version is shared under CC BY-SA 3.0 | MrJoker07 | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) |
 
 <!-- credits:end -->
 

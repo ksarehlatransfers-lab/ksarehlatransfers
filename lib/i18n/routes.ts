@@ -41,6 +41,8 @@ export const route = {
   jubail: "jubail",
   alAhsa: "al-ahsa",
   abha: "abha",
+  jazan: "jazan",
+  najran: "najran",
 } as const;
 
 export type RouteKey = keyof typeof route;
@@ -98,6 +100,9 @@ const sitemapMeta: Record<RouteKey, { priority: number; changeFrequency: "weekly
   // Asir Region. One hub for Abha and Khamis Mushait, level with the other
   // city hubs.
   abha: { priority: 0.9, changeFrequency: "weekly" },
+  // Jazan and Najran regions. Each is a city hub, level with the other hubs.
+  jazan: { priority: 0.9, changeFrequency: "weekly" },
+  najran: { priority: 0.9, changeFrequency: "weekly" },
 };
 
 /** Pages deliberately kept out of the index; see each page's robots meta. */

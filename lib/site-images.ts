@@ -829,6 +829,51 @@ export const siteImages = {
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "page": "https://commons.wikimedia.org/wiki/File:Mosque_in_Khamis_Mushayt.jpg"
     }
+  },
+  "najran-imarah-palace": {
+    "src": "/images/najran-imarah-palace.webp",
+    "width": 1200,
+    "height": 900,
+    "alt": "The mud-brick Imarah Palace in Najran, with white-trimmed crenellations against a blue sky",
+    "altAr": "قصر الإمارة الطيني في نجران بشُرفاته المزينة بالأبيض تحت سماء زرقاء",
+    "subject": "Imarah (Emirate) Palace, Najran",
+    "blurDataURL": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAABwBACdASoUAA8APwForE6rJaQiMAgBYCAJbACdH8GJ/gNpH3EWpkQ6KXdzAAD3Tf5L0bp5fT6mfl38c6Z09x8S2L9/NkWFSwvpudbigSITsnq8G0g6F52grXvzevPQrMfG5Dyp0ZfIR4eHGcjE4QIMQgPK2S2Efg2IgAAA",
+    "credit": {
+      "author": "Richard Mortel",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Imarah_Palace.jpg"
+    }
+  },
+  "najran-mud-tower": {
+    "src": "/images/najran-mud-tower-house.webp",
+    "width": 1200,
+    "height": 900,
+    "alt": "A tall traditional mud-brick tower house in Najran, with palm trees beside it",
+    "altAr": "بيت برجي تقليدي من الطين في نجران تحيط به أشجار النخيل",
+    "subject": "Traditional house, Najran",
+    "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAwBACdASoUAA8APwFqrU8rJiQiMAgBYCAJZgCsACFrLX3SIne4sr6EV1gA/tNtoQcVeFxsmsBMzlPO9yT2cCtLSLo8QO4MfTrwK3pAF5k/p721dHwBQsqSH4EnAOLbIKkHQXTyAAA=",
+    "credit": {
+      "author": "TacoJeddah",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Origineel_huis_Najran.JPG"
+    }
+  },
+  "jazan-coast-sunset": {
+    "src": "/images/jazan-coast-sunset.webp",
+    "width": 1200,
+    "height": 900,
+    "alt": "The sun setting over the Red Sea, seen from the shore of Jazan city",
+    "altAr": "غروب الشمس فوق البحر الأحمر كما يُرى من شاطئ مدينة جازان",
+    "subject": "Sunset from the shore of Jazan city",
+    "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACQAwCdASoUAA8APwFsrk+rJiQiMAgBYCAJQBOgBDlrYg1nV91SAM23owqzL7dO8FbSmextu8e2OwaYcwAUuQRCy9WRVbgfHvwOY8AA",
+    "credit": {
+      "author": "MrJoker07",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Sunset_in_Jazan.jpg"
+    }
   }
 } as const satisfies Record<string, SiteImage>;
 

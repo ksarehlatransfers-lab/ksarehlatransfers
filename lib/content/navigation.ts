@@ -131,6 +131,16 @@ export function primaryNav(locale: Locale): NavGroup[] {
           href: href(locale, "abha"),
           description: t({ en: "Local transfers in both cities", ar: "التوصيل داخل المدينتين" }, locale),
         },
+        {
+          label: t({ en: "Jazan, Sabya & Abu Arish", ar: "جازان وصبيا وأبو عريش" }, locale),
+          href: href(locale, "jazan"),
+          description: t({ en: "Local transfers in three areas", ar: "التوصيل في ثلاث مناطق" }, locale),
+        },
+        {
+          label: t({ en: "Najran", ar: "نجران" }, locale),
+          href: href(locale, "najran"),
+          description: t({ en: "Local transfers in the city", ar: "التوصيل داخل المدينة" }, locale),
+        },
       ],
     },
     {
@@ -402,6 +412,24 @@ export function footerNav(
         {
           label: t({ en: "Abha & Khamis Mushait", ar: "أبها وخميس مشيط" }, locale),
           href: href(locale, "abha"),
+        },
+      ],
+    },
+    {
+      heading: t({ en: "Jazan Region", ar: "منطقة جازان" }, locale),
+      links: [
+        {
+          label: t({ en: "Jazan, Sabya & Abu Arish", ar: "جازان وصبيا وأبو عريش" }, locale),
+          href: href(locale, "jazan"),
+        },
+      ],
+    },
+    {
+      heading: t({ en: "Najran Region", ar: "منطقة نجران" }, locale),
+      links: [
+        {
+          label: t({ en: "Najran transfers", ar: "التوصيل في نجران" }, locale),
+          href: href(locale, "najran"),
         },
       ],
     },

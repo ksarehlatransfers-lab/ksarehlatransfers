@@ -401,6 +401,22 @@ export const riyadhToBuraydah: RoutePageContent = {
 
   related: [
     {
+      routeKey: "buraydah",
+      label: { en: "Transfers in Buraydah", ar: "التوصيل في بريدة" },
+      note: {
+        en: "Once you arrive: local journeys, Prince Naif bin Abdulaziz International Airport and hotels.",
+        ar: "بعد الوصول: التنقل داخل المدينة، ومطار الأمير نايف بن عبدالعزيز الدولي، والفنادق.",
+      },
+    },
+    {
+      routeKey: "unaizah",
+      label: { en: "Transfers in Unaizah", ar: "التوصيل في عنيزة" },
+      note: {
+        en: "South-west of Buraydah: local journeys, hotels and the road between the two cities.",
+        ar: "جنوب غرب بريدة: التنقل داخل المدينة، والفنادق، والطريق بين المدينتين.",
+      },
+    },
+    {
       routeKey: "riyadh",
       label: { en: "All Riyadh transfers", ar: "جميع خدمات النقل في الرياض" },
       note: {

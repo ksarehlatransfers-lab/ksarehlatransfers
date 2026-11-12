@@ -146,6 +146,16 @@ export function primaryNav(locale: Locale): NavGroup[] {
           href: href(locale, "tabuk"),
           description: t({ en: "City and airport transfers", ar: "التوصيل في المدينة والمطار" }, locale),
         },
+        {
+          label: t({ en: "Buraydah", ar: "بريدة" }, locale),
+          href: href(locale, "buraydah"),
+          description: t({ en: "City, airport and hotels", ar: "المدينة والمطار والفنادق" }, locale),
+        },
+        {
+          label: t({ en: "Unaizah", ar: "عنيزة" }, locale),
+          href: href(locale, "unaizah"),
+          description: t({ en: "Local, hotels and Buraydah", ar: "داخل المدينة والفنادق وبريدة" }, locale),
+        },
       ],
     },
     {
@@ -444,6 +454,19 @@ export function footerNav(
         {
           label: t({ en: "Tabuk transfers", ar: "التوصيل في تبوك" }, locale),
           href: href(locale, "tabuk"),
+        },
+      ],
+    },
+    {
+      heading: t({ en: "Qassim Region", ar: "منطقة القصيم" }, locale),
+      links: [
+        {
+          label: t({ en: "Buraydah transfers", ar: "التوصيل في بريدة" }, locale),
+          href: href(locale, "buraydah"),
+        },
+        {
+          label: t({ en: "Unaizah transfers", ar: "التوصيل في عنيزة" }, locale),
+          href: href(locale, "unaizah"),
         },
       ],
     },

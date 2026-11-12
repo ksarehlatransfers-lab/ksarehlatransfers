@@ -919,6 +919,51 @@ export const siteImages = {
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Hejaz_Rail_track_laying_near_Tabuk_1906.jpg"
     }
+  },
+  "buraydah-date-market": {
+    "src": "/images/buraydah-date-city-market.webp",
+    "width": 1600,
+    "height": 1000,
+    "alt": "Buyers and pickup trucks loaded with dates crowding the date market at Date City in Buraydah",
+    "altAr": "مشترون وشاحنات صغيرة محمّلة بالتمور في سوق التمور بمدينة التمور في بريدة",
+    "subject": "Date City market, Buraydah",
+    "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAwCdASoUAAwAPwFqrE6rJiQiMAgBYCAJZwAAXFKt+B7OEeOy4AAAzCZ18mqLT4hX33bQHCCf/O97IE1jtGAaBpZX35WvKCDZxy9CysVXoZ1sjEulxvFwAAA=",
+    "credit": {
+      "author": "Suliman Al-Kurishan from Unaizah , Saudi Arabia",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Date_City_in_Buraidah_3.JPG"
+    }
+  },
+  "buraydah-grand-mosque": {
+    "src": "/images/buraydah-grand-mosque.webp",
+    "width": 1200,
+    "height": 600,
+    "alt": "The sandstone-coloured Grand Mosque of Buraydah, with twin square minarets and palm trees",
+    "altAr": "الجامع الكبير في بريدة بلونه الرملي ومئذنتيه المربعتين وأشجار النخيل",
+    "subject": "The Grand Mosque of Buraydah",
+    "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAwCdASoUAAoAPwFqrE8rJiQiMAgBYCAJZACdH8ADAQWp7DeRnrAA/uCDBZ2uC2AD5WOChCwiXk6G03WCLDhgxKnIwNJDfb1hIDV7sArx94xl2NCOyS5hEMIuBtkAAAA=",
+    "credit": {
+      "author": "Alhassounabdul",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9_%D8%A7%D9%84%D9%83%D8%A8%D9%8A%D8%B1_(%D8%AC%D8%A7%D9%85%D8%B9_%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9)_(%D8%AC%D8%A7%D9%85%D8%B9_%D8%AE%D8%A7%D8%AF%D9%85_%D8%A7%D9%84%D8%AD%D8%B1%D9%85%D9%8A%D9%86_%D8%A7%D9%84%D8%B4%D8%B1%D9%8A%D9%81%D9%8A%D9%86).jpg"
+    }
+  },
+  "unaizah-al-gadhi-mosque": {
+    "src": "/images/unaizah-al-gadhi-mosque.webp",
+    "width": 1200,
+    "height": 900,
+    "alt": "A large mosque with a tall minaret and arched facade in Unaizah, against a blue sky",
+    "altAr": "جامع كبير بمئذنة شاهقة وواجهة مقوّسة في عنيزة تحت سماء زرقاء",
+    "subject": "A mosque in Unaizah",
+    "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAABQAwCdASoUAA8APwForE6rJaQiMAgBYCAJQBYdgSuDhVFW3AD3CcUXj3BZ8ow2W7rsRp9SATz0Al/1Hzii3Ld7hDS3xzysprEtZBT/JDCIrWIA",
+    "credit": {
+      "author": "Meshal Obeidallah at English Wikipedia",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Grand_Mosque_of_Unayzah.jpg"
+    }
   }
 } as const satisfies Record<string, SiteImage>;
 

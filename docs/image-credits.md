@@ -73,6 +73,9 @@ credit data, so attribution travels with each image in code.
 | `tabuk-castle` | [Tabuk Castle, Tabuk](https://commons.wikimedia.org/wiki/File:Tabuk_Fortress_2022.jpg) — cropped to 16:10, resized and converted to WebP | amanderson2 | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) |
 | `tabuk-al-tawbah-mosque` | [Al-Tawbah Mosque, Tabuk](https://commons.wikimedia.org/wiki/File:Al_Tawbah_Mosque_Tabuk.JPG) — cropped to 4:5, resized and converted to WebP; this modified version is shared under CC BY-SA 4.0 | Ali32liver | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 | `tabuk-hejaz-railway-1906` | [Track laying on the Hejaz Railway near Tabuk, 1906](https://commons.wikimedia.org/wiki/File:Hejaz_Rail_track_laying_near_Tabuk_1906.jpg) — cropped to 3:2, resized and converted to WebP | Bernhard Moritz | Public domain |
+| `buraydah-date-market` | [Date City market, Buraydah](https://commons.wikimedia.org/wiki/File:Date_City_in_Buraidah_3.JPG) — cropped to 16:10, resized and converted to WebP | Suliman Al-Kurishan from Unaizah , Saudi Arabia | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) |
+| `buraydah-grand-mosque` | [The Grand Mosque of Buraydah](https://commons.wikimedia.org/wiki/File:%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9_%D8%A7%D9%84%D9%83%D8%A8%D9%8A%D8%B1_(%D8%AC%D8%A7%D9%85%D8%B9_%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9)_(%D8%AC%D8%A7%D9%85%D8%B9_%D8%AE%D8%A7%D8%AF%D9%85_%D8%A7%D9%84%D8%AD%D8%B1%D9%85%D9%8A%D9%86_%D8%A7%D9%84%D8%B4%D8%B1%D9%8A%D9%81%D9%8A%D9%86).jpg) — cropped to 2:1, resized and converted to WebP; this modified version is shared under CC BY-SA 4.0 | Alhassounabdul | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| `unaizah-al-gadhi-mosque` | [A mosque in Unaizah](https://commons.wikimedia.org/wiki/File:Grand_Mosque_of_Unayzah.jpg) — resized and converted to WebP | Meshal Obeidallah at English Wikipedia | Public domain |
 
 <!-- credits:end -->
 

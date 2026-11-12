@@ -44,6 +44,8 @@ export const route = {
   jazan: "jazan",
   najran: "najran",
   tabuk: "tabuk",
+  buraydah: "buraydah",
+  unaizah: "unaizah",
 } as const;
 
 export type RouteKey = keyof typeof route;
@@ -107,6 +109,10 @@ const sitemapMeta: Record<RouteKey, { priority: number; changeFrequency: "weekly
   // Tabuk. City hub with confirmed city and airport transfers, level with
   // the other hubs.
   tabuk: { priority: 0.9, changeFrequency: "weekly" },
+  // Qassim. City hubs with owner-confirmed services, level with the other
+  // hubs.
+  buraydah: { priority: 0.9, changeFrequency: "weekly" },
+  unaizah: { priority: 0.9, changeFrequency: "weekly" },
 };
 
 /** Pages deliberately kept out of the index; see each page's robots meta. */

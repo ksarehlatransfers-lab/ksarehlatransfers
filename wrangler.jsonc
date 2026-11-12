@@ -1,0 +1,46 @@
+// Cloudflare Workers configuration for KSA Rehla Transfers (ksarehlatransfers.com).
+//
+// Committed so the Cloudflare build does not rely on `wrangler deploy`'s
+// automatic Next.js setup. That auto-setup generated a config whose
+// WORKER_SELF_REFERENCE service binding pointed at a Worker named after the
+// package ("private-transfer-across-saudia"), which does not exist, so the
+// first deploy failed (code 10143). The self-reference must match `name`.
+//
+// Mirrors the setup proven on the Saudi Taxi Worker: no R2 bucket; prerendered
+// pages are served from Workers Static Assets (see open-next.config.ts).
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"main": ".open-next/worker.js",
+	"name": "ksarehlatransfers",
+	"compatibility_date": "2026-11-10",
+	"compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+	"assets": {
+		"directory": ".open-next/assets",
+		"binding": "ASSETS"
+	},
+	"services": [
+		{
+			// Self-reference service binding — must match the Worker name above.
+			"binding": "WORKER_SELF_REFERENCE",
+			"service": "ksarehlatransfers"
+		}
+	],
+	"images": {
+		"binding": "IMAGES"
+	},
+	"vars": {
+		// Next's response cache (minimal mode, as OpenNext runs it) keeps up to
+		// 150 rendered responses in memory per Worker instance. Inside the 128 MB
+		// Worker memory cap that caused 1102 errors on the Saudi Taxi Worker
+		// during crawls; the cache only dedupes requests within a 10 s window, so
+		// a small size loses nothing.
+		"NEXT_PRIVATE_RESPONSE_CACHE_MAX_SIZE": "10"
+	},
+	// CRM_INTAKE_URL, CRM_INTAKE_TOKEN and any other secrets are set in the
+	// Cloudflare dashboard, never here. keep_vars stops a deploy from removing
+	// dashboard-set variables.
+	"keep_vars": true,
+	"observability": {
+		"enabled": true
+	}
+}

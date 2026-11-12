@@ -46,3 +46,8 @@ next-env.d.ts
 # license attribution for the photographs in public/images.
 /docs/*
 !/docs/image-credits.md
+
+# Cloudflare (OpenNext) build output and local Worker state
+/.open-next/
+/.wrangler/
+.dev.vars*

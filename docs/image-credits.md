@@ -70,6 +70,9 @@ credit data, so attribution travels with each image in code.
 | `najran-imarah-palace` | [Imarah (Emirate) Palace, Najran](https://commons.wikimedia.org/wiki/File:Imarah_Palace.jpg) — cropped to 4:3, resized and converted to WebP | Richard Mortel | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) |
 | `najran-mud-tower` | [Traditional house, Najran](https://commons.wikimedia.org/wiki/File:Origineel_huis_Najran.JPG) — cropped to 4:3, resized and converted to WebP; this modified version is shared under CC BY-SA 3.0 | TacoJeddah | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) |
 | `jazan-coast-sunset` | [Sunset from the shore of Jazan city](https://commons.wikimedia.org/wiki/File:Sunset_in_Jazan.jpg) — resized and converted to WebP; this modified version is shared under CC BY-SA 3.0 | MrJoker07 | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) |
+| `tabuk-castle` | [Tabuk Castle, Tabuk](https://commons.wikimedia.org/wiki/File:Tabuk_Fortress_2022.jpg) — cropped to 16:10, resized and converted to WebP | amanderson2 | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) |
+| `tabuk-al-tawbah-mosque` | [Al-Tawbah Mosque, Tabuk](https://commons.wikimedia.org/wiki/File:Al_Tawbah_Mosque_Tabuk.JPG) — cropped to 4:5, resized and converted to WebP; this modified version is shared under CC BY-SA 4.0 | Ali32liver | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| `tabuk-hejaz-railway-1906` | [Track laying on the Hejaz Railway near Tabuk, 1906](https://commons.wikimedia.org/wiki/File:Hejaz_Rail_track_laying_near_Tabuk_1906.jpg) — cropped to 3:2, resized and converted to WebP | Bernhard Moritz | Public domain |
 
 <!-- credits:end -->
 

@@ -141,6 +141,11 @@ export function primaryNav(locale: Locale): NavGroup[] {
           href: href(locale, "najran"),
           description: t({ en: "Local transfers in the city", ar: "التوصيل داخل المدينة" }, locale),
         },
+        {
+          label: t({ en: "Tabuk", ar: "تبوك" }, locale),
+          href: href(locale, "tabuk"),
+          description: t({ en: "Destination guide", ar: "دليل الوجهة" }, locale),
+        },
       ],
     },
     {
@@ -430,6 +435,15 @@ export function footerNav(
         {
           label: t({ en: "Najran transfers", ar: "التوصيل في نجران" }, locale),
           href: href(locale, "najran"),
+        },
+      ],
+    },
+    {
+      heading: t({ en: "Tabuk Region", ar: "منطقة تبوك" }, locale),
+      links: [
+        {
+          label: t({ en: "Tabuk destination guide", ar: "دليل تبوك" }, locale),
+          href: href(locale, "tabuk"),
         },
       ],
     },

@@ -874,6 +874,51 @@ export const siteImages = {
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "page": "https://commons.wikimedia.org/wiki/File:Sunset_in_Jazan.jpg"
     }
+  },
+  "tabuk-castle": {
+    "src": "/images/tabuk-castle.webp",
+    "width": 1600,
+    "height": 1000,
+    "alt": "The sandstone walls and arched gateway of Tabuk Castle under a clear sky",
+    "altAr": "الجدران الحجرية الرملية لقلعة تبوك وبوابتها المقوّسة تحت سماء صافية",
+    "subject": "Tabuk Castle, Tabuk",
+    "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAwBACdASoUAAwAPwFsrU6rJiQiMAgBYCAJZgCdMoADQyP6VgsuYdd+9gwA/uf7eGOXB4tuzr/kSHeg210pA12nrUsljLiTRejybkJxbggLUZeJF3B5n84In1L4tkxKKL74yUmWsAA=",
+    "credit": {
+      "author": "amanderson2",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Tabuk_Fortress_2022.jpg"
+    }
+  },
+  "tabuk-al-tawbah-mosque": {
+    "src": "/images/tabuk-al-tawbah-mosque.webp",
+    "width": 800,
+    "height": 1000,
+    "alt": "The white minaret and facade of Al-Tawbah Mosque in Tabuk against a blue sky",
+    "altAr": "مئذنة مسجد التوبة في تبوك وواجهته البيضاء تحت سماء زرقاء",
+    "subject": "Al-Tawbah Mosque, Tabuk",
+    "blurDataURL": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAABQBACdASoUABkAPwF0sVOrJqQiqAgBYCAJYgC06A2Ge4Q9Wrk/FZ3MkJ68ANUHfpnf4fVErpQ7rIQzf3uXvRAcG/kqrQqx89yROEEeKlRtRR62jGuVDGIjRCM2PHlNAR1849oCaY4b6pRgP3reRN6WqXSzXT8tTYE4hC8FTPrw7lcu1JV9zAAA",
+    "credit": {
+      "author": "Ali32liver",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Al_Tawbah_Mosque_Tabuk.JPG"
+    }
+  },
+  "tabuk-hejaz-railway-1906": {
+    "src": "/images/tabuk-hejaz-railway-1906.webp",
+    "width": 1200,
+    "height": 800,
+    "alt": "Black-and-white photograph of workers laying track for the Hejaz Railway in the desert near Tabuk in 1906",
+    "altAr": "صورة بالأبيض والأسود لعمّال يمدّون قضبان سكة حديد الحجاز في الصحراء قرب تبوك عام 1906",
+    "subject": "Track laying on the Hejaz Railway near Tabuk, 1906",
+    "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAwCdASoUAA0APwFsrU8rJiQiMAgBYCAJaQAAW9ozpKefsSE33oAA/upuT/k2kM6O/pSmXXZ4u4pWXQNK9gb5fAFplnhAknAlsg9HGVl/YtcWtyOs9QT0yVtf677gAAA=",
+    "credit": {
+      "author": "Bernhard Moritz",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Hejaz_Rail_track_laying_near_Tabuk_1906.jpg"
+    }
   }
 } as const satisfies Record<string, SiteImage>;
 

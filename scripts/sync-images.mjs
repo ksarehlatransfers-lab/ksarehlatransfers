@@ -54,7 +54,7 @@ const TS_OUT = path.join(ROOT, "lib/site-images.ts");
 const CREDITS = path.join(ROOT, "docs/image-credits.md");
 
 const API = "https://en.wikipedia.org/w/api.php";
-const UA = "private-transfers-across-saudi/1.0 (image pipeline; licence attribution)";
+const UA = "ksa-rehla-transfers/1.0 (image pipeline; licence attribution)";
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const exists = (p) => access(p).then(() => true, () => false);

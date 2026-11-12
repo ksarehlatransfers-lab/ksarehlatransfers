@@ -28,8 +28,8 @@ const copy = {
   // This page is noindex, so the title is for the browser tab rather than a
   // search result. It carries the brand because there is room for it here.
   title: {
-    en: "Get a quote | Private Transfers Across Saudi",
-    ar: "اطلب عرض سعر | نقل خاص عبر السعودية",
+    en: "Get a quote | KSA Rehla Transfers",
+    ar: "اطلب عرض سعر | KSA Rehla Transfers",
   },
   description: {
     en:

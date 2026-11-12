@@ -8,8 +8,8 @@ import type { Locale } from "@/lib/i18n/config";
 
 /** The wordmark in each language. Same two-part structure, same hierarchy. */
 const wordmark = {
-  en: { primary: "Private Transfers", secondary: "Across Saudi" },
-  ar: { primary: "نقل خاص", secondary: "عبر السعودية" },
+  en: { primary: "KSA Rehla", secondary: "Transfers" },
+  ar: { primary: "KSA Rehla", secondary: "Transfers" },
 } as const;
 
 /**

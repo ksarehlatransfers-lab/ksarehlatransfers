@@ -2,18 +2,19 @@
  * Single source of truth for brand and deployment details.
  *
  * Everything here is referenced by the layout, metadata and structured data,
- * so changing a value once updates the whole site. Set NEXT_PUBLIC_SITE_URL in
- * the deployment environment before going live — the canonical URL, Open Graph
- * tags and JSON-LD all derive from it.
+ * so changing a value once updates the whole site. The canonical URL, Open
+ * Graph tags and JSON-LD all derive from `url`: NEXT_PUBLIC_SITE_URL overrides
+ * it (local QA sets it to localhost), and without it the production domain
+ * is used, so a build that forgets the variable still emits correct URLs.
  */
 
-const rawUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+const rawUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ksarehlatransfers.com";
 
 export const site = {
-  name: "Private Transfers Across Saudi",
-  shortName: "Private Transfers Across Saudi",
+  name: "KSA Rehla Transfers",
+  shortName: "KSA Rehla Transfers",
   /** Used in the SEO title after the main keyword. */
-  brand: "Private Transfers Across Saudi",
+  brand: "KSA Rehla Transfers",
   url: rawUrl.replace(/\/$/, ""),
   /** Default site description, per locale. Pages override with their own. */
   description: {
@@ -41,4 +42,4 @@ export const site = {
 } as const;
 
 export const absoluteUrl = (path = "/") =>
-  new URL(path, site.url || "http://localhost:3000").toString();
+  new URL(path, site.url || "https://ksarehlatransfers.com").toString();

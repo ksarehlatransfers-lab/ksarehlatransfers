@@ -135,6 +135,8 @@ export const locationOptions: Bilingual<string[]> = {
     "Sabya",
     "Abu Arish",
     "Najran",
+    "Tabuk",
+    "Prince Sultan bin Abdulaziz International Airport (TUU)",
     "Other location in Saudi Arabia",
   ],
   ar: [
@@ -154,6 +156,8 @@ export const locationOptions: Bilingual<string[]> = {
     "صبيا",
     "أبو عريش",
     "نجران",
+    "تبوك",
+    "مطار الأمير سلطان بن عبدالعزيز الدولي (TUU)",
     "موقع آخر داخل المملكة",
   ],
 };

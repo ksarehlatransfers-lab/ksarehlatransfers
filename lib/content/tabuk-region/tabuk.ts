@@ -6,13 +6,16 @@ import type { ClusterCta, ClusterFaq, RelatedLink } from "@/lib/content/riyadh/t
 /**
  * Tabuk — destination hub for Tabuk City.
  *
- * Operational coverage: NONE CONFIRMED (owner, 12 Nov 2026; research folder
- * tabuk/). Local transfers, airport pickups and drop-offs, hotel transfers,
- * intercity journeys, NEOM / AMAALA / project sites, sightseeing and hourly
- * service are all unconfirmed. So this page is informational: it offers no
- * service, and its quote section only invites journey details for review —
- * a request is not a booking. When the owner confirms coverage, add a
- * service line, FAQ and quote prompt for exactly what is confirmed.
+ * Owner-confirmed coverage (research folder tabuk/, updated 12 Nov 2026):
+ * - private transfers within Tabuk City;
+ * - pickups and drop-offs at Prince Sultan bin Abdulaziz International
+ *   Airport (TUU).
+ * NOT confirmed, so never offered or implied here: hotel transfers as a
+ * service, intercity journeys, the governorates (Duba, Haql, Tayma, Al-Wajh,
+ * Umluj, Al-Bad'), NEOM / AMAALA / project sites, sightseeing and
+ * excursions, hourly service, vehicle types, prices, waiting allowances and
+ * guarantees. A quote request is not a booking. Add a line here only for
+ * what the owner confirms next.
  *
  * Facts (Saudipedia, retrieved 12 Nov 2026; evidence in the research folder):
  * - Tabuk City: regional centre of Tabuk Province, its largest city;
@@ -43,11 +46,11 @@ import type { ClusterCta, ClusterFaq, RelatedLink } from "@/lib/content/riyadh/t
  *   residents are about an hour from Yanbu's airport; winter snow on Jabal
  *   al-Lawz; NEOM, AMAALA and the Red Sea Project.
  * - Airport: Prince Sultan bin Abdulaziz International Airport (TUU), about
- *   5 km from the city centre. Context only.
+ *   5 km from the city centre (now a confirmed pickup and drop-off point).
  *
  * Deliberately NOT published: the "3,500 years old" castle claim and the
  * Qur'anic "dwellers in the wood" identification (unsupported), opening
- * hours, admission, travel times, and any service or availability wording.
+ * hours, admission, travel times, and any service beyond the two above.
  */
 
 type B = Bilingual<string>;
@@ -58,9 +61,18 @@ export type TabukContent = {
   routeKey: RouteKey;
   imageKey: SiteImageKey;
   seo: { title: B; description: B };
+  /** Name of the Service node in structured data: the confirmed services only. */
+  serviceName: B;
   crumbLabel: B;
   hero: { eyebrow: B; h1: B; lead: B };
   facts: { heading: B; items: { label: B; value: B; note: B }[]; source: B };
+  services: {
+    heading: B;
+    lead: B;
+    items: { id: "tabuk-city" | "tabuk-airport"; title: B; marker: B; body: B }[];
+    notOfferedHeading: B;
+    notOffered: B[];
+  };
   about: { heading: B; paragraphs: B[] };
   castle: { eyebrow: B; name: B; paragraphs: B[] };
   spring: { name: B; paragraphs: B[] };
@@ -81,23 +93,28 @@ export const tabuk: TabukContent = {
 
   seo: {
     title: {
-      en: "Tabuk Private Transfers | Request a Quote",
-      ar: "خدمات النقل الخاص في تبوك | اطلب عرض سعر",
+      en: "Tabuk Private Transfers & Airport Transfers | Request a Quote",
+      ar: "النقل الخاص في تبوك والتوصيل من المطار | اطلب عرض سعر",
     },
     description: {
-      en: "A guide to Tabuk in north-west Saudi Arabia: its castle, Al-Tawbah Mosque, the Hejaz Railway station and Ain al-Sukkar. Send journey details for a quote.",
-      ar: "دليل إلى تبوك في شمال غرب المملكة: قلعتها ومسجد التوبة ومحطة سكة حديد الحجاز وعين السكر. أرسل تفاصيل رحلتك لطلب عرض سعر.",
+      en: "Private transfers within Tabuk City, and pickups and drop-offs at Prince Sultan bin Abdulaziz International Airport (TUU). Send your details for a quote.",
+      ar: "توصيل خاص داخل مدينة تبوك، واستقبال وتوصيل في مطار الأمير سلطان بن عبدالعزيز الدولي (TUU). أرسل تفاصيل رحلتك واطلب عرض سعر.",
     },
+  },
+
+  serviceName: {
+    en: "Private transfers within Tabuk City and at Prince Sultan bin Abdulaziz International Airport",
+    ar: "التوصيل الخاص داخل مدينة تبوك وفي مطار الأمير سلطان بن عبدالعزيز الدولي",
   },
 
   crumbLabel: { en: "Tabuk", ar: "تبوك" },
 
   hero: {
     eyebrow: { en: "Tabuk Province · North-west Saudi Arabia", ar: "منطقة تبوك · شمال غرب المملكة" },
-    h1: { en: "Tabuk, the northern gateway", ar: "تبوك، بوابة الشمال" },
+    h1: { en: "Private transfers in Tabuk, the northern gateway", ar: "توصيل خاص في تبوك، بوابة الشمال" },
     lead: {
-      en: "The largest city in Tabuk Province, on the old road from the Levant to Madinah. A castle beside an ancient spring, a mosque tied to the Prophet's expedition, and a station from the Hejaz Railway — all in one city.",
-      ar: "كبرى مدن منطقة تبوك، على الطريق القديم بين الشام والمدينة المنورة. قلعة بجوار عين قديمة، ومسجد يرتبط بغزوة تبوك، ومحطة من محطات سكة حديد الحجاز، في مدينة واحدة.",
+      en: "Our local drivers provide private transfers within Tabuk City, and pickups and drop-offs at Prince Sultan bin Abdulaziz International Airport. The city itself sits on the old road from the Levant to Madinah, with a castle beside an ancient spring and a station from the Hejaz Railway.",
+      ar: "يقدّم سائقونا المحليون التوصيل الخاص داخل مدينة تبوك، والاستقبال والتوصيل في مطار الأمير سلطان بن عبدالعزيز الدولي. وتقع المدينة على الطريق القديم بين الشام والمدينة المنورة، وفيها قلعة بجوار عين قديمة ومحطة من محطات سكة حديد الحجاز.",
     },
   },
 
@@ -126,6 +143,42 @@ export const tabuk: TabukContent = {
       },
     ],
     source: { en: "Figures: Saudipedia.", ar: "الأرقام: سعوديبيديا." },
+  },
+
+  services: {
+    heading: { en: "Transfers in Tabuk", ar: "التوصيل في تبوك" },
+    lead: {
+      en: "Two services, both arranged by our local drivers. Each journey is confirmed with you before it is booked.",
+      ar: "خدمتان يقدّمهما سائقونا المحليون، ونؤكد كل رحلة معك قبل حجزها.",
+    },
+    items: [
+      {
+        id: "tabuk-city",
+        title: { en: "Within Tabuk City", ar: "داخل مدينة تبوك" },
+        marker: { en: "City transfers", ar: "التوصيل في المدينة" },
+        body: {
+          en: "Private transfers between addresses in Tabuk City. Give us the pickup and the destination; where the car can stop is confirmed for each journey.",
+          ar: "توصيل خاص بين العناوين داخل مدينة تبوك. زوّدنا بنقطة الانطلاق والوجهة، ونؤكد مكان توقف السيارة لكل رحلة.",
+        },
+      },
+      {
+        id: "tabuk-airport",
+        title: { en: "Prince Sultan bin Abdulaziz International Airport", ar: "مطار الأمير سلطان بن عبدالعزيز الدولي" },
+        marker: { en: "TUU · ~5 km from the city centre", ar: "TUU · ~5 كم من وسط المدينة" },
+        body: {
+          en: "Pickups and drop-offs at Tabuk's airport. Send the flight number and the address in the city; how and where you meet the driver is confirmed for your journey.",
+          ar: "الاستقبال والتوصيل في مطار تبوك. أرسل رقم الرحلة والعنوان في المدينة، ونؤكد لك طريقة لقاء السائق ومكانه لرحلتك.",
+        },
+      },
+    ],
+    notOfferedHeading: { en: "Not offered on this page at present", ar: "غير متاح في هذه الصفحة حاليًا" },
+    notOffered: [
+      { en: "Hotel transfers", ar: "التوصيل من الفنادق وإليها" },
+      { en: "Intercity and long-distance journeys", ar: "الرحلات بين المدن والرحلات الطويلة" },
+      { en: "Duba, Haql, Tayma, Al-Wajh, Umluj or other governorates", ar: "ضباء وحقل وتيماء والوجه وأملج وغيرها من المحافظات" },
+      { en: "NEOM, AMAALA and other project sites", ar: "نيوم وأمالا ومواقع المشروعات الأخرى" },
+      { en: "Sightseeing, excursions or hourly hire", ar: "الجولات السياحية والرحلات الاستكشافية والاستئجار بالساعة" },
+    ],
   },
 
   about: {
@@ -247,31 +300,31 @@ export const tabuk: TabukContent = {
   },
 
   enquiry: {
-    heading: { en: "How a Tabuk enquiry works", ar: "كيف يُعالَج طلبك في تبوك" },
+    heading: { en: "How to request a Tabuk quote", ar: "كيف تطلب عرض سعر في تبوك" },
     lead: {
-      en: "We have not yet confirmed which journeys we can arrange in Tabuk. You are welcome to send your journey details, and we will review them.",
-      ar: "لم نؤكد بعدُ الرحلات التي يمكننا ترتيبها في تبوك. يسعدنا أن ترسل تفاصيل رحلتك لنراجعها.",
+      en: "Send your journey details — a trip within Tabuk City, or a pickup or drop-off at the airport — and we reply in writing.",
+      ar: "أرسل تفاصيل رحلتك، سواء داخل مدينة تبوك أو استقبالًا أو توصيلًا في المطار، ونرد عليك كتابةً.",
     },
     steps: [
       {
         title: { en: "Send the details", ar: "أرسل التفاصيل" },
         body: {
-          en: "Where the journey starts and ends, the date and time, and how many passengers and suitcases.",
-          ar: "مكان بداية الرحلة ونهايتها، والتاريخ والوقت، وعدد الركاب والحقائب.",
+          en: "The pickup and destination — with the flight number for an airport journey — the date and time, and how many passengers and suitcases.",
+          ar: "نقطة الانطلاق والوجهة، ورقم الرحلة الجوية إن كانت الرحلة من المطار أو إليه، والتاريخ والوقت، وعدد الركاب والحقائب.",
         },
       },
       {
-        title: { en: "We review it", ar: "نراجع الطلب" },
+        title: { en: "We confirm availability", ar: "نؤكد الإتاحة" },
         body: {
-          en: "We check whether we can arrange that journey and reply to tell you.",
-          ar: "نتحقق مما إذا كان بإمكاننا ترتيب هذه الرحلة، ونرد عليك بالنتيجة.",
+          en: "We check the journey for your date and time and reply to you.",
+          ar: "نتحقق من الرحلة في التاريخ والوقت المطلوبين ونرد عليك.",
         },
       },
       {
-        title: { en: "A written price, if we can", ar: "سعر مكتوب إن أمكن" },
+        title: { en: "A written price", ar: "سعر مكتوب" },
         body: {
-          en: "If we can arrange it, we send a written price for you to consider.",
-          ar: "إن أمكننا ترتيبها، نرسل إليك سعرًا مكتوبًا لتنظر فيه.",
+          en: "We send a written price and the vehicle category for you to consider.",
+          ar: "نرسل إليك سعرًا مكتوبًا وفئة المركبة لتنظر فيهما.",
         },
       },
     ],
@@ -284,6 +337,13 @@ export const tabuk: TabukContent = {
   faqHeading: { en: "Tabuk: common questions", ar: "تبوك: أسئلة شائعة" },
 
   faqs: [
+    {
+      question: { en: "Do you provide private transfers in Tabuk?", ar: "هل تقدّمون التوصيل الخاص في تبوك؟" },
+      answer: {
+        en: "Yes. Our local drivers provide private transfers within Tabuk City, and pickups and drop-offs at Prince Sultan bin Abdulaziz International Airport. Send the pickup and destination, and we reply with a written quotation.",
+        ar: "نعم. يقدّم سائقونا المحليون التوصيل الخاص داخل مدينة تبوك، والاستقبال والتوصيل في مطار الأمير سلطان بن عبدالعزيز الدولي. أرسل نقطة الانطلاق والوجهة، ونرد بعرض سعر مكتوب.",
+      },
+    },
     {
       question: { en: "Where is Tabuk?", ar: "أين تقع تبوك؟" },
       answer: {
@@ -308,15 +368,22 @@ export const tabuk: TabukContent = {
     {
       question: { en: "How can I request a transfer quote in Tabuk?", ar: "كيف أطلب عرض سعر للتوصيل في تبوك؟" },
       answer: {
-        en: "Use the quote form to send the pickup and destination, the date and time, and the number of passengers. We review the request and reply to say whether we can arrange it. A request is not a booking.",
-        ar: "استخدم نموذج طلب عرض السعر لإرسال نقطة الانطلاق والوجهة، والتاريخ والوقت، وعدد الركاب. نراجع الطلب ونرد عليك لنخبرك إن كان بإمكاننا ترتيبه. والطلب ليس حجزًا.",
+        en: "Use the quote form to send the pickup and destination, the date and time, the number of passengers and, for an airport journey, the flight number. We reply with a written price. A request is not a booking.",
+        ar: "استخدم نموذج طلب عرض السعر لإرسال نقطة الانطلاق والوجهة، والتاريخ والوقت، وعدد الركاب، ورقم الرحلة الجوية إن كانت الرحلة من المطار أو إليه. ونرد عليك بسعر مكتوب. والطلب ليس حجزًا.",
       },
     },
     {
-      question: { en: "Do you offer airport or intercity transfers in Tabuk?", ar: "هل تقدّمون التوصيل من المطار أو بين المدن في تبوك؟" },
+      question: { en: "Do you pick up from Tabuk airport?", ar: "هل تستقبلون من مطار تبوك؟" },
       answer: {
-        en: "Not at present. Tabuk's airport is Prince Sultan bin Abdulaziz International Airport, about 5 km from the city centre, but airport pickups, intercity journeys and other specific services in the region are not confirmed. You are welcome to send your journey details for review.",
-        ar: "ليس حاليًا. مطار تبوك هو مطار الأمير سلطان بن عبدالعزيز الدولي على بعد نحو 5 كم من وسط المدينة، لكن الاستقبال من المطار والرحلات بين المدن وغيرها من الخدمات في المنطقة غير مؤكدة. ويسعدنا أن ترسل تفاصيل رحلتك لنراجعها.",
+        en: "Yes. We provide pickups and drop-offs at Prince Sultan bin Abdulaziz International Airport (TUU), about 5 km from the city centre, for journeys to and from addresses in Tabuk City. Send the flight number with your request; how and where you meet the driver is confirmed for your journey.",
+        ar: "نعم. نقدّم الاستقبال والتوصيل في مطار الأمير سلطان بن عبدالعزيز الدولي (TUU) على بعد نحو 5 كم من وسط المدينة، للرحلات من العناوين داخل مدينة تبوك وإليها. أرسل رقم الرحلة الجوية مع طلبك، ونؤكد لك طريقة لقاء السائق ومكانه لرحلتك.",
+      },
+    },
+    {
+      question: { en: "Do you drive from Tabuk to other cities or to NEOM?", ar: "هل توصلون من تبوك إلى مدن أخرى أو إلى نيوم؟" },
+      answer: {
+        en: "Not at present. Intercity journeys, the province's governorates and project sites such as NEOM and AMAALA are not among the services on this page. This page covers transfers within Tabuk City and at its airport.",
+        ar: "ليس حاليًا. الرحلات بين المدن، ومحافظات المنطقة، ومواقع المشروعات مثل نيوم وأمالا، ليست ضمن خدمات هذه الصفحة، فهي تغطي التوصيل داخل مدينة تبوك وفي مطارها.",
       },
     },
   ],
@@ -360,10 +427,10 @@ export const tabuk: TabukContent = {
 
   cta: {
     eyebrow: { en: "Tabuk", ar: "تبوك" },
-    heading: { en: "Send your journey details", ar: "أرسل تفاصيل رحلتك" },
+    heading: { en: "Request a Tabuk transfer quotation", ar: "اطلب عرض سعر للتوصيل في تبوك" },
     body: {
-      en: "We review each request and reply to say whether we can arrange it.",
-      ar: "نراجع كل طلب ونرد عليك لنخبرك إن كان بإمكاننا ترتيبه.",
+      en: "A journey within Tabuk City, or a pickup or drop-off at the airport. We reply with a written price.",
+      ar: "رحلة داخل مدينة تبوك، أو استقبال أو توصيل في المطار. ونرد عليك بسعر مكتوب.",
     },
     button: { en: "Request a quote", ar: "اطلب عرض سعر" },
   },

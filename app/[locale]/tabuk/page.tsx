@@ -42,29 +42,25 @@ const crumbs = (locale: Locale): Crumb[] => [
 ];
 
 /**
- * Structured data for a page that offers no confirmed service.
- *
- * The shared cluster helper always adds a `Service` node, which would tell
- * search engines that a transfer service is offered in Tabuk — not yet
- * confirmed by the owner. The helper is reused unchanged and its `Service`
- * node is dropped here, leaving WebPage, BreadcrumbList and FAQPage.
+ * Structured data: WebPage, BreadcrumbList, a Service node naming only the
+ * two owner-confirmed services (Tabuk City transfers and TUU airport pickups
+ * and drop-offs — no offers, prices or ratings) and FAQPage.
  */
 function tabukJsonLd(locale: Locale, imageUrl: string) {
-  const data = clusterPageJsonLd({
+  return clusterPageJsonLd({
     locale,
     routeKey: content.routeKey,
     title: content.seo.title[locale],
     description: content.seo.description[locale],
     imageUrl,
     crumbs: crumbs(locale),
-    serviceName: content.hero.h1[locale],
+    serviceName: content.serviceName[locale],
     serviceDescription: content.seo.description[locale],
     faqEntries: content.faqs.map((faq) => ({
       question: faq.question[locale],
       answer: faq.answer[locale],
     })),
   });
-  return { ...data, "@graph": data["@graph"].filter((node) => node["@type"] !== "Service") };
 }
 
 /** Horizontal sandstone strata. Decorative only. */
@@ -82,13 +78,15 @@ function Strata({ className }: { className?: string }) {
  *
  * Design concept — "the northern gateway". Tabuk is the first city on the
  * old road south from the Levant, so the page reads like an editorial guide
- * rather than a service page, and it has no service line of its own: the
- * owner has not confirmed any Tabuk coverage.
+ * with a short, explicit service section: the owner has confirmed transfers
+ * within Tabuk City and pickups and drop-offs at the airport (TUU), and
+ * nothing else.
  *
  * Unlike the Abha contours, the Jazan sea-to-mountain line or the Najran
  * valley band:
  * - a full-bleed hero, the headline set over the castle photograph;
  * - an ink "strata" band of four facts with sandstone rules;
+ * - two sandstone service cards (city, airport) and a "not offered" row;
  * - a castle-and-spring spread (the two stand side by side), then the
  *   mosque as a tall portrait with its text;
  * - an archival railway band built around the year 1906;
@@ -159,6 +157,36 @@ export default async function TabukPage({ params }: PageProps<"/[locale]/tabuk">
             ))}
           </dl>
           <p className="mt-4 text-xs text-white/50">{content.facts.source[locale]}</p>
+        </div>
+      </section>
+
+      {/* Confirmed services: two cards, then what is not offered */}
+      <section className="section-y bg-background" aria-labelledby="tbk-services">
+        <div className="site-container">
+          <div className="max-w-3xl">
+            <h2 id="tbk-services" className="text-h2 text-balance text-ink">{content.services.heading[locale]}</h2>
+            <p className="text-lead mt-4 text-pretty text-muted-foreground">{content.services.lead[locale]}</p>
+          </div>
+          <ul role="list" className="mt-10 grid gap-4 md:grid-cols-2">
+            {content.services.items.map((item) => (
+              <li key={item.id} id={item.id} className="relative isolate scroll-mt-24 overflow-hidden rounded-3xl bg-sand p-7 sm:p-9">
+                <Strata className="absolute inset-x-0 top-0 -z-10 h-10 opacity-70" />
+                <p className="numeric text-xs font-semibold tracking-wide text-brass-deep">{item.marker[locale]}</p>
+                <h3 className="text-h3 mt-3 text-balance text-ink">{item.title[locale]}</h3>
+                <p className="mt-3 text-[0.975rem] leading-relaxed text-ink/80">{item.body[locale]}</p>
+              </li>
+            ))}
+          </ul>
+          <div className="mt-6 rounded-2xl border border-ink/10 p-6">
+            <h3 className="text-h4 text-ink">{content.services.notOfferedHeading[locale]}</h3>
+            <ul role="list" className="mt-3 flex flex-wrap gap-2">
+              {content.services.notOffered.map((item) => (
+                <li key={item.en} className="rounded-full bg-sand px-3 py-1 text-sm text-muted-foreground">
+                  {item[locale]}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 

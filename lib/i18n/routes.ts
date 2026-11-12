@@ -104,9 +104,9 @@ const sitemapMeta: Record<RouteKey, { priority: number; changeFrequency: "weekly
   // Jazan and Najran regions. Each is a city hub, level with the other hubs.
   jazan: { priority: 0.9, changeFrequency: "weekly" },
   najran: { priority: 0.9, changeFrequency: "weekly" },
-  // Tabuk. A destination guide with no confirmed service yet, so a step
-  // below the service hubs.
-  tabuk: { priority: 0.7, changeFrequency: "monthly" },
+  // Tabuk. City hub with confirmed city and airport transfers, level with
+  // the other hubs.
+  tabuk: { priority: 0.9, changeFrequency: "weekly" },
 };
 
 /** Pages deliberately kept out of the index; see each page's robots meta. */

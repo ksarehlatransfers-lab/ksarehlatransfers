@@ -144,7 +144,7 @@ export function primaryNav(locale: Locale): NavGroup[] {
         {
           label: t({ en: "Tabuk", ar: "تبوك" }, locale),
           href: href(locale, "tabuk"),
-          description: t({ en: "Destination guide", ar: "دليل الوجهة" }, locale),
+          description: t({ en: "City and airport transfers", ar: "التوصيل في المدينة والمطار" }, locale),
         },
       ],
     },
@@ -442,7 +442,7 @@ export function footerNav(
       heading: t({ en: "Tabuk Region", ar: "منطقة تبوك" }, locale),
       links: [
         {
-          label: t({ en: "Tabuk destination guide", ar: "دليل تبوك" }, locale),
+          label: t({ en: "Tabuk transfers", ar: "التوصيل في تبوك" }, locale),
           href: href(locale, "tabuk"),
         },
       ],

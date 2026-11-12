@@ -76,10 +76,18 @@ async function deliverToCrm(
       },
       body: JSON.stringify(lead),
       // Never follow a redirect with the token attached to an unexpected host.
-      redirect: "error",
+      // "manual", not "error": Cloudflare Workers rejects redirect: "error"
+      // ("won't be implemented … use manual and check the status"), which
+      // made every live delivery throw before reaching the CRM. A 3xx is
+      // treated as a failure below, so the token is still never re-sent.
+      redirect: "manual",
       cache: "no-store",
       signal: AbortSignal.timeout(TIMEOUT_MS),
     });
+    if (res.status >= 300 && res.status < 400) {
+      console.error("[inquiry] CRM intake redirected; not followed", { status: res.status, reference: meta.reference });
+      return { ok: false, reason: "failed", detail: `CRM responded ${res.status} (redirect not followed)` };
+    }
     const json = (await res.json().catch(() => null)) as { ok?: boolean; error?: string } | null;
 
     if (res.ok && json?.ok) return { ok: true, reference: meta.reference };
